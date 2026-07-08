@@ -8,10 +8,19 @@ function yearToDecade(year) {
   return `${Math.floor(year / 10) * 10}s`;
 }
 
-/* Return the "primary" variant of a train: latest active, else latest overall.
+/* Return the "primary" variant of a train.
+   Priority: (1) matches the currently-active era filter,
+             (2) newest active variant,
+             (3) newest overall variant.
    For flat (no-variants) entries, returns null. */
 function getPrimaryVariant(v) {
   if (!v.variants || !v.variants.length) return null;
+  if (activeEra !== "全部") {
+    const eraMatch = v.variants.filter(x => yearToDecade(x.yearStart) === activeEra);
+    if (eraMatch.length) {
+      return eraMatch.reduce((a, b) => (b.yearStart || 0) > (a.yearStart || 0) ? b : a);
+    }
+  }
   const active = v.variants.filter(x => x.status !== "retired");
   const pool = active.length ? active : v.variants;
   return pool.reduce((a, b) => (b.yearStart || 0) > (a.yearStart || 0) ? b : a);
