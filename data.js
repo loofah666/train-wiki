@@ -1,7 +1,12 @@
 window.TRAIN_DATA = [
   {
     id: "puyuma",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/%E5%8F%B0%E9%90%B5%E6%99%AE%E6%82%A0%E7%91%AA.jpg",
+    photoUrl: "images/puyuma.jpg",
+    photoCredit: {
+      author: "LucasLiu0910",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E9%90%B5%E6%99%AE%E6%82%A0%E7%91%AA.jpg"
+    },
     name: "普悠瑪號",
     nameEn: "Puyuma Express",
     model: "TEMU2000",
@@ -30,7 +35,12 @@ window.TRAIN_DATA = [
   },
   {
     id: "taroko",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/TEMU1000-1066-yilan.jpg",
+    photoUrl: "images/taroko.jpg",
+    photoCredit: {
+      author: "Encino~commonswiki",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:TEMU1000-1066-yilan.jpg"
+    },
     name: "太魯閣號",
     nameEn: "Taroko Express",
     model: "TEMU1000",
@@ -59,7 +69,12 @@ window.TRAIN_DATA = [
   },
   {
     id: "ziqiang",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/A_TRA_EMU1200_train_at_Taichung_Station_01.jpg",
+    photoUrl: "images/ziqiang--emu3000.jpg",
+    photoCredit: {
+      author: "鐵路1",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_EMU3000_at_Qidu_Station_20220618.jpg"
+    },
     name: "自強號",
     nameEn: "Tze-Chiang Limited Express",
     operator: "臺灣鐵路公司",
@@ -84,6 +99,12 @@ window.TRAIN_DATA = [
         maxSpeed: 120,
         cars: 5,
         seats: 224,
+        photoUrl: "images/ziqiang--emu100.jpg",
+        photoCredit: {
+          author: "Cheng-en Cheng",
+          license: "CC BY-SA 2.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:A_TRA_EMU100_train_at_Taichung_Station.jpg"
+        },
         description: "臺鐵第一款交流電聯車、也是首款自強號，1978 年從英國進口，共 13 組 65 輛。圓弧形車頭仿英國城際列車設計，暱稱「英國貴婦」或「阿婆號」，2010 年退役。",
         features: [
           "臺灣首款交流電聯車",
@@ -102,6 +123,12 @@ window.TRAIN_DATA = [
         maxSpeed: 120,
         cars: 9,
         seats: 406,
+        photoUrl: "images/ziqiang--emu1200.jpg",
+        photoCredit: {
+          author: "Rsa",
+          license: "CC BY-SA 3.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_EMU1200_at_Taichung_Station_20130807.jpg"
+        },
         description: "由 1988 年南非 UCW 製造的 EMU200 於 2002–2004 年由台灣車輛改造而成。跳脫傳統米黃「啞鈴」塗裝，白車身配紅裙板與橘線的外觀，因神似日本特急電車被鐵道迷暱稱「紅斑馬」。2022 年 3 月 28 日末班車後退役。",
         features: [
           "臺鐵首款設有育嬰／哺乳室的電聯車",
@@ -119,6 +146,12 @@ window.TRAIN_DATA = [
         maxSpeed: 130,
         cars: 12,
         seats: 572,
+        photoUrl: "images/ziqiang--pp.jpg",
+        photoCredit: {
+          author: "jason199567",
+          license: "CC BY-SA 4.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_E1000_Push-pull_Express_train_on_the_Western_Line.jpg"
+        },
         description: "臺鐵首款流線型車頭、也是首款推拉式（Push-Pull）自強號。1996 年首航，兩部 E1000 機車分列首尾夾帶 10 節不動力拖車，1996 年上路至今仍是西部幹線主力。編組中特殊車廂包括親子車廂 PPP2500 與多功能自行車廂 PPM2500。",
         features: [
           "臺鐵首款流線型車頭與電動滑塞式車門",
@@ -136,6 +169,12 @@ window.TRAIN_DATA = [
         maxSpeed: 130,
         cars: 12,
         seats: 538,
+        photoUrl: "images/ziqiang--emu3000.jpg",
+        photoCredit: {
+          author: "鐵路1",
+          license: "CC BY-SA 4.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_EMU3000_at_Qidu_Station_20220618.jpg"
+        },
         description: "臺鐵最新世代城際列車，由日立製作所在山口縣笠戶事業所組裝，屬 Hitachi AT300 (A-train) 家族。共 50 編組 600 輛，主要投入東部幹線紓解一票難求。首度導入商務車廂「騰雲座艙」，提供大型座椅、充電插座與飲料點心。",
         features: [
           "臺鐵首度導入的商務車廂「騰雲座艙」",
@@ -148,7 +187,12 @@ window.TRAIN_DATA = [
   },
   {
     id: "juguang",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/TRA_E402_Chu-Kuang_Express_at_Taitung_Station_20201114.jpg",
+    photoUrl: "images/juguang.jpg",
+    photoCredit: {
+      author: "Kazehayashi",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_E402_Chu-Kuang_Express_at_Taitung_Station_20201114.jpg"
+    },
     name: "莒光號",
     nameEn: "Chu-Kuang Express",
     model: "35SP32950 系列客車（現役主力）",
