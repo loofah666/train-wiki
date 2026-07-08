@@ -172,12 +172,13 @@ function buildDetailHTML(v) {
     }).join("");
   }
 
-  const photo = safePhotoUrl(v.photoUrl);
-  const svg = (window.TRAIN_SVG && window.TRAIN_SVG[v.id]) || "";
-
   const hasVariants = Array.isArray(v.variants) && v.variants.length > 0;
   const primary = hasVariants ? getPrimaryVariant(v) : null;
   const headerModel = hasVariants ? primary.model : v.model;
+
+  // Photo: prefer variant's own photoUrl (if any), fall back to train-level photoUrl
+  const photo = safePhotoUrl((primary && primary.photoUrl) || v.photoUrl);
+  const svg = (window.TRAIN_SVG && window.TRAIN_SVG[v.id]) || "";
 
   let tabsHTML = "";
   if (hasVariants) {
@@ -366,6 +367,18 @@ gridEl.addEventListener("click", e => {
     if (header) {
       const nameEn = v.nameEn ? esc(v.nameEn) : "";
       header.innerHTML = nameEn + (variant.model ? " · " + esc(variant.model) : "");
+    }
+    // Update photo if this variant carries its own; fall back to train-level photo
+    const photoSlot = panel.querySelector(".img-slot--photo");
+    if (photoSlot) {
+      const newPhoto = safePhotoUrl(variant.photoUrl || v.photoUrl);
+      if (newPhoto) {
+        photoSlot.innerHTML = `<img src="${esc(newPhoto)}" alt="${esc(v.name)} · ${esc(variant.model)}" loading="lazy" onerror="this.parentElement.innerHTML='&lt;span&gt;📷&lt;/span&gt;&lt;span&gt;照片&lt;/span&gt;'">`;
+      } else {
+        photoSlot.classList.remove("img-slot--photo");
+        photoSlot.classList.add("img-slot");
+        photoSlot.innerHTML = `<span>📷</span><span>照片</span>`;
+      }
     }
     // Recalc panel max-height because content height changed
     panel.style.maxHeight = panelInner.scrollHeight + "px";
