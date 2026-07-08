@@ -134,11 +134,11 @@
 - 備註：2023-01-26
 
 ### neiwan_dr1000 (內灣線)
-- [ ] filename: `neiwan_dr1000.jpg`
-- File page: https://commons.wikimedia.org/wiki/File:TRA_DR1000_at_Neiwan_Station.jpg
-- Author: Dquai / License: CC BY-SA 4.0
-- Download: https://upload.wikimedia.org/wikipedia/commons/3/33/TRA_DR1000_at_Neiwan_Station.jpg
-- 備註：DR1000 於內灣站終點，配合已重打的資料
+- [x] filename: `neiwan_dr1000.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:TRA_DR1000_DMU_in_NeiWan_Station.jpg
+- Author: SElefant (Sean H. Yu) / License: CC BY-SA 3.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/4/47/TRA_DR1000_DMU_in_NeiWan_Station.jpg
+- 備註：2007-08-02 於橫山鄉；使用者選用此圖取代先前 Dquai 版
 
 ### ck124 (CK124 蒸汽)
 - [x] filename: `ck124.jpg`
@@ -152,7 +152,7 @@
 ## 高鐵
 
 ### thsr_700t (高鐵 700T)
-- [ ] filename: `thsr_700t.jpg`
+- [x] filename: `thsr_700t.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:THSR_700T_TR17_20130907.jpg
 - Author: Rsa / License: CC BY-SA 3.0 (雙 GFDL 1.2+)
 - Download: https://upload.wikimedia.org/wikipedia/commons/0/09/THSR_700T_TR17_20130907.jpg

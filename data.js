@@ -222,7 +222,12 @@ window.TRAIN_DATA = [
   },
   {
     id: "emu_local",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/TRA_EMU900.jpg",
+    photoUrl: "images/emu_local.jpg",
+    photoCredit: {
+      author: "jason199567",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_EMU900_running_a_local_train_service_on_the_Western_Line.jpg"
+    },
     name: "區間車",
     nameEn: "Local Train (EMU)",
     operator: "臺灣鐵路公司",
@@ -244,6 +249,12 @@ window.TRAIN_DATA = [
         maxSpeed: 110,
         cars: 4,
         seats: 240,
+        photoUrl: "images/emu_local--emu500.jpg",
+        photoCredit: {
+          author: "Takeshi Aida",
+          license: "CC BY-SA 2.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Taiwan_EMU500_Commuter,_Qidu_(20240113)_(53560453672).jpg"
+        },
         description: "臺鐵首款不鏽鋼車體 EMU，1995 年由韓國大宇重工承造，設計參考先前的 DR2900 系。共 86 組 4 車編組，1995–1997 年分三批交車，奠定了臺鐵通勤列車的現代化基礎。",
         features: [
           "臺鐵首款不鏽鋼車體 EMU",
@@ -261,6 +272,12 @@ window.TRAIN_DATA = [
         maxSpeed: 110,
         cars: 8,
         seats: 408,
+        photoUrl: "images/emu_local--emu700.jpg",
+        photoCredit: {
+          author: "jason199567",
+          license: "CC BY-SA 4.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_EMU700_running_a_local_train_service_on_the_Western_Line.jpg"
+        },
         description: "臺灣首款由國內廠商共同承造的 EMU，日本車輛先造前 3 組（EMU701–703），其餘 37 組（EMU704–740）由台灣車輛在新竹廠組裝。採用東芝 IGBT VVVF 牽引與 ATP（ETCS Level 1），是臺鐵區間快主力。",
         features: [
           "臺鐵首款國內組裝的 EMU（台灣車輛）",
@@ -278,6 +295,12 @@ window.TRAIN_DATA = [
         maxSpeed: 130,
         cars: 10,
         seats: 436,
+        photoUrl: "images/emu_local--emu900.jpg",
+        photoCredit: {
+          author: "Takeshi Aida",
+          license: "CC BY-SA 2.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Taiwan_EMU900_Commuter,_Qidu_(20240114b)_(53561757230).jpg"
+        },
         description: "臺鐵最新世代的 10 車編組通勤 EMU，由韓國現代 Rotem 承造、MBD Technologies 工業設計。共 52 組 520 輛，2020–2023 年分批交車，主要用於西部幹線高需求區間車服務，取代舊 PP 與 EMU500。",
         features: [
           "10 車長編組（5M5T）、車廂數為前代兩倍以上",
@@ -290,7 +313,12 @@ window.TRAIN_DATA = [
   },
   {
     id: "pingxi_dr1000",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Taiwan_DR1000%2C_Pingxi%2C_Pingxi_Line_%2820181225a%29_%2853567323229%29.jpg",
+    photoUrl: "images/pingxi_dr1000.jpg",
+    photoCredit: {
+      author: "Takeshi Aida",
+      license: "CC BY-SA 2.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Taiwan_DR1000,_Pingxi,_Pingxi_Line_(20181225a)_(53567323229).jpg"
+    },
     name: "平溪線柴油客車",
     nameEn: "Pingxi Line Diesel Railcar",
     model: "DR1000",
@@ -319,7 +347,12 @@ window.TRAIN_DATA = [
   },
   {
     id: "jiji_dr2700",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Diesel_Railcar_in_LinKou_Line_of_Taiwan_Railway-P1020697.JPG",
+    photoUrl: "images/jiji_dr2700.jpg",
+    photoCredit: {
+      author: "賴德湘",
+      license: "CC BY 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:%E5%85%89%E8%8F%AF%E8%99%9F.jpg"
+    },
     name: "光華號 DR2700（白鐵仔）",
     nameEn: "Kuang-Hua Express DR2700",
     model: "DR2700",
@@ -351,7 +384,12 @@ window.TRAIN_DATA = [
   },
   {
     id: "blue_skin",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/TRA_R101_leading_a_Breezy_Blue_Train_at_Taitung_Station.jpg",
+    photoUrl: "images/blue_skin.jpg",
+    photoCredit: {
+      author: "jason199567",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_R101_leading_a_Breezy_Blue_Train_at_Taitung_Station.jpg"
+    },
     name: "藍皮解憂號",
     nameEn: "Blue Skin Train",
     model: "SPK32700 系客車（R100 柴電機車牽引）",
@@ -380,7 +418,12 @@ window.TRAIN_DATA = [
   },
   {
     id: "thsr_700t",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/THSR_700T_arrived_Platform_1%2C_Hsinchu_Station_20140429.jpg",
+    photoUrl: "images/thsr_700t.jpg",
+    photoCredit: {
+      author: "Rsa",
+      license: "CC BY-SA 3.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:THSR_700T_TR17_20130907.jpg"
+    },
     name: "高鐵700T型",
     nameEn: "Taiwan High Speed Rail 700T",
     model: "700T",
@@ -777,7 +820,12 @@ window.TRAIN_DATA = [
   },
   {
     id: "neiwan_dr1000",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/EMU100_%26_DR3100_in_Taitung.jpg",
+    photoUrl: "images/neiwan_dr1000.jpg",
+    photoCredit: {
+      author: "SElefant (Sean H. Yu)",
+      license: "CC BY-SA 3.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_DR1000_DMU_in_NeiWan_Station.jpg"
+    },
     name: "內灣線柴油客車",
     nameEn: "Neiwan Line Diesel Railcar",
     model: "DR1000",
@@ -859,7 +907,12 @@ window.TRAIN_DATA = [
   },
   {
     id: "ck124",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/20110702%E4%B8%89%E7%BE%A9%E7%AB%99%E5%85%A7%E7%9A%84CK124%E5%BE%8C%E5%81%B4.jpg",
+    photoUrl: "images/ck124.jpg",
+    photoCredit: {
+      author: "Subscriptshoe9",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Taiwan_Railways_Administration_CK124_near_Zhongli_Station_20220730.jpg"
+    },
     name: "舊山線CK124蒸汽機車",
     nameEn: "Old Mountain Line CK124 Steam Locomotive",
     model: "CK124",

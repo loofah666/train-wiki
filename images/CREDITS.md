@@ -53,6 +53,78 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 
 ---
 
+## TRA 通勤區間車
+
+### emu_local.jpg — 區間車頂層（EMU900 代表）
+- Author: **jason199567** (Flickr)
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:TRA_EMU900_running_a_local_train_service_on_the_Western_Line.jpg
+- Downloaded: 2026-07-08
+
+### emu_local--emu500.jpg — 區間車 EMU500
+- Author: **Takeshi Aida** (Flickr, HK)
+- License: **CC BY-SA 2.0**
+- Source: https://commons.wikimedia.org/wiki/File:Taiwan_EMU500_Commuter,_Qidu_(20240113)_(53560453672).jpg
+- Downloaded: 2026-07-08
+
+### emu_local--emu700.jpg — 區間車 EMU700 (阿福號)
+- Author: **jason199567** (Flickr)
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:TRA_EMU700_running_a_local_train_service_on_the_Western_Line.jpg
+- Downloaded: 2026-07-08
+
+### emu_local--emu900.jpg — 區間車 EMU900
+- Author: **Takeshi Aida** (Flickr, HK)
+- License: **CC BY-SA 2.0**
+- Source: https://commons.wikimedia.org/wiki/File:Taiwan_EMU900_Commuter,_Qidu_(20240114b)_(53561757230).jpg
+- Downloaded: 2026-07-08
+
+---
+
+## TRA 支線／觀光／保存
+
+### pingxi_dr1000.jpg — 平溪線 DR1000
+- Author: **Takeshi Aida** (Flickr, HK)
+- License: **CC BY-SA 2.0**
+- Source: https://commons.wikimedia.org/wiki/File:Taiwan_DR1000,_Pingxi,_Pingxi_Line_(20181225a)_(53567323229).jpg
+- Downloaded: 2026-07-08
+
+### jiji_dr2700.jpg — 光華號 DR2700（已退役）
+- Author: **賴德湘**
+- License: **CC BY 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:%E5%85%89%E8%8F%AF%E8%99%9F.jpg
+- Downloaded: 2026-07-08
+
+### blue_skin.jpg — 藍皮解憂號
+- Author: **jason199567** (Flickr)
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:TRA_R101_leading_a_Breezy_Blue_Train_at_Taitung_Station.jpg
+- Downloaded: 2026-07-08
+
+### neiwan_dr1000.jpg — 內灣線 DR1000
+- Author: **SElefant** (Sean H. Yu)
+- License: **CC BY-SA 3.0**
+- Source: https://commons.wikimedia.org/wiki/File:TRA_DR1000_DMU_in_NeiWan_Station.jpg
+- Downloaded: 2026-07-08
+
+### ck124.jpg — 舊山線 CK124 蒸汽
+- Author: **Subscriptshoe9**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:Taiwan_Railways_Administration_CK124_near_Zhongli_Station_20220730.jpg
+- Downloaded: 2026-07-08
+
+---
+
+## 高鐵
+
+### thsr_700t.jpg — 高鐵 700T
+- Author: **Rsa**
+- License: **CC BY-SA 3.0** (雙 GFDL 1.2+)
+- Source: https://commons.wikimedia.org/wiki/File:THSR_700T_TR17_20130907.jpg
+- Downloaded: 2026-07-08
+
+---
+
 ## 已存在的本地照片（來源未詳細記錄）
 
 以下照片在此清單建立前就已在本地目錄，來源未追蹤：
