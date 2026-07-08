@@ -122,6 +122,28 @@ function gradient(color, delta=-30) {
   return `linear-gradient(135deg,${c} 0%,${adjustColor(c, delta)} 100%)`;
 }
 
+/* Build the photo slot with optional credit tooltip.
+   `source` is the variant/train whose photoUrl+photoCredit is used;
+   falls back to top-level fields on the train object `v`. */
+function buildPhotoSlot(v, source) {
+  const photo = safePhotoUrl((source && source.photoUrl) || v.photoUrl);
+  if (!photo) {
+    return `<div class="img-slot"><span>📷</span><span>照片</span></div>`;
+  }
+  const credit = (source && source.photoCredit) || v.photoCredit;
+  const altText = v.name + (source && source.model ? " · " + source.model : "");
+  const creditHTML = credit ? `
+    <button class="photo-credit-btn" aria-label="照片來源" title="照片來源">i</button>
+    <div class="photo-credit-tooltip" role="tooltip">
+      Photo by ${esc(credit.author || "Unknown")}${credit.license ? ` / ${esc(credit.license)}` : ""}
+      ${credit.sourceUrl ? `<br><a href="${esc(credit.sourceUrl)}" target="_blank" rel="noopener noreferrer">來源連結 ↗</a>` : ""}
+    </div>` : "";
+  return `<div class="img-slot img-slot--photo">
+    <img src="${esc(photo)}" alt="${esc(altText)}" loading="lazy" onerror="this.parentElement.classList.remove('img-slot--photo');this.parentElement.classList.add('img-slot');this.parentElement.innerHTML='&lt;span&gt;📷&lt;/span&gt;&lt;span&gt;照片&lt;/span&gt;'">
+    ${creditHTML}
+  </div>`;
+}
+
 /* ── DETAIL HTML ── */
 
 /* Build the per-variant section (specs grid + features + funFact).
@@ -176,8 +198,6 @@ function buildDetailHTML(v) {
   const primary = hasVariants ? getPrimaryVariant(v) : null;
   const headerModel = hasVariants ? primary.model : v.model;
 
-  // Photo: prefer variant's own photoUrl (if any), fall back to train-level photoUrl
-  const photo = safePhotoUrl((primary && primary.photoUrl) || v.photoUrl);
   const svg = (window.TRAIN_SVG && window.TRAIN_SVG[v.id]) || "";
 
   let tabsHTML = "";
@@ -205,10 +225,7 @@ function buildDetailHTML(v) {
     </div>
     <div class="detail-body">
       <div class="img-slots">
-        ${photo
-          ? `<div class="img-slot img-slot--photo"><img src="${esc(photo)}" alt="${esc(v.name)}" loading="lazy" onerror="this.parentElement.innerHTML='&lt;span&gt;📷&lt;/span&gt;&lt;span&gt;照片&lt;/span&gt;'"></div>`
-          : `<div class="img-slot"><span>📷</span><span>照片</span></div>`
-        }
+        ${buildPhotoSlot(v, hasVariants ? primary : v)}
         <div class="img-slot img-slot--svg">
           ${svg || `<span>${esc(v.emoji || "🚂")}</span><span style="font-size:0.7rem;color:#a0aec0">插畫</span>`}
         </div>
@@ -347,6 +364,17 @@ document.getElementById("searchInput").addEventListener("input", e => { searchQu
 
 const gridEl = document.getElementById("grid");
 gridEl.addEventListener("click", e => {
+  // Photo credit toggle
+  const creditBtn = e.target.closest(".photo-credit-btn");
+  if (creditBtn && gridEl.contains(creditBtn)) {
+    e.stopPropagation();
+    const slot = creditBtn.closest(".img-slot--photo");
+    slot?.classList.toggle("credit-open");
+    return;
+  }
+  // Close open credit tooltip on outside click
+  document.querySelectorAll(".img-slot--photo.credit-open").forEach(s => s.classList.remove("credit-open"));
+
   // Variant tab switch takes priority over card click
   const tab = e.target.closest(".variant-tab");
   if (tab && gridEl.contains(tab)) {
@@ -368,17 +396,13 @@ gridEl.addEventListener("click", e => {
       const nameEn = v.nameEn ? esc(v.nameEn) : "";
       header.innerHTML = nameEn + (variant.model ? " · " + esc(variant.model) : "");
     }
-    // Update photo if this variant carries its own; fall back to train-level photo
-    const photoSlot = panel.querySelector(".img-slot--photo");
-    if (photoSlot) {
-      const newPhoto = safePhotoUrl(variant.photoUrl || v.photoUrl);
-      if (newPhoto) {
-        photoSlot.innerHTML = `<img src="${esc(newPhoto)}" alt="${esc(v.name)} · ${esc(variant.model)}" loading="lazy" onerror="this.parentElement.innerHTML='&lt;span&gt;📷&lt;/span&gt;&lt;span&gt;照片&lt;/span&gt;'">`;
-      } else {
-        photoSlot.classList.remove("img-slot--photo");
-        photoSlot.classList.add("img-slot");
-        photoSlot.innerHTML = `<span>📷</span><span>照片</span>`;
-      }
+    // Update the photo slot (photoUrl and credit may differ per variant)
+    const imgSlots = panel.querySelector(".img-slots");
+    const oldPhotoSlot = imgSlots && imgSlots.firstElementChild;
+    if (oldPhotoSlot) {
+      const tmp = document.createElement("div");
+      tmp.innerHTML = buildPhotoSlot(v, variant);
+      oldPhotoSlot.replaceWith(tmp.firstElementChild);
     }
     // Recalc panel max-height because content height changed
     panel.style.maxHeight = panelInner.scrollHeight + "px";
