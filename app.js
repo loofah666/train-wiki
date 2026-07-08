@@ -252,7 +252,7 @@ function render() {
           <div class="card-operator">${esc(v.operator || "")}</div>
           <div class="card-tags">
             <span class="tag">${esc(v.type)}</span>
-            ${(v.region||[]).slice(0,1).map(r => `<span class="tag">${esc(r)}</span>`).join("")}
+            ${(v.region||[]).map(r => `<span class="tag">${esc(r)}</span>`).join("")}
             <span class="tag">${esc(yearToDecade(v.yearStart))}</span>
           </div>
         </div>`;
