@@ -501,6 +501,60 @@ body {
 .no-results-emoji { font-size: 3rem; display: block; margin-bottom: 12px; }
 .no-results p { font-size: 1rem; }
 
+/* ── Variant tabs (multi-generation trains) ── */
+.variant-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  margin: 6px 0 14px;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+.variant-tab {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1.5px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.variant-tab:hover { background: var(--color-tag-bg); }
+.variant-tab.active {
+  background: var(--color-chip-active-type);
+  color: #fff;
+  border-color: transparent;
+}
+.badge-retired {
+  font-size: 0.65rem;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.15);
+  color: inherit;
+  font-weight: 600;
+}
+.variant-tab.active .badge-retired {
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+}
+.variant-desc {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  background: var(--color-tag-bg);
+  border-radius: 8px;
+  border-left: 3px solid var(--color-chip-active-type);
+}
+
 @media (max-width: 480px) {
   .img-slots { grid-template-columns: repeat(3, 1fr); }
   .specs-grid { grid-template-columns: 1fr 1fr; }

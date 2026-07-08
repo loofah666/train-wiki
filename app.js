@@ -8,9 +8,30 @@ function yearToDecade(year) {
   return `${Math.floor(year / 10) * 10}s`;
 }
 
+/* Return the "primary" variant of a train: latest active, else latest overall.
+   For flat (no-variants) entries, returns null. */
+function getPrimaryVariant(v) {
+  if (!v.variants || !v.variants.length) return null;
+  const active = v.variants.filter(x => x.status !== "retired");
+  const pool = active.length ? active : v.variants;
+  return pool.reduce((a, b) => (b.yearStart || 0) > (a.yearStart || 0) ? b : a);
+}
+
+/* Year used on card era-tag: primary variant year for multi-variant, yearStart for flat. */
+function primaryYear(v) {
+  const primary = getPrimaryVariant(v);
+  return primary ? primary.yearStart : v.yearStart;
+}
+
+/* All years across variants (or single year); used for era filter. */
+function allYears(v) {
+  if (v.variants && v.variants.length) return v.variants.map(x => x.yearStart).filter(Boolean);
+  return v.yearStart ? [v.yearStart] : [];
+}
+
 const TYPES   = ["全部", ...new Set(data.map(d => d.type))];
 const REGIONS = ["全部", ...new Set(data.flatMap(d => d.region || []))];
-const ERAS    = ["全部", ...[...new Set(data.map(d => yearToDecade(d.yearStart)))].sort()];
+const ERAS    = ["全部", ...[...new Set(data.flatMap(d => allYears(d).map(yearToDecade)))].sort()];
 
 let activeType   = "全部";
 let activeRegion = "全部";
@@ -45,10 +66,15 @@ function buildAllChips() {
 function matchesFilters(v) {
   if (activeType   !== "全部" && v.type !== activeType)                          return false;
   if (activeRegion !== "全部" && !(v.region && v.region.includes(activeRegion))) return false;
-  if (activeEra    !== "全部" && yearToDecade(v.yearStart) !== activeEra)        return false;
+  if (activeEra    !== "全部") {
+    const eras = allYears(v).map(yearToDecade);
+    if (!eras.includes(activeEra)) return false;
+  }
   if (searchQuery) {
     const q = searchQuery.toLowerCase();
-    const hay = [v.name, v.nameEn, v.model, v.operator, v.type, ...(v.tags||[])].join(" ").toLowerCase();
+    const variantHay = (v.variants || []).flatMap(x => [x.model, x.nickname, x.manufacturer]);
+    const hay = [v.name, v.nameEn, v.model, v.operator, v.type, ...(v.tags||[]), ...variantHay]
+      .join(" ").toLowerCase();
     if (!hay.includes(q)) return false;
   }
   return true;
@@ -88,19 +114,36 @@ function gradient(color, delta=-30) {
 }
 
 /* ── DETAIL HTML ── */
-function buildDetailHTML(v) {
-  // Specs
+
+/* Build the per-variant section (specs grid + features + funFact).
+   `source` can be a flat train entry OR a variant object — both have
+   the same shape for the fields we read here. */
+function buildVariantSection(source) {
   const specs = [
-    { label:"最高時速", value: v.maxSpeed      ? v.maxSpeed      + " km/h" : "—" },
-    { label:"車廂節數", value: v.cars           ? v.cars           + " 節"  : "—" },
-    { label:"製造商",   value: v.manufacturer  || "—" },
-    { label:"啟用年份", value: v.yearStart      ? v.yearStart      + " 年"  : "—" }
+    { label:"最高時速", value: source.maxSpeed     ? source.maxSpeed + " km/h" : "—" },
+    { label:"車廂節數", value: source.cars         ? source.cars     + " 節"   : "—" },
+    { label:"製造商",   value: source.manufacturer || "—" },
+    { label:"啟用年份", value: source.yearStart
+        ? source.yearStart + " 年" + (source.yearEnd ? "－" + source.yearEnd + " 年" : "")
+        : "—" }
   ];
   const specsHTML = specs.map(s =>
     `<div class="spec-item"><div class="spec-label">${esc(s.label)}</div><div class="spec-value">${esc(s.value)}</div></div>`
   ).join("");
 
-  // Routes
+  const featHTML = (source.features || []).map(f => `<li>${esc(f)}</li>`).join("");
+
+  return `
+    ${source.description ? `<p class="variant-desc">${esc(source.description)}</p>` : ""}
+    <div class="section-title">技術規格</div>
+    <div class="specs-grid">${specsHTML}</div>
+    ${featHTML ? `<div class="section-title">特色亮點</div><ul class="features-list">${featHTML}</ul>` : ""}
+    ${source.funFact ? `<div class="fun-fact"><div class="fun-fact-icon">🎉</div><div class="fun-fact-text">${esc(source.funFact)}</div></div>` : ""}
+  `;
+}
+
+function buildDetailHTML(v) {
+  // Routes (service-level, shared across variants)
   let routesHTML = "";
   if (v.routes && v.routes.length) {
     const clr = safeColor(v.color);
@@ -120,18 +163,32 @@ function buildDetailHTML(v) {
     }).join("");
   }
 
-  // Features
-  const featHTML = (v.features||[]).map(f => `<li>${esc(f)}</li>`).join("");
-
   const photo = safePhotoUrl(v.photoUrl);
   const svg = (window.TRAIN_SVG && window.TRAIN_SVG[v.id]) || "";
+
+  const hasVariants = Array.isArray(v.variants) && v.variants.length > 0;
+  const primary = hasVariants ? getPrimaryVariant(v) : null;
+  const headerModel = hasVariants ? primary.model : v.model;
+
+  let tabsHTML = "";
+  if (hasVariants) {
+    tabsHTML = `<div class="variant-tabs" role="tablist">${
+      v.variants.map(x => {
+        const active = x === primary;
+        const retired = x.status === "retired";
+        return `<button class="variant-tab${active ? " active" : ""}" role="tab" data-variant="${esc(x.model)}">
+          ${esc(x.model)}${retired ? `<span class="badge-retired">已退役</span>` : ""}
+        </button>`;
+      }).join("")
+    }</div>`;
+  }
 
   return `
     <div class="detail-header" style="background:${gradient(v.color, -35)};">
       <div class="detail-header-emoji">${esc(v.emoji || "🚂")}</div>
       <div class="detail-header-info">
         <div class="detail-header-name">${esc(v.name)}</div>
-        <div class="detail-header-model">${esc(v.nameEn || "")}${v.model ? " · " + esc(v.model) : ""}</div>
+        <div class="detail-header-model">${esc(v.nameEn || "")}${headerModel ? " · " + esc(headerModel) : ""}</div>
         <div class="detail-header-operator">${esc(v.operator || "")}</div>
       </div>
       <button class="close-btn" onclick="closeDetail()" title="關閉">✕</button>
@@ -147,11 +204,9 @@ function buildDetailHTML(v) {
         </div>
       </div>
       <p class="detail-desc">${esc(v.description || "")}</p>
-      <div class="section-title">技術規格</div>
-      <div class="specs-grid">${specsHTML}</div>
       ${routesHTML ? `<div class="section-title">營運路線</div><div class="routes-wrap">${routesHTML}</div>` : ""}
-      ${featHTML   ? `<div class="section-title">特色亮點</div><ul class="features-list">${featHTML}</ul>` : ""}
-      ${v.funFact  ? `<div class="fun-fact"><div class="fun-fact-icon">🎉</div><div class="fun-fact-text">${esc(v.funFact)}</div></div>` : ""}
+      ${tabsHTML}
+      <div class="variant-detail">${buildVariantSection(hasVariants ? primary : v)}</div>
     </div>`;
 }
 
@@ -248,12 +303,12 @@ function render() {
         </div>
         <div class="card-body">
           <div class="card-name">${esc(v.name)}</div>
-          <div class="card-model">${esc(v.model || "")}</div>
+          <div class="card-model">${esc(v.variants ? `${v.variants.length} 車型世代` : (v.model || ""))}</div>
           <div class="card-operator">${esc(v.operator || "")}</div>
           <div class="card-tags">
             <span class="tag">${esc(v.type)}</span>
             ${(v.region||[]).map(r => `<span class="tag">${esc(r)}</span>`).join("")}
-            <span class="tag">${esc(yearToDecade(v.yearStart))}</span>
+            <span class="tag">${esc(yearToDecade(primaryYear(v)))}</span>
           </div>
         </div>`;
       grid.appendChild(card);
@@ -282,6 +337,31 @@ document.getElementById("searchInput").addEventListener("input", e => { searchQu
 
 const gridEl = document.getElementById("grid");
 gridEl.addEventListener("click", e => {
+  // Variant tab switch takes priority over card click
+  const tab = e.target.closest(".variant-tab");
+  if (tab && gridEl.contains(tab)) {
+    e.stopPropagation();
+    const panel = tab.closest(".detail-panel-wrap");
+    const panelInner = panel.querySelector(".detail-panel");
+    const model = tab.dataset.variant;
+    const v = data.find(x => x.id === openCardId);
+    if (!v || !v.variants) return;
+    const variant = v.variants.find(x => x.model === model);
+    if (!variant) return;
+    panel.querySelectorAll(".variant-tab").forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+    const section = panel.querySelector(".variant-detail");
+    section.innerHTML = buildVariantSection(variant);
+    // Update header model line
+    const header = panel.querySelector(".detail-header-model");
+    if (header) {
+      const nameEn = v.nameEn ? esc(v.nameEn) : "";
+      header.innerHTML = nameEn + (variant.model ? " · " + esc(variant.model) : "");
+    }
+    // Recalc panel max-height because content height changed
+    panel.style.maxHeight = panelInner.scrollHeight + "px";
+    return;
+  }
   const card = e.target.closest(".card");
   if (card && gridEl.contains(card)) toggleDetail(card.dataset.id);
 });
