@@ -70,7 +70,7 @@
 - 備註：2022-06-18 於七堵站
 
 ### juguang (莒光號)
-- [ ] filename: `juguang.jpg`
+- [x] filename: `juguang.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:TRA_E402_Chu-Kuang_Express_at_Taitung_Station_20201114.jpg
 - Author: Kazehayashi / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/3/3a/TRA_E402_Chu-Kuang_Express_at_Taitung_Station_20201114.jpg
@@ -113,35 +113,35 @@
 ## TRA 支線／觀光／保存
 
 ### pingxi_dr1000 (平溪線)
-- [ ] filename: `pingxi_dr1000.jpg`
+- [x] filename: `pingxi_dr1000.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:Taiwan_DR1000,_Pingxi,_Pingxi_Line_(20181225a)_(53567323229).jpg
 - Author: Takeshi Aida / License: CC BY-SA 2.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/0/09/Taiwan_DR1000%2C_Pingxi%2C_Pingxi_Line_%2820181225a%29_%2853567323229%29.jpg
 - 備註：現有照片就是這張，驗證過
 
 ### jiji_dr2700 (光華號)
-- [ ] filename: `jiji_dr2700.jpg`
+- [x] filename: `jiji_dr2700.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:%E5%85%89%E8%8F%AF%E8%99%9F.jpg
 - Author: 賴德湘 / License: CC BY 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/4/48/%E5%85%89%E8%8F%AF%E8%99%9F.jpg
 - 備註：**現有 photoUrl 錯了**（是林口線 DR2700 非集集線）。這張是乾淨光華號本尊。備選：`File:DR2705_at_Taichung.JPG`
 
 ### blue_skin (藍皮解憂號)
-- [ ] filename: `blue_skin.jpg`
+- [x] filename: `blue_skin.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:TRA_R101_leading_a_Breezy_Blue_Train_at_Taitung_Station.jpg
 - Author: jason199567 / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/4/48/TRA_R101_leading_a_Breezy_Blue_Train_at_Taitung_Station.jpg
 - 備註：2023-01-26
 
-### neiwan_dr3100 (內灣線)
-- [ ] filename: `neiwan_dr3100.jpg`
+### neiwan_dr1000 (內灣線)
+- [ ] filename: `neiwan_dr1000.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:TRA_DR1000_at_Neiwan_Station.jpg
 - Author: Dquai / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/3/33/TRA_DR1000_at_Neiwan_Station.jpg
 - 備註：DR1000 於內灣站終點，配合已重打的資料
 
 ### ck124 (CK124 蒸汽)
-- [ ] filename: `ck124.jpg`
+- [x] filename: `ck124.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:Taiwan_Railways_Administration_CK124_near_Zhongli_Station_20220730.jpg
 - Author: Subscriptshoe9 / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/4/49/Taiwan_Railways_Administration_CK124_near_Zhongli_Station_20220730.jpg

@@ -543,7 +543,7 @@ window.TRAIN_SVG = {
     <circle cx="195" cy="72" r="7" fill="#fffbeb" stroke="#744210" stroke-width="2"/>
   </g></svg>`,
 
-  "neiwan_dr3100": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  "neiwan_dr1000": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
   <g stroke-linecap="round" stroke-linejoin="round">
     <path d="M28 62 L28 32 Q28 26 38 26 L200 26 Q210 26 210 32 L210 62 Z" fill="#975a16" fill-opacity="0.12" stroke="#975a16" stroke-width="2.5"/>
     <path d="M28 32 Q20 26 14 30 L12 40 L12 62 L28 62" fill="#975a16" fill-opacity="0.2" stroke="#975a16" stroke-width="2"/>

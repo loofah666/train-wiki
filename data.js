@@ -776,7 +776,7 @@ window.TRAIN_DATA = [
     tags: ["觀光", "蒸汽", "Shay", "保存鐵道", "中部", "阿里山", "歷史"]
   },
   {
-    id: "neiwan_dr3100",
+    id: "neiwan_dr1000",
     photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/EMU100_%26_DR3100_in_Taitung.jpg",
     name: "內灣線柴油客車",
     nameEn: "Neiwan Line Diesel Railcar",
