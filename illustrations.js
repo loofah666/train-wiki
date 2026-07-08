@@ -1,33 +1,5 @@
 window.TRAIN_SVG = {
 
-  "thsr_700t": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
-  <!-- 高鐵 700T：極流線子彈頭，白車身，紅腰線 -->
-  <g stroke-linecap="round" stroke-linejoin="round">
-    <!-- 車身主體：流線型，長鼻子 -->
-    <path d="M10,55 Q30,30 60,28 L200,28 Q215,28 220,38 L220,60 Q215,65 200,65 L20,65 Q12,65 10,60 Z"
-          fill="#c53030" fill-opacity="0.08" stroke="#c53030" stroke-width="2.5"/>
-    <!-- 白色車身上半部 -->
-    <path d="M10,55 Q30,30 60,28 L200,28 Q215,28 220,38 L220,55 L10,55 Z"
-          fill="white" fill-opacity="0.7" stroke="none"/>
-    <!-- 紅色腰線 -->
-    <line x1="10" y1="55" x2="220" y2="55" stroke="#c53030" stroke-width="3"/>
-    <!-- 車窗 x4 -->
-    <rect x="70" y="33" width="22" height="14" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
-    <rect x="100" y="33" width="22" height="14" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
-    <rect x="130" y="33" width="22" height="14" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
-    <rect x="160" y="33" width="22" height="14" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
-    <!-- 車輪 x2 -->
-    <circle cx="65" cy="72" r="9" fill="white" fill-opacity="0.5" stroke="#c53030" stroke-width="2.5"/>
-    <circle cx="65" cy="72" r="3" fill="#c53030" fill-opacity="0.4" stroke="none"/>
-    <circle cx="185" cy="72" r="9" fill="white" fill-opacity="0.5" stroke="#c53030" stroke-width="2.5"/>
-    <circle cx="185" cy="72" r="3" fill="#c53030" fill-opacity="0.4" stroke="none"/>
-    <!-- 車底橫樑 -->
-    <line x1="50" y1="65" x2="210" y2="65" stroke="#c53030" stroke-width="1.5"/>
-    <!-- 駕駛艙玻璃 -->
-    <path d="M15,52 Q28,38 50,34 L50,52 Z" fill="#c53030" fill-opacity="0.12" stroke="#c53030" stroke-width="1.5"/>
-  </g>
-</svg>`,
-
   "puyuma": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
   <!-- 普悠瑪：傾斜式，藍色系，斜切腰線 -->
   <g stroke-linecap="round" stroke-linejoin="round">
@@ -87,6 +59,27 @@ window.TRAIN_SVG = {
   </g>
 </svg>`,
 
+  "ziqiang": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 64 L14 36 Q14 28 26 28 L214 28 Q226 28 226 36 L226 64 Z" fill="#e53e3e" fill-opacity="0.1" stroke="#e53e3e" stroke-width="2.5"/>
+    <path d="M14 36 Q8 28 6 34 L6 62 L14 62" fill="#e53e3e" fill-opacity="0.15" stroke="#e53e3e" stroke-width="2"/>
+    <path d="M226 36 Q232 28 234 34 L234 62 L226 62" fill="#e53e3e" fill-opacity="0.15" stroke="#e53e3e" stroke-width="2"/>
+    <rect x="6" y="48" width="228" height="7" fill="#e53e3e" fill-opacity="0.35" stroke="none"/>
+    <rect x="28" y="32" width="26" height="14" rx="2" fill="#fff5f5" fill-opacity="0.8" stroke="#e53e3e" stroke-width="1.5"/>
+    <rect x="68" y="32" width="26" height="14" rx="2" fill="#fff5f5" fill-opacity="0.8" stroke="#e53e3e" stroke-width="1.5"/>
+    <rect x="116" y="32" width="26" height="14" rx="2" fill="#fff5f5" fill-opacity="0.8" stroke="#e53e3e" stroke-width="1.5"/>
+    <rect x="158" y="32" width="26" height="14" rx="2" fill="#fff5f5" fill-opacity="0.8" stroke="#e53e3e" stroke-width="1.5"/>
+    <rect x="196" y="32" width="20" height="14" rx="2" fill="#fff5f5" fill-opacity="0.8" stroke="#e53e3e" stroke-width="1.5"/>
+    <circle cx="38"  cy="70" r="8" fill="#fff5f5" stroke="#e53e3e" stroke-width="2.5"/>
+    <circle cx="38"  cy="70" r="3.5" fill="#e53e3e" fill-opacity="0.4"/>
+    <circle cx="90"  cy="70" r="8" fill="#fff5f5" stroke="#e53e3e" stroke-width="2.5"/>
+    <circle cx="90"  cy="70" r="3.5" fill="#e53e3e" fill-opacity="0.4"/>
+    <circle cx="152" cy="70" r="8" fill="#fff5f5" stroke="#e53e3e" stroke-width="2.5"/>
+    <circle cx="152" cy="70" r="3.5" fill="#e53e3e" fill-opacity="0.4"/>
+    <circle cx="204" cy="70" r="8" fill="#fff5f5" stroke="#e53e3e" stroke-width="2.5"/>
+    <circle cx="204" cy="70" r="3.5" fill="#e53e3e" fill-opacity="0.4"/>
+  </g></svg>`,
+
   "juguang": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
   <!-- 莒光號：傳統方正客車，棕色/深橘 -->
   <g stroke-linecap="round" stroke-linejoin="round">
@@ -121,165 +114,7 @@ window.TRAIN_SVG = {
   </g>
 </svg>`,
 
-  "mrt_c301_wenhu": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
-  <!-- 台北捷運：平頭，銀灰車身，綠色腰線 -->
-  <g stroke-linecap="round" stroke-linejoin="round">
-    <!-- 車身（銀灰色，方正平頭） -->
-    <path d="M12,30 Q12,22 20,22 L218,22 Q226,22 226,30 L226,65 Q226,68 222,68 L16,68 Q12,68 12,65 Z"
-          fill="#276749" fill-opacity="0.08" stroke="#276749" stroke-width="2.5"/>
-    <!-- 銀灰色車身填色 -->
-    <path d="M12,30 Q12,22 20,22 L218,22 Q226,22 226,30 L226,65 Q226,68 222,68 L16,68 Q12,68 12,65 Z"
-          fill="#e2e8f0" fill-opacity="0.4" stroke="none"/>
-    <!-- 綠色腰線 -->
-    <rect x="12" y="46" width="214" height="8" rx="0" fill="#276749" fill-opacity="0.85" stroke="none"/>
-    <!-- 車窗 x6 -->
-    <rect x="22" y="26" width="16" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
-    <rect x="52" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
-    <rect x="86" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
-    <rect x="120" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
-    <rect x="154" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
-    <rect x="188" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
-    <!-- 車輪 x4 -->
-    <circle cx="50" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#276749" stroke-width="2.5"/>
-    <circle cx="50" cy="74" r="3" fill="#276749" fill-opacity="0.4" stroke="none"/>
-    <circle cx="90" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#276749" stroke-width="2.5"/>
-    <circle cx="90" cy="74" r="3" fill="#276749" fill-opacity="0.4" stroke="none"/>
-    <circle cx="150" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#276749" stroke-width="2.5"/>
-    <circle cx="150" cy="74" r="3" fill="#276749" fill-opacity="0.4" stroke="none"/>
-    <circle cx="190" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#276749" stroke-width="2.5"/>
-    <circle cx="190" cy="74" r="3" fill="#276749" fill-opacity="0.4" stroke="none"/>
-    <!-- 前燈 -->
-    <rect x="13" y="55" width="8" height="5" rx="1" fill="#276749" fill-opacity="0.3" stroke="#276749" stroke-width="1.2"/>
-  </g>
-</svg>`,
-
-  "danhai_lrt": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
-  <!-- 輕軌：低底盤，矮而長，大玻璃窗，紫色系 -->
-  <g stroke-linecap="round" stroke-linejoin="round">
-    <!-- 低矮車身 -->
-    <path d="M14,42 Q18,28 36,27 L204,27 Q222,27 226,42 L226,66 Q224,70 218,70 L22,70 Q16,70 14,66 Z"
-          fill="#6b46c1" fill-opacity="0.09" stroke="#6b46c1" stroke-width="2.5"/>
-    <!-- 大面積玻璃窗帶 -->
-    <rect x="20" y="30" width="200" height="24" rx="4" fill="#6b46c1" fill-opacity="0.12" stroke="#6b46c1" stroke-width="1.5"/>
-    <!-- 窗格分隔線 x4 -->
-    <line x1="60" y1="30" x2="60" y2="54" stroke="#6b46c1" stroke-width="1.2"/>
-    <line x1="100" y1="30" x2="100" y2="54" stroke="#6b46c1" stroke-width="1.2"/>
-    <line x1="140" y1="30" x2="140" y2="54" stroke="#6b46c1" stroke-width="1.2"/>
-    <line x1="180" y1="30" x2="180" y2="54" stroke="#6b46c1" stroke-width="1.2"/>
-    <!-- 紫色腰線（車底） -->
-    <line x1="14" y1="58" x2="226" y2="58" stroke="#6b46c1" stroke-width="3"/>
-    <!-- 小車輪（嵌入車底）x4 -->
-    <circle cx="48" cy="70" r="6" fill="white" fill-opacity="0.5" stroke="#6b46c1" stroke-width="2"/>
-    <circle cx="48" cy="70" r="2" fill="#6b46c1" fill-opacity="0.5" stroke="none"/>
-    <circle cx="80" cy="70" r="6" fill="white" fill-opacity="0.5" stroke="#6b46c1" stroke-width="2"/>
-    <circle cx="80" cy="70" r="2" fill="#6b46c1" fill-opacity="0.5" stroke="none"/>
-    <circle cx="160" cy="70" r="6" fill="white" fill-opacity="0.5" stroke="#6b46c1" stroke-width="2"/>
-    <circle cx="160" cy="70" r="2" fill="#6b46c1" fill-opacity="0.5" stroke="none"/>
-    <circle cx="192" cy="70" r="6" fill="white" fill-opacity="0.5" stroke="#6b46c1" stroke-width="2"/>
-    <circle cx="192" cy="70" r="2" fill="#6b46c1" fill-opacity="0.5" stroke="none"/>
-    <!-- 車頭圓角 -->
-    <path d="M14,66 Q14,42 36,28" stroke="#6b46c1" stroke-width="2" fill="none"/>
-    <!-- 集電弓（pantograph）-->
-    <line x1="120" y1="27" x2="110" y2="15" stroke="#6b46c1" stroke-width="1.5"/>
-    <line x1="120" y1="27" x2="130" y2="15" stroke="#6b46c1" stroke-width="1.5"/>
-    <line x1="105" y1="15" x2="135" y2="15" stroke="#6b46c1" stroke-width="2"/>
-  </g>
-</svg>`,
-
-  "alishan_shay": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
-  <!-- 阿里山蒸汽機車：復古可愛，大鍋爐，煙囪，連桿，大驅動輪 -->
-  <g stroke-linecap="round" stroke-linejoin="round">
-    <!-- 煤水車（後方） -->
-    <rect x="155" y="38" width="70" height="30" rx="4" fill="#975a16" fill-opacity="0.12" stroke="#975a16" stroke-width="2"/>
-    <!-- 鍋爐（大橢圓/圓柱體） -->
-    <ellipse cx="95" cy="48" rx="72" ry="18" fill="#975a16" fill-opacity="0.15" stroke="#975a16" stroke-width="2.5"/>
-    <!-- 鍋爐前端圓頭（煙箱） -->
-    <ellipse cx="28" cy="48" rx="12" ry="18" fill="#975a16" fill-opacity="0.2" stroke="#975a16" stroke-width="2"/>
-    <!-- 駕駛室 -->
-    <rect x="128" y="30" width="30" height="38" rx="4" fill="#975a16" fill-opacity="0.15" stroke="#975a16" stroke-width="2"/>
-    <!-- 駕駛室窗 -->
-    <rect x="132" y="34" width="10" height="10" rx="2" fill="#975a16" fill-opacity="0.2" stroke="#975a16" stroke-width="1.5"/>
-    <rect x="146" y="34" width="10" height="10" rx="2" fill="#975a16" fill-opacity="0.2" stroke="#975a16" stroke-width="1.5"/>
-    <!-- 煙囪（高聳） -->
-    <rect x="20" y="10" width="12" height="22" rx="3" fill="#975a16" fill-opacity="0.18" stroke="#975a16" stroke-width="2"/>
-    <!-- 煙囪頂端喇叭口 -->
-    <path d="M16,12 Q26,8 36,12" stroke="#975a16" stroke-width="2.5" fill="none"/>
-    <!-- 煙霧（三條曲線） -->
-    <path d="M22,10 Q18,4 22,0" stroke="#975a16" stroke-width="1.5" fill="none" stroke-opacity="0.6"/>
-    <path d="M26,9 Q26,3 30,0" stroke="#975a16" stroke-width="1.5" fill="none" stroke-opacity="0.5"/>
-    <path d="M30,10 Q34,4 34,0" stroke="#975a16" stroke-width="1.5" fill="none" stroke-opacity="0.4"/>
-    <!-- 汽鍋安全閥（小鼓包） -->
-    <ellipse cx="80" cy="31" rx="7" ry="5" fill="#975a16" fill-opacity="0.2" stroke="#975a16" stroke-width="1.5"/>
-    <ellipse cx="100" cy="31" rx="6" ry="4" fill="#975a16" fill-opacity="0.2" stroke="#975a16" stroke-width="1.5"/>
-    <!-- 3個大驅動輪 -->
-    <circle cx="50" cy="72" r="13" fill="white" fill-opacity="0.5" stroke="#975a16" stroke-width="2.5"/>
-    <circle cx="50" cy="72" r="5" fill="#975a16" fill-opacity="0.3" stroke="#975a16" stroke-width="1.5"/>
-    <!-- 輪輻 x4 -->
-    <line x1="50" y1="59" x2="50" y2="85" stroke="#975a16" stroke-width="1.2"/>
-    <line x1="37" y1="72" x2="63" y2="72" stroke="#975a16" stroke-width="1.2"/>
-    <line x1="41" y1="63" x2="59" y2="81" stroke="#975a16" stroke-width="1.2"/>
-    <line x1="41" y1="81" x2="59" y2="63" stroke="#975a16" stroke-width="1.2"/>
-
-    <circle cx="85" cy="72" r="13" fill="white" fill-opacity="0.5" stroke="#975a16" stroke-width="2.5"/>
-    <circle cx="85" cy="72" r="5" fill="#975a16" fill-opacity="0.3" stroke="#975a16" stroke-width="1.5"/>
-    <line x1="85" y1="59" x2="85" y2="85" stroke="#975a16" stroke-width="1.2"/>
-    <line x1="72" y1="72" x2="98" y2="72" stroke="#975a16" stroke-width="1.2"/>
-    <line x1="76" y1="63" x2="94" y2="81" stroke="#975a16" stroke-width="1.2"/>
-    <line x1="76" y1="81" x2="94" y2="63" stroke="#975a16" stroke-width="1.2"/>
-
-    <circle cx="120" cy="72" r="13" fill="white" fill-opacity="0.5" stroke="#975a16" stroke-width="2.5"/>
-    <circle cx="120" cy="72" r="5" fill="#975a16" fill-opacity="0.3" stroke="#975a16" stroke-width="1.5"/>
-    <line x1="120" y1="59" x2="120" y2="85" stroke="#975a16" stroke-width="1.2"/>
-    <line x1="107" y1="72" x2="133" y2="72" stroke="#975a16" stroke-width="1.2"/>
-    <line x1="111" y1="63" x2="129" y2="81" stroke="#975a16" stroke-width="1.2"/>
-    <line x1="111" y1="81" x2="129" y2="63" stroke="#975a16" stroke-width="1.2"/>
-
-    <!-- 連桿（connecting rod，連接三個大輪） -->
-    <path d="M50,65 Q67,60 85,65 Q102,60 120,65" stroke="#975a16" stroke-width="3" fill="none"/>
-    <!-- 側桿（側連桿，連接輪中心的橫桿） -->
-    <line x1="50" y1="72" x2="120" y2="72" stroke="#975a16" stroke-width="2" stroke-dasharray="4,2"/>
-    <!-- 小引導輪（前） -->
-    <circle cx="20" cy="72" r="7" fill="white" fill-opacity="0.5" stroke="#975a16" stroke-width="2"/>
-    <!-- 煤水車車輪 -->
-    <circle cx="170" cy="72" r="8" fill="white" fill-opacity="0.5" stroke="#975a16" stroke-width="2"/>
-    <circle cx="170" cy="72" r="3" fill="#975a16" fill-opacity="0.4" stroke="none"/>
-    <circle cx="200" cy="72" r="8" fill="white" fill-opacity="0.5" stroke="#975a16" stroke-width="2"/>
-    <circle cx="200" cy="72" r="3" fill="#975a16" fill-opacity="0.4" stroke="none"/>
-  </g>
-</svg>`,
-
-  "kmrt_c301h": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
-  <!-- 高雄捷運：車頭略圓，銀灰車身，紅色腰線 -->
-  <g stroke-linecap="round" stroke-linejoin="round">
-    <!-- 車身（略圓車頭） -->
-    <path d="M16,32 Q14,22 26,22 L214,22 Q226,22 226,32 L226,65 Q226,68 222,68 L20,68 Q14,68 14,65 L14,32 Z"
-          fill="#c53030" fill-opacity="0.08" stroke="#c53030" stroke-width="2.5"/>
-    <!-- 銀灰色車身填色 -->
-    <path d="M16,32 Q14,22 26,22 L214,22 Q226,22 226,32 L226,65 Q226,68 222,68 L20,68 Q14,68 14,65 L14,32 Z"
-          fill="#e2e8f0" fill-opacity="0.35" stroke="none"/>
-    <!-- 紅色腰線（粗） -->
-    <rect x="14" y="47" width="212" height="7" rx="0" fill="#c53030" fill-opacity="0.9" stroke="none"/>
-    <!-- 車窗 x5 -->
-    <rect x="22" y="26" width="18" height="15" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
-    <rect x="52" y="26" width="28" height="15" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
-    <rect x="90" y="26" width="28" height="15" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
-    <rect x="128" y="26" width="28" height="15" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
-    <rect x="166" y="26" width="28" height="15" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
-    <!-- 車輪 x4 -->
-    <circle cx="52" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#c53030" stroke-width="2.5"/>
-    <circle cx="52" cy="74" r="3" fill="#c53030" fill-opacity="0.4" stroke="none"/>
-    <circle cx="92" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#c53030" stroke-width="2.5"/>
-    <circle cx="92" cy="74" r="3" fill="#c53030" fill-opacity="0.4" stroke="none"/>
-    <circle cx="148" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#c53030" stroke-width="2.5"/>
-    <circle cx="148" cy="74" r="3" fill="#c53030" fill-opacity="0.4" stroke="none"/>
-    <circle cx="188" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#c53030" stroke-width="2.5"/>
-    <circle cx="188" cy="74" r="3" fill="#c53030" fill-opacity="0.4" stroke="none"/>
-    <!-- 前燈組 -->
-    <rect x="14" y="54" width="7" height="5" rx="1" fill="#c53030" fill-opacity="0.35" stroke="#c53030" stroke-width="1.2"/>
-    <rect x="14" y="62" width="7" height="4" rx="1" fill="#c53030" fill-opacity="0.25" stroke="#c53030" stroke-width="1"/>
-  </g>
-</svg>`,
-"emu_local": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  "emu_local": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
   <g stroke-linecap="round" stroke-linejoin="round">
     <rect x="10" y="28" width="220" height="36" rx="4" fill="#3182ce" fill-opacity="0.12" stroke="#3182ce" stroke-width="2.5"/>
     <rect x="10" y="28" width="220" height="10" rx="3" fill="#3182ce" fill-opacity="0.3" stroke="none"/>
@@ -357,6 +192,66 @@ window.TRAIN_SVG = {
     <circle cx="202" cy="72" r="8" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2.5"/>
     <circle cx="202" cy="72" r="3.5" fill="#2b6cb0" fill-opacity="0.5"/>
   </g></svg>`,
+
+  "thsr_700t": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 高鐵 700T：極流線子彈頭，白車身，紅腰線 -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- 車身主體：流線型，長鼻子 -->
+    <path d="M10,55 Q30,30 60,28 L200,28 Q215,28 220,38 L220,60 Q215,65 200,65 L20,65 Q12,65 10,60 Z"
+          fill="#c53030" fill-opacity="0.08" stroke="#c53030" stroke-width="2.5"/>
+    <!-- 白色車身上半部 -->
+    <path d="M10,55 Q30,30 60,28 L200,28 Q215,28 220,38 L220,55 L10,55 Z"
+          fill="white" fill-opacity="0.7" stroke="none"/>
+    <!-- 紅色腰線 -->
+    <line x1="10" y1="55" x2="220" y2="55" stroke="#c53030" stroke-width="3"/>
+    <!-- 車窗 x4 -->
+    <rect x="70" y="33" width="22" height="14" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
+    <rect x="100" y="33" width="22" height="14" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
+    <rect x="130" y="33" width="22" height="14" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
+    <rect x="160" y="33" width="22" height="14" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
+    <!-- 車輪 x2 -->
+    <circle cx="65" cy="72" r="9" fill="white" fill-opacity="0.5" stroke="#c53030" stroke-width="2.5"/>
+    <circle cx="65" cy="72" r="3" fill="#c53030" fill-opacity="0.4" stroke="none"/>
+    <circle cx="185" cy="72" r="9" fill="white" fill-opacity="0.5" stroke="#c53030" stroke-width="2.5"/>
+    <circle cx="185" cy="72" r="3" fill="#c53030" fill-opacity="0.4" stroke="none"/>
+    <!-- 車底橫樑 -->
+    <line x1="50" y1="65" x2="210" y2="65" stroke="#c53030" stroke-width="1.5"/>
+    <!-- 駕駛艙玻璃 -->
+    <path d="M15,52 Q28,38 50,34 L50,52 Z" fill="#c53030" fill-opacity="0.12" stroke="#c53030" stroke-width="1.5"/>
+  </g>
+</svg>`,
+
+  "mrt_c301_wenhu": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 台北捷運：平頭，銀灰車身，綠色腰線 -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- 車身（銀灰色，方正平頭） -->
+    <path d="M12,30 Q12,22 20,22 L218,22 Q226,22 226,30 L226,65 Q226,68 222,68 L16,68 Q12,68 12,65 Z"
+          fill="#276749" fill-opacity="0.08" stroke="#276749" stroke-width="2.5"/>
+    <!-- 銀灰色車身填色 -->
+    <path d="M12,30 Q12,22 20,22 L218,22 Q226,22 226,30 L226,65 Q226,68 222,68 L16,68 Q12,68 12,65 Z"
+          fill="#e2e8f0" fill-opacity="0.4" stroke="none"/>
+    <!-- 綠色腰線 -->
+    <rect x="12" y="46" width="214" height="8" rx="0" fill="#276749" fill-opacity="0.85" stroke="none"/>
+    <!-- 車窗 x6 -->
+    <rect x="22" y="26" width="16" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
+    <rect x="52" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
+    <rect x="86" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
+    <rect x="120" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
+    <rect x="154" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
+    <rect x="188" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
+    <!-- 車輪 x4 -->
+    <circle cx="50" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#276749" stroke-width="2.5"/>
+    <circle cx="50" cy="74" r="3" fill="#276749" fill-opacity="0.4" stroke="none"/>
+    <circle cx="90" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#276749" stroke-width="2.5"/>
+    <circle cx="90" cy="74" r="3" fill="#276749" fill-opacity="0.4" stroke="none"/>
+    <circle cx="150" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#276749" stroke-width="2.5"/>
+    <circle cx="150" cy="74" r="3" fill="#276749" fill-opacity="0.4" stroke="none"/>
+    <circle cx="190" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#276749" stroke-width="2.5"/>
+    <circle cx="190" cy="74" r="3" fill="#276749" fill-opacity="0.4" stroke="none"/>
+    <!-- 前燈 -->
+    <rect x="13" y="55" width="8" height="5" rx="1" fill="#276749" fill-opacity="0.3" stroke="#276749" stroke-width="1.2"/>
+  </g>
+</svg>`,
 
   "mrt_c381": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
   <g stroke-linecap="round" stroke-linejoin="round">
@@ -439,6 +334,38 @@ window.TRAIN_SVG = {
     <circle cx="182" cy="72" r="3"   fill="#7cb518" fill-opacity="0.45"/>
   </g></svg>`,
 
+  "kmrt_c301h": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 高雄捷運：車頭略圓，銀灰車身，紅色腰線 -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- 車身（略圓車頭） -->
+    <path d="M16,32 Q14,22 26,22 L214,22 Q226,22 226,32 L226,65 Q226,68 222,68 L20,68 Q14,68 14,65 L14,32 Z"
+          fill="#c53030" fill-opacity="0.08" stroke="#c53030" stroke-width="2.5"/>
+    <!-- 銀灰色車身填色 -->
+    <path d="M16,32 Q14,22 26,22 L214,22 Q226,22 226,32 L226,65 Q226,68 222,68 L20,68 Q14,68 14,65 L14,32 Z"
+          fill="#e2e8f0" fill-opacity="0.35" stroke="none"/>
+    <!-- 紅色腰線（粗） -->
+    <rect x="14" y="47" width="212" height="7" rx="0" fill="#c53030" fill-opacity="0.9" stroke="none"/>
+    <!-- 車窗 x5 -->
+    <rect x="22" y="26" width="18" height="15" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
+    <rect x="52" y="26" width="28" height="15" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
+    <rect x="90" y="26" width="28" height="15" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
+    <rect x="128" y="26" width="28" height="15" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
+    <rect x="166" y="26" width="28" height="15" rx="3" fill="#c53030" fill-opacity="0.15" stroke="#c53030" stroke-width="1.5"/>
+    <!-- 車輪 x4 -->
+    <circle cx="52" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#c53030" stroke-width="2.5"/>
+    <circle cx="52" cy="74" r="3" fill="#c53030" fill-opacity="0.4" stroke="none"/>
+    <circle cx="92" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#c53030" stroke-width="2.5"/>
+    <circle cx="92" cy="74" r="3" fill="#c53030" fill-opacity="0.4" stroke="none"/>
+    <circle cx="148" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#c53030" stroke-width="2.5"/>
+    <circle cx="148" cy="74" r="3" fill="#c53030" fill-opacity="0.4" stroke="none"/>
+    <circle cx="188" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#c53030" stroke-width="2.5"/>
+    <circle cx="188" cy="74" r="3" fill="#c53030" fill-opacity="0.4" stroke="none"/>
+    <!-- 前燈組 -->
+    <rect x="14" y="54" width="7" height="5" rx="1" fill="#c53030" fill-opacity="0.35" stroke="#c53030" stroke-width="1.2"/>
+    <rect x="14" y="62" width="7" height="4" rx="1" fill="#c53030" fill-opacity="0.25" stroke="#c53030" stroke-width="1"/>
+  </g>
+</svg>`,
+
   "taoyuan_emu": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
   <g stroke-linecap="round" stroke-linejoin="round">
     <path d="M20 64 L20 36 Q20 28 30 28 L210 28 Q220 28 220 36 L220 64 Z" fill="#553c9a" fill-opacity="0.12" stroke="#553c9a" stroke-width="2.5"/>
@@ -457,6 +384,39 @@ window.TRAIN_SVG = {
     <circle cx="196" cy="70" r="3" fill="#553c9a" fill-opacity="0.4"/>
   </g></svg>`,
 
+  "danhai_lrt": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 輕軌：低底盤，矮而長，大玻璃窗，紫色系 -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- 低矮車身 -->
+    <path d="M14,42 Q18,28 36,27 L204,27 Q222,27 226,42 L226,66 Q224,70 218,70 L22,70 Q16,70 14,66 Z"
+          fill="#6b46c1" fill-opacity="0.09" stroke="#6b46c1" stroke-width="2.5"/>
+    <!-- 大面積玻璃窗帶 -->
+    <rect x="20" y="30" width="200" height="24" rx="4" fill="#6b46c1" fill-opacity="0.12" stroke="#6b46c1" stroke-width="1.5"/>
+    <!-- 窗格分隔線 x4 -->
+    <line x1="60" y1="30" x2="60" y2="54" stroke="#6b46c1" stroke-width="1.2"/>
+    <line x1="100" y1="30" x2="100" y2="54" stroke="#6b46c1" stroke-width="1.2"/>
+    <line x1="140" y1="30" x2="140" y2="54" stroke="#6b46c1" stroke-width="1.2"/>
+    <line x1="180" y1="30" x2="180" y2="54" stroke="#6b46c1" stroke-width="1.2"/>
+    <!-- 紫色腰線（車底） -->
+    <line x1="14" y1="58" x2="226" y2="58" stroke="#6b46c1" stroke-width="3"/>
+    <!-- 小車輪（嵌入車底）x4 -->
+    <circle cx="48" cy="70" r="6" fill="white" fill-opacity="0.5" stroke="#6b46c1" stroke-width="2"/>
+    <circle cx="48" cy="70" r="2" fill="#6b46c1" fill-opacity="0.5" stroke="none"/>
+    <circle cx="80" cy="70" r="6" fill="white" fill-opacity="0.5" stroke="#6b46c1" stroke-width="2"/>
+    <circle cx="80" cy="70" r="2" fill="#6b46c1" fill-opacity="0.5" stroke="none"/>
+    <circle cx="160" cy="70" r="6" fill="white" fill-opacity="0.5" stroke="#6b46c1" stroke-width="2"/>
+    <circle cx="160" cy="70" r="2" fill="#6b46c1" fill-opacity="0.5" stroke="none"/>
+    <circle cx="192" cy="70" r="6" fill="white" fill-opacity="0.5" stroke="#6b46c1" stroke-width="2"/>
+    <circle cx="192" cy="70" r="2" fill="#6b46c1" fill-opacity="0.5" stroke="none"/>
+    <!-- 車頭圓角 -->
+    <path d="M14,66 Q14,42 36,28" stroke="#6b46c1" stroke-width="2" fill="none"/>
+    <!-- 集電弓（pantograph）-->
+    <line x1="120" y1="27" x2="110" y2="15" stroke="#6b46c1" stroke-width="1.5"/>
+    <line x1="120" y1="27" x2="130" y2="15" stroke="#6b46c1" stroke-width="1.5"/>
+    <line x1="105" y1="15" x2="135" y2="15" stroke="#6b46c1" stroke-width="2"/>
+  </g>
+</svg>`,
+
   "kaohsiung_lrt": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
   <g stroke-linecap="round" stroke-linejoin="round">
     <rect x="12" y="36" width="216" height="28" rx="4" fill="#c53030" fill-opacity="0.12" stroke="#c53030" stroke-width="2.5"/>
@@ -474,6 +434,68 @@ window.TRAIN_SVG = {
     <circle cx="160" cy="68" r="5" fill="#fed7d7" stroke="#c53030" stroke-width="2"/>
     <circle cx="196" cy="68" r="5" fill="#fed7d7" stroke="#c53030" stroke-width="2"/>
   </g></svg>`,
+
+  "alishan_shay": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 阿里山蒸汽機車：復古可愛，大鍋爐，煙囪，連桿，大驅動輪 -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- 煤水車（後方） -->
+    <rect x="155" y="38" width="70" height="30" rx="4" fill="#975a16" fill-opacity="0.12" stroke="#975a16" stroke-width="2"/>
+    <!-- 鍋爐（大橢圓/圓柱體） -->
+    <ellipse cx="95" cy="48" rx="72" ry="18" fill="#975a16" fill-opacity="0.15" stroke="#975a16" stroke-width="2.5"/>
+    <!-- 鍋爐前端圓頭（煙箱） -->
+    <ellipse cx="28" cy="48" rx="12" ry="18" fill="#975a16" fill-opacity="0.2" stroke="#975a16" stroke-width="2"/>
+    <!-- 駕駛室 -->
+    <rect x="128" y="30" width="30" height="38" rx="4" fill="#975a16" fill-opacity="0.15" stroke="#975a16" stroke-width="2"/>
+    <!-- 駕駛室窗 -->
+    <rect x="132" y="34" width="10" height="10" rx="2" fill="#975a16" fill-opacity="0.2" stroke="#975a16" stroke-width="1.5"/>
+    <rect x="146" y="34" width="10" height="10" rx="2" fill="#975a16" fill-opacity="0.2" stroke="#975a16" stroke-width="1.5"/>
+    <!-- 煙囪（高聳） -->
+    <rect x="20" y="10" width="12" height="22" rx="3" fill="#975a16" fill-opacity="0.18" stroke="#975a16" stroke-width="2"/>
+    <!-- 煙囪頂端喇叭口 -->
+    <path d="M16,12 Q26,8 36,12" stroke="#975a16" stroke-width="2.5" fill="none"/>
+    <!-- 煙霧（三條曲線） -->
+    <path d="M22,10 Q18,4 22,0" stroke="#975a16" stroke-width="1.5" fill="none" stroke-opacity="0.6"/>
+    <path d="M26,9 Q26,3 30,0" stroke="#975a16" stroke-width="1.5" fill="none" stroke-opacity="0.5"/>
+    <path d="M30,10 Q34,4 34,0" stroke="#975a16" stroke-width="1.5" fill="none" stroke-opacity="0.4"/>
+    <!-- 汽鍋安全閥（小鼓包） -->
+    <ellipse cx="80" cy="31" rx="7" ry="5" fill="#975a16" fill-opacity="0.2" stroke="#975a16" stroke-width="1.5"/>
+    <ellipse cx="100" cy="31" rx="6" ry="4" fill="#975a16" fill-opacity="0.2" stroke="#975a16" stroke-width="1.5"/>
+    <!-- 3個大驅動輪 -->
+    <circle cx="50" cy="72" r="13" fill="white" fill-opacity="0.5" stroke="#975a16" stroke-width="2.5"/>
+    <circle cx="50" cy="72" r="5" fill="#975a16" fill-opacity="0.3" stroke="#975a16" stroke-width="1.5"/>
+    <!-- 輪輻 x4 -->
+    <line x1="50" y1="59" x2="50" y2="85" stroke="#975a16" stroke-width="1.2"/>
+    <line x1="37" y1="72" x2="63" y2="72" stroke="#975a16" stroke-width="1.2"/>
+    <line x1="41" y1="63" x2="59" y2="81" stroke="#975a16" stroke-width="1.2"/>
+    <line x1="41" y1="81" x2="59" y2="63" stroke="#975a16" stroke-width="1.2"/>
+
+    <circle cx="85" cy="72" r="13" fill="white" fill-opacity="0.5" stroke="#975a16" stroke-width="2.5"/>
+    <circle cx="85" cy="72" r="5" fill="#975a16" fill-opacity="0.3" stroke="#975a16" stroke-width="1.5"/>
+    <line x1="85" y1="59" x2="85" y2="85" stroke="#975a16" stroke-width="1.2"/>
+    <line x1="72" y1="72" x2="98" y2="72" stroke="#975a16" stroke-width="1.2"/>
+    <line x1="76" y1="63" x2="94" y2="81" stroke="#975a16" stroke-width="1.2"/>
+    <line x1="76" y1="81" x2="94" y2="63" stroke="#975a16" stroke-width="1.2"/>
+
+    <circle cx="120" cy="72" r="13" fill="white" fill-opacity="0.5" stroke="#975a16" stroke-width="2.5"/>
+    <circle cx="120" cy="72" r="5" fill="#975a16" fill-opacity="0.3" stroke="#975a16" stroke-width="1.5"/>
+    <line x1="120" y1="59" x2="120" y2="85" stroke="#975a16" stroke-width="1.2"/>
+    <line x1="107" y1="72" x2="133" y2="72" stroke="#975a16" stroke-width="1.2"/>
+    <line x1="111" y1="63" x2="129" y2="81" stroke="#975a16" stroke-width="1.2"/>
+    <line x1="111" y1="81" x2="129" y2="63" stroke="#975a16" stroke-width="1.2"/>
+
+    <!-- 連桿（connecting rod，連接三個大輪） -->
+    <path d="M50,65 Q67,60 85,65 Q102,60 120,65" stroke="#975a16" stroke-width="3" fill="none"/>
+    <!-- 側桿（側連桿，連接輪中心的橫桿） -->
+    <line x1="50" y1="72" x2="120" y2="72" stroke="#975a16" stroke-width="2" stroke-dasharray="4,2"/>
+    <!-- 小引導輪（前） -->
+    <circle cx="20" cy="72" r="7" fill="white" fill-opacity="0.5" stroke="#975a16" stroke-width="2"/>
+    <!-- 煤水車車輪 -->
+    <circle cx="170" cy="72" r="8" fill="white" fill-opacity="0.5" stroke="#975a16" stroke-width="2"/>
+    <circle cx="170" cy="72" r="3" fill="#975a16" fill-opacity="0.4" stroke="none"/>
+    <circle cx="200" cy="72" r="8" fill="white" fill-opacity="0.5" stroke="#975a16" stroke-width="2"/>
+    <circle cx="200" cy="72" r="3" fill="#975a16" fill-opacity="0.4" stroke="none"/>
+  </g>
+</svg>`,
 
   "alishan_dl47": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
   <g stroke-linecap="round" stroke-linejoin="round">
@@ -591,28 +613,6 @@ window.TRAIN_SVG = {
     <path d="M112 62 Q126 56 140 62" fill="none" stroke="#2d3748" stroke-width="2.5"/>
     <circle cx="172" cy="72" r="8" fill="#e2e8f0" stroke="#2d3748" stroke-width="2"/>
     <circle cx="210" cy="72" r="8" fill="#e2e8f0" stroke="#2d3748" stroke-width="2"/>
-  </g></svg>`
-,
-
-  "ziqiang": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
-  <g stroke-linecap="round" stroke-linejoin="round">
-    <path d="M14 64 L14 36 Q14 28 26 28 L214 28 Q226 28 226 36 L226 64 Z" fill="#e53e3e" fill-opacity="0.1" stroke="#e53e3e" stroke-width="2.5"/>
-    <path d="M14 36 Q8 28 6 34 L6 62 L14 62" fill="#e53e3e" fill-opacity="0.15" stroke="#e53e3e" stroke-width="2"/>
-    <path d="M226 36 Q232 28 234 34 L234 62 L226 62" fill="#e53e3e" fill-opacity="0.15" stroke="#e53e3e" stroke-width="2"/>
-    <rect x="6" y="48" width="228" height="7" fill="#e53e3e" fill-opacity="0.35" stroke="none"/>
-    <rect x="28" y="32" width="26" height="14" rx="2" fill="#fff5f5" fill-opacity="0.8" stroke="#e53e3e" stroke-width="1.5"/>
-    <rect x="68" y="32" width="26" height="14" rx="2" fill="#fff5f5" fill-opacity="0.8" stroke="#e53e3e" stroke-width="1.5"/>
-    <rect x="116" y="32" width="26" height="14" rx="2" fill="#fff5f5" fill-opacity="0.8" stroke="#e53e3e" stroke-width="1.5"/>
-    <rect x="158" y="32" width="26" height="14" rx="2" fill="#fff5f5" fill-opacity="0.8" stroke="#e53e3e" stroke-width="1.5"/>
-    <rect x="196" y="32" width="20" height="14" rx="2" fill="#fff5f5" fill-opacity="0.8" stroke="#e53e3e" stroke-width="1.5"/>
-    <circle cx="38"  cy="70" r="8" fill="#fff5f5" stroke="#e53e3e" stroke-width="2.5"/>
-    <circle cx="38"  cy="70" r="3.5" fill="#e53e3e" fill-opacity="0.4"/>
-    <circle cx="90"  cy="70" r="8" fill="#fff5f5" stroke="#e53e3e" stroke-width="2.5"/>
-    <circle cx="90"  cy="70" r="3.5" fill="#e53e3e" fill-opacity="0.4"/>
-    <circle cx="152" cy="70" r="8" fill="#fff5f5" stroke="#e53e3e" stroke-width="2.5"/>
-    <circle cx="152" cy="70" r="3.5" fill="#e53e3e" fill-opacity="0.4"/>
-    <circle cx="204" cy="70" r="8" fill="#fff5f5" stroke="#e53e3e" stroke-width="2.5"/>
-    <circle cx="204" cy="70" r="3.5" fill="#e53e3e" fill-opacity="0.4"/>
   </g></svg>`
 
 };
