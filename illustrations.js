@@ -221,80 +221,121 @@ window.TRAIN_SVG = {
   </g>
 </svg>`,
 
-  "mrt_val256_wenhu": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
-  <!-- 台北捷運：平頭，銀灰車身，綠色腰線 -->
+  "mrt_wenhu": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 文湖線（棕）：膠輪中運量，圓弧小巧車身 -->
   <g stroke-linecap="round" stroke-linejoin="round">
-    <!-- 車身（銀灰色，方正平頭） -->
     <path d="M12,30 Q12,22 20,22 L218,22 Q226,22 226,30 L226,65 Q226,68 222,68 L16,68 Q12,68 12,65 Z"
-          fill="#276749" fill-opacity="0.08" stroke="#276749" stroke-width="2.5"/>
-    <!-- 銀灰色車身填色 -->
+          fill="#C48C31" fill-opacity="0.08" stroke="#C48C31" stroke-width="2.5"/>
     <path d="M12,30 Q12,22 20,22 L218,22 Q226,22 226,30 L226,65 Q226,68 222,68 L16,68 Q12,68 12,65 Z"
           fill="#e2e8f0" fill-opacity="0.4" stroke="none"/>
-    <!-- 綠色腰線 -->
-    <rect x="12" y="46" width="214" height="8" rx="0" fill="#276749" fill-opacity="0.85" stroke="none"/>
-    <!-- 車窗 x6 -->
-    <rect x="22" y="26" width="16" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
-    <rect x="52" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
-    <rect x="86" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
-    <rect x="120" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
-    <rect x="154" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
-    <rect x="188" y="26" width="26" height="14" rx="3" fill="#276749" fill-opacity="0.18" stroke="#276749" stroke-width="1.5"/>
-    <!-- 車輪 x4 -->
-    <circle cx="50" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#276749" stroke-width="2.5"/>
-    <circle cx="50" cy="74" r="3" fill="#276749" fill-opacity="0.4" stroke="none"/>
-    <circle cx="90" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#276749" stroke-width="2.5"/>
-    <circle cx="90" cy="74" r="3" fill="#276749" fill-opacity="0.4" stroke="none"/>
-    <circle cx="150" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#276749" stroke-width="2.5"/>
-    <circle cx="150" cy="74" r="3" fill="#276749" fill-opacity="0.4" stroke="none"/>
-    <circle cx="190" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#276749" stroke-width="2.5"/>
-    <circle cx="190" cy="74" r="3" fill="#276749" fill-opacity="0.4" stroke="none"/>
-    <!-- 前燈 -->
-    <rect x="13" y="55" width="8" height="5" rx="1" fill="#276749" fill-opacity="0.3" stroke="#276749" stroke-width="1.2"/>
+    <rect x="12" y="46" width="214" height="8" rx="0" fill="#C48C31" fill-opacity="0.85" stroke="none"/>
+    <rect x="22" y="26" width="16" height="14" rx="3" fill="#C48C31" fill-opacity="0.18" stroke="#C48C31" stroke-width="1.5"/>
+    <rect x="52" y="26" width="26" height="14" rx="3" fill="#C48C31" fill-opacity="0.18" stroke="#C48C31" stroke-width="1.5"/>
+    <rect x="86" y="26" width="26" height="14" rx="3" fill="#C48C31" fill-opacity="0.18" stroke="#C48C31" stroke-width="1.5"/>
+    <rect x="120" y="26" width="26" height="14" rx="3" fill="#C48C31" fill-opacity="0.18" stroke="#C48C31" stroke-width="1.5"/>
+    <rect x="154" y="26" width="26" height="14" rx="3" fill="#C48C31" fill-opacity="0.18" stroke="#C48C31" stroke-width="1.5"/>
+    <rect x="188" y="26" width="26" height="14" rx="3" fill="#C48C31" fill-opacity="0.18" stroke="#C48C31" stroke-width="1.5"/>
+    <circle cx="50" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#C48C31" stroke-width="2.5"/>
+    <circle cx="50" cy="74" r="3" fill="#C48C31" fill-opacity="0.4" stroke="none"/>
+    <circle cx="90" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#C48C31" stroke-width="2.5"/>
+    <circle cx="90" cy="74" r="3" fill="#C48C31" fill-opacity="0.4" stroke="none"/>
+    <circle cx="150" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#C48C31" stroke-width="2.5"/>
+    <circle cx="150" cy="74" r="3" fill="#C48C31" fill-opacity="0.4" stroke="none"/>
+    <circle cx="190" cy="74" r="8" fill="white" fill-opacity="0.5" stroke="#C48C31" stroke-width="2.5"/>
+    <circle cx="190" cy="74" r="3" fill="#C48C31" fill-opacity="0.4" stroke="none"/>
+    <rect x="13" y="55" width="8" height="5" rx="1" fill="#C48C31" fill-opacity="0.3" stroke="#C48C31" stroke-width="1.2"/>
   </g>
 </svg>`,
 
-  "mrt_c381": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  "mrt_tamsui_xinyi": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 淡水信義線（紅）：高運量鋼輪，方正平頭 -->
   <g stroke-linecap="round" stroke-linejoin="round">
-    <rect x="10" y="28" width="220" height="36" rx="5" fill="#f7fafc" fill-opacity="0.95" stroke="#276749" stroke-width="2.5"/>
-    <rect x="10" y="34" width="220" height="10" fill="#276749" fill-opacity="0.55" stroke="none"/>
-    <path d="M10 32 Q16 28 26 28" fill="none" stroke="#276749" stroke-width="2.5"/>
-    <path d="M214 28 Q224 28 230 32" fill="none" stroke="#276749" stroke-width="2.5"/>
-    <rect x="28" y="38" width="22" height="13" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#276749" stroke-width="1.5"/>
-    <rect x="60" y="38" width="22" height="13" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#276749" stroke-width="1.5"/>
-    <rect x="108" y="38" width="22" height="13" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#276749" stroke-width="1.5"/>
-    <rect x="150" y="38" width="22" height="13" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#276749" stroke-width="1.5"/>
-    <rect x="188" y="38" width="22" height="13" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#276749" stroke-width="1.5"/>
-    <circle cx="40"  cy="68" r="7" fill="#f0fff4" stroke="#276749" stroke-width="2"/>
-    <circle cx="40"  cy="68" r="3" fill="#276749" fill-opacity="0.4"/>
-    <circle cx="100" cy="68" r="7" fill="#f0fff4" stroke="#276749" stroke-width="2"/>
-    <circle cx="100" cy="68" r="3" fill="#276749" fill-opacity="0.4"/>
-    <circle cx="152" cy="68" r="7" fill="#f0fff4" stroke="#276749" stroke-width="2"/>
-    <circle cx="152" cy="68" r="3" fill="#276749" fill-opacity="0.4"/>
-    <circle cx="200" cy="68" r="7" fill="#f0fff4" stroke="#276749" stroke-width="2"/>
-    <circle cx="200" cy="68" r="3" fill="#276749" fill-opacity="0.4"/>
+    <rect x="10" y="28" width="220" height="36" rx="5" fill="#f7fafc" fill-opacity="0.95" stroke="#E3002C" stroke-width="2.5"/>
+    <rect x="10" y="34" width="220" height="10" fill="#E3002C" fill-opacity="0.55" stroke="none"/>
+    <path d="M10 32 Q16 28 26 28" fill="none" stroke="#E3002C" stroke-width="2.5"/>
+    <path d="M214 28 Q224 28 230 32" fill="none" stroke="#E3002C" stroke-width="2.5"/>
+    <rect x="28" y="38" width="22" height="13" rx="2" fill="#fce4ec" fill-opacity="0.8" stroke="#E3002C" stroke-width="1.5"/>
+    <rect x="60" y="38" width="22" height="13" rx="2" fill="#fce4ec" fill-opacity="0.8" stroke="#E3002C" stroke-width="1.5"/>
+    <rect x="108" y="38" width="22" height="13" rx="2" fill="#fce4ec" fill-opacity="0.8" stroke="#E3002C" stroke-width="1.5"/>
+    <rect x="150" y="38" width="22" height="13" rx="2" fill="#fce4ec" fill-opacity="0.8" stroke="#E3002C" stroke-width="1.5"/>
+    <rect x="188" y="38" width="22" height="13" rx="2" fill="#fce4ec" fill-opacity="0.8" stroke="#E3002C" stroke-width="1.5"/>
+    <circle cx="40"  cy="68" r="7" fill="#fff5f5" stroke="#E3002C" stroke-width="2"/>
+    <circle cx="40"  cy="68" r="3" fill="#E3002C" fill-opacity="0.4"/>
+    <circle cx="100" cy="68" r="7" fill="#fff5f5" stroke="#E3002C" stroke-width="2"/>
+    <circle cx="100" cy="68" r="3" fill="#E3002C" fill-opacity="0.4"/>
+    <circle cx="152" cy="68" r="7" fill="#fff5f5" stroke="#E3002C" stroke-width="2"/>
+    <circle cx="152" cy="68" r="3" fill="#E3002C" fill-opacity="0.4"/>
+    <circle cx="200" cy="68" r="7" fill="#fff5f5" stroke="#E3002C" stroke-width="2"/>
+    <circle cx="200" cy="68" r="3" fill="#E3002C" fill-opacity="0.4"/>
   </g></svg>`,
 
-  "mrt_c371": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
-  <!-- 台北捷運 C371：松山新店線（綠）/ 中和新蘆線（橘），6節高運量，平頭方正 -->
+  "mrt_songshan_xindian": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 松山新店線（綠）：高運量鋼輪，方正平頭 -->
   <g stroke-linecap="round" stroke-linejoin="round">
-    <rect x="10" y="28" width="220" height="36" rx="5" fill="#f0fff4" fill-opacity="0.95" stroke="#2e7d32" stroke-width="2.5"/>
-    <rect x="10" y="44" width="220" height="8" fill="#2e7d32" fill-opacity="0.45" stroke="none"/>
-    <path d="M10 32 Q16 28 24 28" fill="none" stroke="#2e7d32" stroke-width="2.5"/>
-    <path d="M216 28 Q226 28 230 32" fill="none" stroke="#2e7d32" stroke-width="2.5"/>
-    <rect x="18" y="31" width="18" height="11" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#2e7d32" stroke-width="1.5"/>
-    <rect x="48" y="31" width="18" height="11" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#2e7d32" stroke-width="1.5"/>
-    <rect x="86" y="31" width="18" height="11" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#2e7d32" stroke-width="1.5"/>
-    <rect x="118" y="31" width="18" height="11" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#2e7d32" stroke-width="1.5"/>
-    <rect x="156" y="31" width="18" height="11" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#2e7d32" stroke-width="1.5"/>
-    <rect x="194" y="31" width="18" height="11" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#2e7d32" stroke-width="1.5"/>
-    <circle cx="36"  cy="68" r="7" fill="#f0fff4" stroke="#2e7d32" stroke-width="2"/>
-    <circle cx="36"  cy="68" r="3" fill="#2e7d32" fill-opacity="0.4"/>
-    <circle cx="84"  cy="68" r="7" fill="#f0fff4" stroke="#2e7d32" stroke-width="2"/>
-    <circle cx="84"  cy="68" r="3" fill="#2e7d32" fill-opacity="0.4"/>
-    <circle cx="140" cy="68" r="7" fill="#f0fff4" stroke="#2e7d32" stroke-width="2"/>
-    <circle cx="140" cy="68" r="3" fill="#2e7d32" fill-opacity="0.4"/>
-    <circle cx="200" cy="68" r="7" fill="#f0fff4" stroke="#2e7d32" stroke-width="2"/>
-    <circle cx="200" cy="68" r="3" fill="#2e7d32" fill-opacity="0.4"/>
+    <rect x="10" y="28" width="220" height="36" rx="5" fill="#f0fff4" fill-opacity="0.95" stroke="#008659" stroke-width="2.5"/>
+    <rect x="10" y="44" width="220" height="8" fill="#008659" fill-opacity="0.45" stroke="none"/>
+    <path d="M10 32 Q16 28 24 28" fill="none" stroke="#008659" stroke-width="2.5"/>
+    <path d="M216 28 Q226 28 230 32" fill="none" stroke="#008659" stroke-width="2.5"/>
+    <rect x="18" y="31" width="18" height="11" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#008659" stroke-width="1.5"/>
+    <rect x="48" y="31" width="18" height="11" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#008659" stroke-width="1.5"/>
+    <rect x="86" y="31" width="18" height="11" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#008659" stroke-width="1.5"/>
+    <rect x="118" y="31" width="18" height="11" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#008659" stroke-width="1.5"/>
+    <rect x="156" y="31" width="18" height="11" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#008659" stroke-width="1.5"/>
+    <rect x="194" y="31" width="18" height="11" rx="2" fill="#c6f6d5" fill-opacity="0.8" stroke="#008659" stroke-width="1.5"/>
+    <circle cx="36"  cy="68" r="7" fill="#f0fff4" stroke="#008659" stroke-width="2"/>
+    <circle cx="36"  cy="68" r="3" fill="#008659" fill-opacity="0.4"/>
+    <circle cx="84"  cy="68" r="7" fill="#f0fff4" stroke="#008659" stroke-width="2"/>
+    <circle cx="84"  cy="68" r="3" fill="#008659" fill-opacity="0.4"/>
+    <circle cx="140" cy="68" r="7" fill="#f0fff4" stroke="#008659" stroke-width="2"/>
+    <circle cx="140" cy="68" r="3" fill="#008659" fill-opacity="0.4"/>
+    <circle cx="200" cy="68" r="7" fill="#f0fff4" stroke="#008659" stroke-width="2"/>
+    <circle cx="200" cy="68" r="3" fill="#008659" fill-opacity="0.4"/>
+  </g></svg>`,
+
+  "mrt_zhonghe_xinlu": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 中和新蘆線（橘）：高運量鋼輪，方正平頭 -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="10" y="28" width="220" height="36" rx="5" fill="#fff8e1" fill-opacity="0.95" stroke="#F8B61C" stroke-width="2.5"/>
+    <rect x="10" y="44" width="220" height="8" fill="#F8B61C" fill-opacity="0.45" stroke="none"/>
+    <path d="M10 32 Q16 28 24 28" fill="none" stroke="#F8B61C" stroke-width="2.5"/>
+    <path d="M216 28 Q226 28 230 32" fill="none" stroke="#F8B61C" stroke-width="2.5"/>
+    <rect x="18" y="31" width="18" height="11" rx="2" fill="#fff3cd" fill-opacity="0.8" stroke="#F8B61C" stroke-width="1.5"/>
+    <rect x="48" y="31" width="18" height="11" rx="2" fill="#fff3cd" fill-opacity="0.8" stroke="#F8B61C" stroke-width="1.5"/>
+    <rect x="86" y="31" width="18" height="11" rx="2" fill="#fff3cd" fill-opacity="0.8" stroke="#F8B61C" stroke-width="1.5"/>
+    <rect x="118" y="31" width="18" height="11" rx="2" fill="#fff3cd" fill-opacity="0.8" stroke="#F8B61C" stroke-width="1.5"/>
+    <rect x="156" y="31" width="18" height="11" rx="2" fill="#fff3cd" fill-opacity="0.8" stroke="#F8B61C" stroke-width="1.5"/>
+    <rect x="194" y="31" width="18" height="11" rx="2" fill="#fff3cd" fill-opacity="0.8" stroke="#F8B61C" stroke-width="1.5"/>
+    <circle cx="36"  cy="68" r="7" fill="#fff8e1" stroke="#F8B61C" stroke-width="2"/>
+    <circle cx="36"  cy="68" r="3" fill="#F8B61C" fill-opacity="0.4"/>
+    <circle cx="84"  cy="68" r="7" fill="#fff8e1" stroke="#F8B61C" stroke-width="2"/>
+    <circle cx="84"  cy="68" r="3" fill="#F8B61C" fill-opacity="0.4"/>
+    <circle cx="140" cy="68" r="7" fill="#fff8e1" stroke="#F8B61C" stroke-width="2"/>
+    <circle cx="140" cy="68" r="3" fill="#F8B61C" fill-opacity="0.4"/>
+    <circle cx="200" cy="68" r="7" fill="#fff8e1" stroke="#F8B61C" stroke-width="2"/>
+    <circle cx="200" cy="68" r="3" fill="#F8B61C" fill-opacity="0.4"/>
+  </g></svg>`,
+
+  "mrt_bannan": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 板南線（藍）：高運量鋼輪，方正平頭 -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="10" y="28" width="220" height="36" rx="5" fill="#f0f8ff" fill-opacity="0.95" stroke="#0070BD" stroke-width="2.5"/>
+    <rect x="10" y="44" width="220" height="8" fill="#0070BD" fill-opacity="0.45" stroke="none"/>
+    <path d="M10 32 Q16 28 24 28" fill="none" stroke="#0070BD" stroke-width="2.5"/>
+    <path d="M216 28 Q226 28 230 32" fill="none" stroke="#0070BD" stroke-width="2.5"/>
+    <rect x="18" y="31" width="18" height="11" rx="2" fill="#dbeafe" fill-opacity="0.8" stroke="#0070BD" stroke-width="1.5"/>
+    <rect x="48" y="31" width="18" height="11" rx="2" fill="#dbeafe" fill-opacity="0.8" stroke="#0070BD" stroke-width="1.5"/>
+    <rect x="86" y="31" width="18" height="11" rx="2" fill="#dbeafe" fill-opacity="0.8" stroke="#0070BD" stroke-width="1.5"/>
+    <rect x="118" y="31" width="18" height="11" rx="2" fill="#dbeafe" fill-opacity="0.8" stroke="#0070BD" stroke-width="1.5"/>
+    <rect x="156" y="31" width="18" height="11" rx="2" fill="#dbeafe" fill-opacity="0.8" stroke="#0070BD" stroke-width="1.5"/>
+    <rect x="194" y="31" width="18" height="11" rx="2" fill="#dbeafe" fill-opacity="0.8" stroke="#0070BD" stroke-width="1.5"/>
+    <circle cx="36"  cy="68" r="7" fill="#f0f8ff" stroke="#0070BD" stroke-width="2"/>
+    <circle cx="36"  cy="68" r="3" fill="#0070BD" fill-opacity="0.4"/>
+    <circle cx="84"  cy="68" r="7" fill="#f0f8ff" stroke="#0070BD" stroke-width="2"/>
+    <circle cx="84"  cy="68" r="3" fill="#0070BD" fill-opacity="0.4"/>
+    <circle cx="140" cy="68" r="7" fill="#f0f8ff" stroke="#0070BD" stroke-width="2"/>
+    <circle cx="140" cy="68" r="3" fill="#0070BD" fill-opacity="0.4"/>
+    <circle cx="200" cy="68" r="7" fill="#f0f8ff" stroke="#0070BD" stroke-width="2"/>
+    <circle cx="200" cy="68" r="3" fill="#0070BD" fill-opacity="0.4"/>
   </g></svg>`,
 
   "ntmetro_610": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">

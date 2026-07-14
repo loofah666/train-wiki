@@ -451,94 +451,297 @@ window.TRAIN_DATA = [
     tags: ["高速", "西部幹線", "對號座", "新幹線技術"]
   },
   {
-    id: "mrt_val256_wenhu",
+    id: "mrt_wenhu",
     photoUrl: "images/mrt_val256_wenhu.jpg",
     photoCredit: { author: "Subscriptshoe9", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Matra_VAL256,_Taipei_Metro_20210509.jpg" },
-    name: "文湖線 VAL256 型電聯車",
-    nameEn: "Wenhu Line VAL256",
-    model: "VAL256",
+    name: "台北捷運文湖線",
+    nameEn: "Wenhu Line (Brown)",
     operator: "台北大眾捷運股份有限公司",
     type: "捷運",
     region: ["北部"],
     yearStart: 1996,
     maxSpeed: 70,
-    manufacturer: "法國 馬特拉（Matra）／ 法國 阿爾斯通（Alstom，後續維護）",
-    seats: 80,
-    cars: 4,
-    color: "#c0392b",
+    color: "#C48C31",
     emoji: "🚇",
-    description: "文湖線（原木柵線）是台灣第一條捷運路線，1996 年通車時轟動全台。採用法國馬特拉（Matra）公司的 VAL256 中運量膠輪系統，以橡膠輪胎取代鋼輪行駛，噪音小且爬坡能力強。列車全自動無人駕駛，靠電腦系統控制，不需司機員。高架路段穿越台北市東區，可俯瞰城市景觀。2013 年木柵線與內湖線整合後更名為文湖線。",
+    description: "文湖線（原木柵線＋內湖線）是台灣第一條捷運路線，1996 年通車。採用中運量膠輪系統，列車全自動無人駕駛（GoA 4），高架路段穿越台北市東區可俯瞰城市景觀。2009 年內湖段通車後兩線合併更名為文湖線，目前共 24 站，由 VAL256 與 INNOVIA APM 256 兩型車輛混合運行。",
     features: [
-      "台灣第一條捷運路線（1996 年）",
-      "法國馬特拉 VAL256 膠輪系統、無人駕駛",
-      "營運速度 70 km/h",
-      "高架路段可俯瞰台北市景"
+      "台灣第一條捷運路線（1996 年通車）",
+      "全自動無人駕駛（GoA 4）",
+      "膠輪系統，噪音小、爬坡力強",
+      "全線 24 站，高架為主"
     ],
     routes: [
-      { name: "文湖線", stations: ["南港展覽館", "大安", "忠孝復興", "中山國中", "內湖", "文德", "動物園"] }
+      { name: "文湖線", stations: ["動物園", "科技大樓", "忠孝復興", "松山機場", "西湖", "內湖", "南港展覽館"] }
     ],
-    funFact: "文湖線的列車用橡膠輪胎跑，就像汽車一樣！所以它在爬坡時比一般火車厲害很多！",
-    tags: ["捷運", "北部", "膠輪", "無人駕駛", "台灣第一"]
+    funFact: "文湖線原名「木柵內湖線」，縮寫「柵湖」（Zhahu）發音類似麻將術語「詐胡」——因為建造期間問題不斷，這個巧合讓台北人笑了好多年，最後乾脆改名！",
+    tags: ["捷運", "北部", "文湖線", "膠輪", "無人駕駛", "台灣第一"],
+    variants: [
+      {
+        model: "VAL256",
+        nickname: "馬特拉",
+        manufacturer: "法國 Matra／Alstom（後續維護）",
+        yearStart: 1996,
+        status: "active",
+        maxSpeed: 70,
+        cars: 4,
+        seats: 80,
+        photoUrl: "images/mrt_val256_wenhu.jpg",
+        photoCredit: { author: "Subscriptshoe9", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Matra_VAL256,_Taipei_Metro_20210509.jpg" },
+        description: "木柵線通車時的原始車隊，法國馬特拉製造，共 51 對 102 輛。2010 年完成號誌系統升級（改用龐巴迪 CITYFLO 650 CBTC），與新車統一控制。",
+        features: [
+          "1996 年木柵線原始車隊",
+          "51 對（102 輛）",
+          "車寬 2,560 mm",
+          "圓弧車頭造型"
+        ]
+      },
+      {
+        model: "INNOVIA APM 256",
+        nickname: "龐巴迪",
+        manufacturer: "加拿大 Bombardier／唐榮鐵工廠（部分組裝）",
+        yearStart: 2009,
+        status: "active",
+        maxSpeed: 70,
+        cars: 4,
+        seats: 96,
+        description: "2009 年內湖線延伸段通車時加入的新車隊，龐巴迪製造，共 101 對 202 輛。外觀較方正現代，車內天花板較低（190 cm）是旅客常見抱怨。",
+        features: [
+          "2009 年內湖線延伸加入",
+          "101 對（202 輛）",
+          "車寬 2,540 mm（略窄於 VAL256）",
+          "方正車頭、CITYFLO 650 號誌"
+        ]
+      }
+    ]
   },
   {
-    id: "mrt_c381",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Taipei_Metro_C381_train_leaving_Beitou_Station_toward_Fuxinggang_Station.jpg",
-    name: "台北捷運C381型電聯車",
-    nameEn: "Taipei MRT C381",
-    model: "C381",
-    operator: "台北大眾捷運股份有限公司",
-    type: "捷運",
-    region: ["北部"],
-    yearStart: 2012,
-    maxSpeed: 80,
-    manufacturer: "日本 川崎重工 / 台灣車輛",
-    seats: 310,
-    cars: 6,
-    color: "#2980b9",
-    emoji: "🚇",
-    description: "C381 型電聯車是台北捷運淡水信義線與松山新店線的新世代主力車款，2012 年 10 月起投入營運。由日本川崎重工設計、台灣車輛在新竹廠共同組裝，是繼 C371 之後又一款國產化捷運車輛。相較舊型 C301，C381 引入 LED 顯示、無障礙區、更寬敞的通道與更節能的 IGBT-VVVF 牽引系統，是台北捷運近年最舒適的車型之一。",
-    features: [
-      "服務淡水信義線與松山新店線",
-      "台日合作、台灣車輛在新竹廠組裝",
-      "6 節車廂、席位 310",
-      "IGBT-VVVF 牽引系統、節能環保"
-    ],
-    routes: [
-      { name: "淡水信義線", stations: ["淡水", "民權西路", "台北車站", "大安", "信義安和", "象山"] },
-      { name: "松山新店線", stations: ["新店", "公館", "西門", "北門", "南京三民", "松山"] }
-    ],
-    funFact: "C381 是台北捷運第一款車頭燈組採「三眼」設計的車型——上下兩顆為近光燈、中間一顆是遠光燈，遠遠一看就能認出它。",
-    tags: ["捷運", "北部", "淡水信義線", "松山新店線", "通勤"]
-  },
-  {
-    id: "mrt_c371",
+    id: "mrt_tamsui_xinyi",
     photoUrl: "images/mrt_c371.jpg",
-    name: "台北捷運C371型電聯車",
-    nameEn: "Taipei MRT C371",
-    model: "C371",
+    name: "台北捷運淡水信義線",
+    nameEn: "Tamsui-Xinyi Line (Red)",
     operator: "台北大眾捷運股份有限公司",
     type: "捷運",
     region: ["北部"],
-    yearStart: 2006,
+    yearStart: 1997,
     maxSpeed: 80,
-    manufacturer: "日本 川崎重工 / 台灣車輛",
-    seats: 308,
-    cars: 6,
-    color: "#2e7d32",
+    color: "#E3002C",
     emoji: "🚇",
-    description: "C371 型是台北捷運松山新店線與中和新蘆線的主力車款，6 節編組高運量設計，由日本川崎重工與台灣車輛合作製造，是台灣首款國產化捷運車輛之一。2006 年隨新莊線延伸段陸續投入服務，目前共有 53.5 列 321 輛，是北捷車隊中數量最多的車型，每天載著無數旅客穿梭在新北與台北之間。",
+    description: "淡水信義線（紅線）是北捷最長的高運量路線（32.3 km），1997 年通車，北起淡水南至象山，共 28 站。沿途經過士林夜市、台北車站、東門、台北 101 等重要地標，是台北最具代表性的捷運路線之一。目前由 C301 與 C381 兩型車輛混合運行。",
     features: [
-      "6節高運量編組",
-      "台日合作製造，首款國產化捷運車",
-      "行駛松山新店線（綠線）與中和新蘆線（橘線）",
-      "北捷數量最多的車型（321輛）"
+      "北捷最長高運量路線（32.3 km）",
+      "1997 年通車，共 28 站",
+      "經過台北車站、台北 101 等地標",
+      "含高架、地面、地下段"
     ],
     routes: [
-      { name: "松山新店線", stations: ["松山", "南京三民", "台北小巨蛋", "大安", "新店"] },
-      { name: "中和新蘆線", stations: ["蘆洲", "三重", "中山國小", "古亭", "南勢角"] }
+      { name: "淡水信義線", stations: ["淡水", "北投", "士林", "台北車站", "東門", "台北101/世貿", "象山"] }
     ],
-    funFact: "C371型有「3系」和「4系」兩個版本，4系由台灣車輛在台灣本地製造，是台灣捷運國產化的重要里程碑！",
-    tags: ["捷運", "北部", "松山新店線", "中和新蘆線", "國產化"]
+    funFact: "2001 年納莉颱風造成淡水線部分路段泡水，全線停駛將近 3 個月——是北捷史上最嚴重的天災停擺事件。",
+    tags: ["捷運", "北部", "淡水信義線", "紅線", "高運量"],
+    variants: [
+      {
+        model: "C301",
+        nickname: "",
+        manufacturer: "日本 川崎重工（經美國 Union Rail Car）",
+        yearStart: 1997,
+        status: "active",
+        maxSpeed: 80,
+        cars: 6,
+        seats: 396,
+        description: "北捷最早的高運量鋼輪列車，1997 年隨淡水線通車啟用，共 22 列 132 輛。2012–2017 年間完成牽引系統升級（GTO → IGBT），持續服役中。",
+        features: [
+          "北捷首款高運量列車（1997）",
+          "22 列（132 輛）",
+          "6 節編組（4 動 2 拖）",
+          "已完成 IGBT 牽引系統更新"
+        ]
+      },
+      {
+        model: "C381",
+        nickname: "三眼仔",
+        manufacturer: "日本 川崎重工／台灣車輛",
+        yearStart: 2012,
+        status: "active",
+        maxSpeed: 80,
+        cars: 6,
+        seats: 310,
+        description: "2012 年投入營運的新世代車款，由川崎重工設計、台灣車輛共同組裝。車頭「三眼」燈組設計是最明顯的辨識特徵，配備 IGBT-VVVF 牽引、LED 到站顯示與無障礙空間。",
+        features: [
+          "2012 年啟用，台日合作製造",
+          "車頭三眼燈組易於辨識",
+          "IGBT-VVVF 牽引系統",
+          "與 C371 零件互通率逾 50%"
+        ],
+        funFact: "C381 是台北捷運第一款車頭燈組採「三眼」設計的車型——上下兩顆為近光燈、中間一顆是遠光燈，遠遠一看就能認出它。"
+      }
+    ]
+  },
+  {
+    id: "mrt_songshan_xindian",
+    photoUrl: "images/mrt_c371.jpg",
+    name: "台北捷運松山新店線",
+    nameEn: "Songshan-Xindian Line (Green)",
+    operator: "台北大眾捷運股份有限公司",
+    type: "捷運",
+    region: ["北部"],
+    yearStart: 1998,
+    maxSpeed: 80,
+    color: "#008659",
+    emoji: "🚇",
+    description: "松山新店線（綠線）是北捷唯一與其他所有營運路線都有站內轉乘的路線，1998 年首段通車，2014 年全線貫通。由新店線、小南門線、松山線三段歷史路線整合而成，共 20 站（含小碧潭支線）。目前由 C371 與 C381 兩型車輛混合運行。",
+    features: [
+      "唯一與所有路線皆有站內轉乘",
+      "1998 年首段通車，2014 年全線貫通",
+      "共 20 站（含小碧潭支線）",
+      "C371（3 系）+ C381 混合車隊"
+    ],
+    routes: [
+      { name: "松山新店線", stations: ["新店", "公館", "中正紀念堂", "西門", "中山", "松江南京", "松山"] }
+    ],
+    funFact: "松山新店線其實是三條線拼起來的——新店線（1998）、小南門線（2000）、松山線（2014），花了 16 年才串成一條完整路線！",
+    tags: ["捷運", "北部", "松山新店線", "綠線", "高運量"],
+    variants: [
+      {
+        model: "C371（3 系）",
+        nickname: "",
+        manufacturer: "日本 川崎重工／台灣車輛",
+        yearStart: 2006,
+        status: "active",
+        maxSpeed: 80,
+        cars: 6,
+        seats: 308,
+        description: "台灣首款國產化捷運車輛，由川崎重工與台灣車輛合作製造。3 系配屬新店機廠，行駛松山新店線。另有 3 節編組短列車行駛小碧潭支線。",
+        features: [
+          "台灣首款國產化捷運列車",
+          "6 節編組（主線）/ 3 節（小碧潭支線）",
+          "3 系配屬新店機廠",
+          "北捷數量最多車型的一部分（全系列 321 輛）"
+        ],
+        funFact: "C371 型有「3 系」和「4 系」兩個版本，分別服務不同路線——就像雙胞胎各自去了不同學校！"
+      },
+      {
+        model: "C381",
+        nickname: "三眼仔",
+        manufacturer: "日本 川崎重工／台灣車輛",
+        yearStart: 2012,
+        status: "active",
+        maxSpeed: 80,
+        cars: 6,
+        seats: 310,
+        description: "2012 年投入營運的新世代車款，部分列車配屬新店機廠行駛松山新店線。與淡水信義線共用同一型號，車頭「三眼」燈組設計是辨識特徵。",
+        features: [
+          "2012 年啟用，與紅線共用車型",
+          "車頭三眼燈組",
+          "IGBT-VVVF 牽引系統",
+          "部分配屬新店機廠"
+        ]
+      }
+    ]
+  },
+  {
+    id: "mrt_zhonghe_xinlu",
+    photoUrl: "images/mrt_c371.jpg",
+    name: "台北捷運中和新蘆線",
+    nameEn: "Zhonghe-Xinlu Line (Orange)",
+    operator: "台北大眾捷運股份有限公司",
+    type: "捷運",
+    region: ["北部"],
+    yearStart: 1998,
+    maxSpeed: 80,
+    color: "#F8B61C",
+    emoji: "🚇",
+    description: "中和新蘆線（橘線）1998 年首段通車，全線 26 站、31.5 km，是北捷唯一全段地下化的高運量路線。在大橋頭站形成 Y 字分岔，分往蘆洲與迴龍兩個方向。目前全線使用 C371（4 系）運行。",
+    features: [
+      "全線地下化（31.5 km）",
+      "大橋頭站 Y 字分岔（蘆洲／迴龍）",
+      "共 26 站",
+      "全線使用 C371（4 系）"
+    ],
+    routes: [
+      { name: "中和新蘆線", stations: ["南勢角", "古亭", "忠孝新生", "民權西路", "大橋頭", "新莊", "迴龍／蘆洲"] }
+    ],
+    funFact: "中和新蘆線在大橋頭站分岔成兩條支線——搭錯方向的話，一個去蘆洲、一個去迴龍，差了十幾公里！1990 年代為省錢沒蓋袋型軌，導致現在故障時要多花 25–30 分鐘才能恢復。",
+    tags: ["捷運", "北部", "中和新蘆線", "橘線", "高運量"],
+    variants: [
+      {
+        model: "C371（4 系）",
+        nickname: "",
+        manufacturer: "日本 川崎重工／台灣車輛",
+        yearStart: 2006,
+        status: "active",
+        maxSpeed: 80,
+        cars: 6,
+        seats: 308,
+        description: "C371 的 4 系列車，配屬蘆洲機廠與新莊機廠，專門行駛中和新蘆線。由台灣車輛在國內製造，是台灣捷運國產化的重要里程碑。",
+        features: [
+          "4 系配屬蘆洲／新莊機廠",
+          "台灣車輛國內製造",
+          "6 節編組（4 動 2 拖）",
+          "與 3 系外觀相同，僅編號系統不同"
+        ]
+      }
+    ]
+  },
+  {
+    id: "mrt_bannan",
+    photoUrl: "images/mrt_c371.jpg",
+    name: "台北捷運板南線",
+    nameEn: "Bannan Line (Blue)",
+    operator: "台北大眾捷運股份有限公司",
+    type: "捷運",
+    region: ["北部"],
+    yearStart: 1999,
+    maxSpeed: 80,
+    color: "#0070BD",
+    emoji: "🚇",
+    description: "板南線（藍線）1999 年通車，是北捷運量最高的路線，也是第一條東西向路線。全線 23 站，串聯板橋、台北車站、忠孝東路商圈與南港，沿途三座三鐵共構站（板橋、台北、南港）是全台最密集的交通樞紐帶。目前由 C321 與 C341 兩型車輛運行。",
+    features: [
+      "北捷運量最高路線",
+      "第一條東西向路線（1999 年）",
+      "全線 23 站",
+      "三座三鐵共構站（板橋、台北、南港）"
+    ],
+    routes: [
+      { name: "板南線", stations: ["頂埔", "板橋", "龍山寺", "台北車站", "忠孝復興", "市政府", "南港展覽館"] }
+    ],
+    funFact: "板南線的英文名 Bannan 常被外國遊客看成 Banana——香蕉線的暱稱不脛而走，加上路線顏色是藍色，「藍色香蕉」成了外國背包客之間的趣味梗。",
+    tags: ["捷運", "北部", "板南線", "藍線", "高運量"],
+    variants: [
+      {
+        model: "C321",
+        nickname: "",
+        manufacturer: "德國 Siemens／南非 UCW／中鋼機械（部分組裝）",
+        yearStart: 1999,
+        status: "active",
+        maxSpeed: 80,
+        cars: 6,
+        seats: 396,
+        description: "板南線通車時的主力列車，1999 年啟用，共 36 列 216 輛。目前正進行牽引系統更新（GTO → ABB BORDLINE IGBT），首列改造車 2024 年 4 月重新上線。",
+        features: [
+          "板南線主力列車（1999 年啟用）",
+          "36 列（216 輛）",
+          "6 節編組（4 動 2 拖）",
+          "牽引系統更新中（2024–）"
+        ]
+      },
+      {
+        model: "C341",
+        nickname: "",
+        manufacturer: "德國 Siemens（奧地利製造）",
+        yearStart: 2005,
+        status: "active",
+        maxSpeed: 80,
+        cars: 6,
+        seats: 396,
+        description: "2005 年加入板南線的增備車，共 6 列 36 輛，由 Siemens 在奧地利製造。外觀與 C321 幾乎相同，主要為板南線東延段（昆陽→南港展覽館）增加運能而採購。",
+        features: [
+          "2005 年增備車",
+          "6 列（36 輛）",
+          "為東延段增加運能",
+          "外觀與 C321 近乎相同"
+        ]
+      }
+    ]
   },
   {
     id: "ntmetro_610",

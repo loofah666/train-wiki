@@ -14,9 +14,11 @@ URL 格式：https://commons.wikimedia.org/wiki/Special:FilePath/FILENAME
 | jiji_dr2700 | 集集線DR2700 | Diesel_Railcar_in_LinKou_Line_of_Taiwan_Railway-P1020697.JPG | ✅ (DR2700替代) |
 | blue_skin | 藍皮解憂號 | TRA_R101_leading_a_Breezy_Blue_Train_at_Taitung_Station.jpg | ✅ |
 | thsr_700t | 高鐵700T | THSR_700T_arrived_Platform_1,_Hsinchu_Station_20140429.jpg | ✅ |
-| mrt_val256_wenhu | 台北捷運文湖線 | Matra_VAL256,_Taipei_Metro_20210509.jpg | ✅ |
-| mrt_c381 | 台北捷運C381 | A_Taipei_Metro_C381_train_leaving_Beitou_Station_toward_Fuxinggang_Station.jpg | ✅ |
-| mrt_c371 | 台北捷運環狀線 | 環狀線列車車體.jpg | ✅ |
+| mrt_wenhu | 台北捷運文湖線 | Matra_VAL256,_Taipei_Metro_20210509.jpg | ✅ |
+| mrt_tamsui_xinyi | 台北捷運淡水信義線 | (暫用 mrt_c371.jpg) | ⬜ 需專屬照片 |
+| mrt_songshan_xindian | 台北捷運松山新店線 | (暫用 mrt_c371.jpg) | ⬜ 需專屬照片 |
+| mrt_zhonghe_xinlu | 台北捷運中和新蘆線 | (暫用 mrt_c371.jpg) | ⬜ 需專屬照片 |
+| mrt_bannan | 台北捷運板南線 | (暫用 mrt_c371.jpg) | ⬜ 需專屬照片 |
 | kmrt_c301h | 高雄捷運 | Kaohsiung_MRT_Red_Line_Train.jpg | ✅ |
 | taoyuan_emu | 桃園機場捷運 | Taoyuan_Airport_MRT_at_Taipei_Main_Station.jpg | ✅ |
 | danhai_lrt | 淡海輕軌 | New_Taipei_Metro_Danhai_Light_Rail_Train_2018-12-29.jpg | ✅ |
