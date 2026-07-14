@@ -221,7 +221,7 @@ window.TRAIN_SVG = {
   </g>
 </svg>`,
 
-  "mrt_c301_wenhu": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  "mrt_val256_wenhu": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
   <!-- 台北捷運：平頭，銀灰車身，綠色腰線 -->
   <g stroke-linecap="round" stroke-linejoin="round">
     <!-- 車身（銀灰色，方正平頭） -->

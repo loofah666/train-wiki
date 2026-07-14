@@ -451,8 +451,9 @@ window.TRAIN_DATA = [
     tags: ["高速", "西部幹線", "對號座", "新幹線技術"]
   },
   {
-    id: "mrt_c301_wenhu",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Taipei_MRT_Train_C301_3CarSet_No_3014.JPG",
+    id: "mrt_val256_wenhu",
+    photoUrl: "images/mrt_val256_wenhu.jpg",
+    photoCredit: { author: "Subscriptshoe9", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Matra_VAL256,_Taipei_Metro_20210509.jpg" },
     name: "文湖線 VAL256 型電聯車",
     nameEn: "Wenhu Line VAL256",
     model: "VAL256",

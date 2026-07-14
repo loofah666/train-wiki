@@ -14,7 +14,7 @@
 
 - [ ] **`ziqiang` 頂層要不要換圖？** 現在建議的是 EMU1200（已退役）；建議改用 EMU3000 或 PP 推拉式（現役）為代表照。原 EMU1200 圖挪去 `--emu1200` variant。
 - [ ] **`kaohsiung_lrt` 頂層要不要換圖？** 建議的頂層照與 `--caf` variant 都是 CAF Urbos 3，會撞照片。可保持撞（沒差）或找一張站內合影。
-- [ ] **`mrt_c301_wenhu` 現在的圖是錯的**（實際是 C301 淡水線、非 VAL256 文湖線）。建議去 `Category:VAL_256` 或 `Category:Wenhu_line_rolling_stock` 挑一張正確的 VAL256 照片。
+- [x] ~~**`mrt_c301_wenhu` 現在的圖是錯的**~~ ✅ 已解決：改用 Matra_VAL256 照片，id 更名為 `mrt_val256_wenhu`。
 
 ---
 
@@ -162,12 +162,12 @@
 
 ## 都會捷運
 
-### mrt_c301_wenhu (台北捷運文湖線)
-- [ ] filename: `mrt_c301_wenhu.jpg`
-- File page: https://commons.wikimedia.org/wiki/File:Taipei_MRT_Train_C301_3CarSet_No_3014.JPG
-- Author: Jiahwang / License: CC BY-SA 2.5
-- Download: https://upload.wikimedia.org/wikipedia/commons/b/b1/Taipei_MRT_Train_C301_3CarSet_No_3014.JPG
-- 備註：⚠️ **錯圖**——這是 C301 淡水/新北投線鋼輪車，非 VAL256 文湖線膠輪車。建議搜 `Category:VAL_256` 或 `Category:Wenhu_line_rolling_stock` 找正確圖
+### mrt_val256_wenhu (台北捷運文湖線)
+- [x] filename: `mrt_val256_wenhu.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:Matra_VAL256,_Taipei_Metro_20210509.jpg
+- Author: Subscriptshoe9 / License: CC BY-SA 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/0/0a/Matra_VAL256%2C_Taipei_Metro_20210509.jpg
+- 備註：5759×2810 高解析；已改正 id 從 mrt_c301_wenhu → mrt_val256_wenhu
 
 ### mrt_c381 (台北捷運 C381)
 - [ ] filename: `mrt_c381.jpg`

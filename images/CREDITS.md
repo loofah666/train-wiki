@@ -125,6 +125,16 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 
 ---
 
+## 都會捷運
+
+### mrt_val256_wenhu.jpg — 台北捷運文湖線 VAL256
+- Author: **Subscriptshoe9**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:Matra_VAL256,_Taipei_Metro_20210509.jpg
+- Downloaded: 2026-07-14
+
+---
+
 ## 已存在的本地照片（來源未詳細記錄）
 
 以下照片在此清單建立前就已在本地目錄，來源未追蹤：

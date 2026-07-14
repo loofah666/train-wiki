@@ -14,7 +14,7 @@ URL 格式：https://commons.wikimedia.org/wiki/Special:FilePath/FILENAME
 | jiji_dr2700 | 集集線DR2700 | Diesel_Railcar_in_LinKou_Line_of_Taiwan_Railway-P1020697.JPG | ✅ (DR2700替代) |
 | blue_skin | 藍皮解憂號 | TRA_R101_leading_a_Breezy_Blue_Train_at_Taitung_Station.jpg | ✅ |
 | thsr_700t | 高鐵700T | THSR_700T_arrived_Platform_1,_Hsinchu_Station_20140429.jpg | ✅ |
-| mrt_c301_wenhu | 台北捷運文湖線 | Taipei_MRT_Train_C301_3CarSet_No_3014.JPG | ✅ |
+| mrt_val256_wenhu | 台北捷運文湖線 | Matra_VAL256,_Taipei_Metro_20210509.jpg | ✅ |
 | mrt_c381 | 台北捷運C381 | A_Taipei_Metro_C381_train_leaving_Beitou_Station_toward_Fuxinggang_Station.jpg | ✅ |
 | mrt_c371 | 台北捷運環狀線 | 環狀線列車車體.jpg | ✅ |
 | kmrt_c301h | 高雄捷運 | Kaohsiung_MRT_Red_Line_Train.jpg | ✅ |

@@ -28,4 +28,4 @@
 ## 📝 備註
 
 - `mrt_c371` = 台北捷運**松山新店線／中和新蘆線**（非環狀線）
-- `mrt_c301_wenhu` = 台北捷運**文湖線**（VAL256 / INNOVIA APM 256）
+- `mrt_val256_wenhu` = 台北捷運**文湖線**（VAL256 / INNOVIA APM 256）
