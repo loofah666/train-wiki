@@ -262,8 +262,19 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 
 ---
 
-## 已存在的本地照片（來源未詳細記錄）
+## 鐵博
 
-以下照片在此清單建立前就已在本地目錄，來源未追蹤：
+### nrm_blueskin--dr2203.jpg — 鐵博藍皮小火車 DR2203（孔雀藍，頂層共用）
+- Author: **Mrmarkertw**
+- License: **CC BY 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:2025%E5%B9%B4%E7%9A%8435DR2203.jpg
+- Downloaded: 2026-07-15
+- 備註：換掉原本來源未追蹤的舊圖；`nrm_blueskin` 頂層卡片圖與此 DR2203 variant 共用同一檔案
 
-- `nrm_blueskin--dr2203.jpg`（頂層 + DR2203 variant 共用；原檔名 `nrm--dr2203.jpg`）
+### nrm_blueskin--dr2303.jpg — 鐵博藍皮小火車 DR2303（浪漫藍）
+- Author: **鐵路Railway**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:DR2303%E6%96%BC%E5%9C%8B%E5%AE%B6%E9%90%B5%E9%81%93%E5%8D%9A%E7%89%A9%E9%A4%A8.jpg
+- Downloaded: 2026-07-15
+
+

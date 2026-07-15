@@ -311,15 +311,14 @@
 > 卡片 id 已由 `nrm_dr2203` 改名為 `nrm_blueskin`（鐐博藍皮小火車主題，不用單一型號命名），檔名前綴同步更新。
 
 ### nrm_blueskin--dr2203 (孔雀藍)
-- [x] filename: `nrm_blueskin--dr2203.jpg`（頂層 + DR2203 variant 共用；沿用既有本地圖，來源未追蹤）
-- 備選（若想換成有授權記錄的乾淨版）：
-  - File page: https://commons.wikimedia.org/wiki/File:2025%E5%B9%B4%E7%9A%8435DR2203.jpg
-  - Author: Mrmarkertw / License: CC BY 4.0
-  - Download: https://upload.wikimedia.org/wikipedia/commons/9/90/2025%E5%B9%B4%E7%9A%8435DR2203.jpg
-  - 備註：於台北機廠（國家鐵道博物館），2025-08
+- [x] filename: `nrm_blueskin--dr2203.jpg`（頂層 + DR2203 variant 共用）
+- File page: https://commons.wikimedia.org/wiki/File:2025%E5%B9%B4%E7%9A%8435DR2203.jpg
+- Author: Mrmarkertw / License: CC BY 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/9/90/2025%E5%B9%B4%E7%9A%8435DR2203.jpg
+- 備註：於台北機廠（國家鐵道博物館），2025-08；換掉原本來源未追蹤的舊圖
 
 ### nrm_blueskin--dr2303 (浪漫藍)
-- [ ] filename: `nrm_blueskin--dr2303.jpg`
+- [x] filename: `nrm_blueskin--dr2303.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:DR2303%E6%96%BC%E5%9C%8B%E5%AE%B6%E9%90%B5%E9%81%93%E5%8D%9A%E7%89%A9%E9%A4%A8.jpg
 - Author: 鐵路Railway / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/2/2a/DR2303%E6%96%BC%E5%9C%8B%E5%AE%B6%E9%90%B5%E9%81%93%E5%8D%9A%E7%89%A9%E9%A4%A8.jpg
@@ -330,6 +329,7 @@
 ## 已本地化（略過）
 - `alishan` 頂層 + Shay variant — `images/alishan--shay.jpg`
 - `nrm_blueskin` 頂層 + DR2203 variant — `images/nrm_blueskin--dr2203.jpg`
+- `nrm_blueskin--dr2303` — `images/nrm_blueskin--dr2303.jpg`
 - `mrt_songshan_xindian--c371` — `images/mrt_songshan_xindian--c371.jpg`
 - `taoyuan_emu` 頂層 — `images/taoyuan_emu--2000.jpg`
 - `ntmetro_610` — `images/ntmetro_610.jpg`
