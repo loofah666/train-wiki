@@ -138,7 +138,7 @@
 - Download: https://upload.wikimedia.org/wikipedia/commons/4/47/TRA_DR1000_DMU_in_NeiWan_Station.jpg
 - 備註：2007-08-02 於橫山鄉；使用者選用此圖取代先前 Dquai 版
 
-### jiushanxian (舊山線 CK124 蒸汽)
+### jiushanxian — 舊山線（頂層 + CK124 variant 共用）
 - [x] filename: `jiushanxian--ck124.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:Taiwan_Railways_Administration_CK124_near_Zhongli_Station_20220730.jpg
 - Author: Subscriptshoe9 / License: CC BY-SA 4.0

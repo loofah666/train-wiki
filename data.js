@@ -1151,31 +1151,52 @@ window.TRAIN_DATA = [
       license: "CC BY-SA 4.0",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Taiwan_Railways_Administration_CK124_near_Zhongli_Station_20220730.jpg"
     },
-    name: "舊山線CK124蒸汽機車",
-    nameEn: "Old Mountain Line CK124 Steam Locomotive",
-    model: "CK124",
-    operator: "台灣鐵路管理局（保存展示）",
+    name: "舊山線",
+    nameEn: "Old Mountain Line",
+    operator: "台灣鐵路管理局",
     type: "觀光",
     region: ["中部"],
-    yearStart: 1936,
+    yearStart: 1908,
     maxSpeed: 85,
-    manufacturer: "日本 日本車輛製造",
-    seats: null,
-    cars: null,
     color: "#2c3e50",
     emoji: "🚂",
-    description: "CK124 屬臺鐵 CK120 型（原稱 C12 型）蒸汽機車，1936 年由日本車輛製造為日治時代購入的第一批。全型共 7 輛（C121–C127，其中 C121–C125 於 1936 年、C126–C127 於 1942 年購入）。目前以保存復駛的方式在舊山線（三義至勝興段）進行觀光運轉，讓民眾重溫百年前的鐵道風情。黑色鋼鐵車身噴出的白色蒸汽配上勝興車站的日式老建築，是台灣最具歷史氛圍的鐵道場景之一。",
+    description: "舊山線是縱貫鐵路山線最早通車的路段，1908 年全線自三義經勝興、（舊）泰安通車至豐原。因坡度陡峭、彎道多、路線老舊，1998 年臺中線雙軌工程（新山線）截彎取直完工後功成身退，走完最後一班列車正式停駛。目前僅三義至（舊）泰安間 13.6 公里以觀光名義復駛，沿線經過台鐵（不含阿里山林鐵）海拔最高的勝興車站及見證百年歷史的龍騰斷橋，是全台最富懷舊氛圍的鐵道路段之一。",
     features: [
-      "1936 年日治時代日本車輛製造",
-      "台鐵 CK120 型（原 C12 型）7 輛中之一",
-      "舊山線觀光復駛特別運轉",
-      "勝興車站日式建築歷史場景"
+      "縱貫線山線最早通車路段（1908 年）",
+      "勝興車站為台鐵（不含阿里山林鐵）海拔最高車站",
+      "沿線龍騰斷橋、內社川鐵橋等百年古蹟",
+      "三義至勝興間坡度達千分之 25.5"
     ],
     routes: [
-      { name: "舊山線", stations: ["三義", "勝興", "舊泰安"] }
+      { name: "舊山線（復駛路段）", stations: ["三義", "勝興", "龍騰", "舊泰安"] }
     ],
-    funFact: "CK124已經快90歲了，比你的爺爺奶奶可能還要老！它跑過的路加起來，可能已經繞地球好幾圈了！",
-    tags: ["觀光", "蒸汽", "歷史", "中部", "舊山線", "日治時代"]
+    funFact: "雖然名叫「舊」山線，但退役後可沒閒著——2019 年苗栗縣推出全台首創的「Railbike 舊山線鐵道自行車」，讓遊客親自踩踏穿越百年隧道與鐵橋，如今反而是舊山線最常態的觀光方式。",
+    tags: ["觀光", "蒸汽", "歷史", "中部", "舊山線", "登山鐵路", "日治時代"],
+    variants: [
+      {
+        model: "CK124",
+        manufacturer: "日本 日本車輛製造",
+        yearStart: 1936,
+        status: "preserved",
+        maxSpeed: 85,
+        cars: null,
+        seats: null,
+        photoUrl: "images/jiushanxian--ck124.jpg",
+        photoCredit: {
+          author: "Subscriptshoe9",
+          license: "CC BY-SA 4.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Taiwan_Railways_Administration_CK124_near_Zhongli_Station_20220730.jpg"
+        },
+        description: "CK124 屬臺鐵 CK120 型（原稱 C12 型）蒸汽機車，日治時代購入共 7 輛（C121–C125 於 1936 年、C126–C127 於 1942 年），現僅存 CK124 一輛動態保存。1999 年自北投員工訓練中心移至台北機廠修復，2000 年復駛成功，平時保存於彰化扇形車庫。2010 年起曾以此車牽引觀光列車行駛舊山線三義至（舊）泰安段，但舊山線自 2015 年起已無定期客運班次，近年 CK124 的特殊活動更常見於平溪線、內灣線等其他路線，並非固定在舊山線運行。",
+        features: [
+          "台鐵 CK120 型（原 C12 型）僅存的動態保存機車",
+          "1936 年日本車輛製造，2000 年修復動態復駛",
+          "平時保存於彰化扇形車庫",
+          "近年特殊活動多見於平溪線、內灣線，舊山線已非固定班次"
+        ],
+        funFact: "CK124 已經快 90 歲了，比你的爺爺奶奶可能還要老！不過這幾年它到處跑活動的興趣，好像比待在老家舊山線還高——平溪線、內灣線都留下過它冒白煙的身影。"
+      }
+    ]
   }
 ];
 
