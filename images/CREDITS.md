@@ -147,6 +147,36 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Downloaded: 2026-07-15
 - 備註：私人使用，不公開發布
 
+### mrt_tamsui_xinyi.jpg — 淡水信義線 C301（頂層 + C301 variant 共用）
+- Author: **Lokseng01**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C301_train_at_Beitou_Station.jpg
+- Downloaded: 2026-07-15
+
+### mrt_tamsui_xinyi--c381.jpg — 淡水信義線 C381 variant
+- Author: **Lokseng01**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C381_train_leaving_Beitou_Station_toward_Fuxinggang_Station.jpg
+- Downloaded: 2026-07-15
+
+### mrt_zhonghe_xinlu.jpg — 中和新蘆線 C371（頂層 + C371(4系) variant 共用）
+- Author: **Samson Ng . D201@EAL**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:Kawasaki-TRSC_C371_EMU.jpg
+- Downloaded: 2026-07-15
+
+### mrt_bannan.jpg — 板南線 C321（頂層 + C321 variant 共用）
+- Author: **Sinsyuan**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:C321_Bannan_BL02_20260108.jpg
+- Downloaded: 2026-07-15
+
+### mrt_bannan--c341.jpg — 板南線 C341 variant
+- Author: **蒼空 翔 (Chou0416)**
+- License: **CC BY-SA 3.0**
+- Source: https://commons.wikimedia.org/wiki/File:C341_1201_at_Ximen_Station_20060531.jpg
+- Downloaded: 2026-07-15
+
 ---
 
 ## 已存在的本地照片（來源未詳細記錄）

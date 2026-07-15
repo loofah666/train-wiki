@@ -516,7 +516,8 @@ window.TRAIN_DATA = [
   },
   {
     id: "mrt_tamsui_xinyi",
-    photoUrl: "images/mrt_c371.jpg",
+    photoUrl: "images/mrt_tamsui_xinyi.jpg",
+    photoCredit: { author: "Lokseng01", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C301_train_at_Beitou_Station.jpg" },
     name: "台北捷運淡水信義線",
     nameEn: "Tamsui-Xinyi Line (Red)",
     operator: "台北大眾捷運股份有限公司",
@@ -548,6 +549,8 @@ window.TRAIN_DATA = [
         maxSpeed: 80,
         cars: 6,
         seats: 396,
+        photoUrl: "images/mrt_tamsui_xinyi.jpg",
+        photoCredit: { author: "Lokseng01", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C301_train_at_Beitou_Station.jpg" },
         description: "北捷最早的高運量鋼輪列車，1997 年隨淡水線通車啟用，共 22 列 132 輛。2012–2017 年間完成牽引系統升級（GTO → IGBT），持續服役中。",
         features: [
           "北捷首款高運量列車（1997）",
@@ -565,6 +568,8 @@ window.TRAIN_DATA = [
         maxSpeed: 80,
         cars: 6,
         seats: 310,
+        photoUrl: "images/mrt_tamsui_xinyi--c381.jpg",
+        photoCredit: { author: "Lokseng01", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C381_train_leaving_Beitou_Station_toward_Fuxinggang_Station.jpg" },
         description: "2012 年投入營運的新世代車款，由川崎重工設計、台灣車輛共同組裝。車頭「三眼」燈組設計是最明顯的辨識特徵，配備 IGBT-VVVF 牽引、LED 到站顯示與無障礙空間。",
         features: [
           "2012 年啟用，台日合作製造",
@@ -644,7 +649,8 @@ window.TRAIN_DATA = [
   },
   {
     id: "mrt_zhonghe_xinlu",
-    photoUrl: "images/mrt_c371.jpg",
+    photoUrl: "images/mrt_zhonghe_xinlu.jpg",
+    photoCredit: { author: "Samson Ng . D201@EAL", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Kawasaki-TRSC_C371_EMU.jpg" },
     name: "台北捷運中和新蘆線",
     nameEn: "Zhonghe-Xinlu Line (Orange)",
     operator: "台北大眾捷運股份有限公司",
@@ -676,6 +682,8 @@ window.TRAIN_DATA = [
         maxSpeed: 80,
         cars: 6,
         seats: 308,
+        photoUrl: "images/mrt_zhonghe_xinlu.jpg",
+        photoCredit: { author: "Samson Ng . D201@EAL", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Kawasaki-TRSC_C371_EMU.jpg" },
         description: "C371 的 4 系列車，配屬蘆洲機廠與新莊機廠，專門行駛中和新蘆線。由台灣車輛在國內製造，是台灣捷運國產化的重要里程碑。",
         features: [
           "4 系配屬蘆洲／新莊機廠",
@@ -688,7 +696,8 @@ window.TRAIN_DATA = [
   },
   {
     id: "mrt_bannan",
-    photoUrl: "images/mrt_c371.jpg",
+    photoUrl: "images/mrt_bannan.jpg",
+    photoCredit: { author: "Sinsyuan", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:C321_Bannan_BL02_20260108.jpg" },
     name: "台北捷運板南線",
     nameEn: "Bannan Line (Blue)",
     operator: "台北大眾捷運股份有限公司",
@@ -720,6 +729,8 @@ window.TRAIN_DATA = [
         maxSpeed: 80,
         cars: 6,
         seats: 396,
+        photoUrl: "images/mrt_bannan.jpg",
+        photoCredit: { author: "Sinsyuan", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:C321_Bannan_BL02_20260108.jpg" },
         description: "板南線通車時的主力列車，1999 年啟用，共 36 列 216 輛。目前正進行牽引系統更新（GTO → ABB BORDLINE IGBT），首列改造車 2024 年 4 月重新上線。",
         features: [
           "板南線主力列車（1999 年啟用）",
@@ -737,6 +748,8 @@ window.TRAIN_DATA = [
         maxSpeed: 80,
         cars: 6,
         seats: 396,
+        photoUrl: "images/mrt_bannan--c341.jpg",
+        photoCredit: { author: "蒼空 翔 (Chou0416)", license: "CC BY-SA 3.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:C341_1201_at_Ximen_Station_20060531.jpg" },
         description: "2005 年加入板南線的增備車，共 6 列 36 輛，由 Siemens 在奧地利製造。外觀與 C321 幾乎相同，主要為板南線東延段（昆陽→南港展覽館）增加運能而採購。",
         features: [
           "2005 年增備車",

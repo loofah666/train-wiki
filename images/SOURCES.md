@@ -203,7 +203,7 @@
 ### mrt_zhonghe_xinlu — 中和新蘆線（橘線）
 
 #### 頂層 / C371(4系) variant
-- [ ] filename: `mrt_zhonghe_xinlu.jpg`
+- [x] filename: `mrt_zhonghe_xinlu.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:Kawasaki-TRSC_C371_EMU.jpg
 - Author: Samson Ng . D201@EAL / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/9/91/Kawasaki-TRSC_C371_EMU.jpg
@@ -212,14 +212,18 @@
 ### mrt_bannan — 板南線（藍線）
 
 #### 頂層 / C321 variant
-- [ ] filename: `mrt_bannan.jpg`
+- [x] filename: `mrt_bannan.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:C321_Bannan_BL02_20260108.jpg
 - Author: Sinsyuan / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/a/a6/C321_Bannan_BL02_20260108.jpg
 - 備註：4000×2252，C321 於永寧站（BL02），2026-01-08
 
 #### C341 variant
-- [ ] 待找照片（外觀與 C321 極相似，可考慮不另外放）
+- [x] filename: `mrt_bannan--c341.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:C341_1201_at_Ximen_Station_20060531.jpg
+- Author: 蒼空 翔 (Chou0416) / License: CC BY-SA 3.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/1/1b/C341_1201_at_Ximen_Station_20060531.jpg
+- 備註：1600×1200，C341 編號 1201 於西門站，2006-05-31
 
 ### ntmetro_610 (新北捷運環狀線)
 - [ ] filename: `ntmetro_610.jpg`
