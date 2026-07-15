@@ -167,7 +167,14 @@
 - File page: https://commons.wikimedia.org/wiki/File:Matra_VAL256,_Taipei_Metro_20210509.jpg
 - Author: Subscriptshoe9 / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/0/0a/Matra_VAL256%2C_Taipei_Metro_20210509.jpg
-- 備註：5759×2810；INNOVIA APM 256 variant 照片待找
+- 備註：5759×2810
+
+#### INNOVIA APM 256 variant
+- [x] filename: `mrt_wenhu--INNOVIA-APM-256.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:Bombardier_INNOVIA_APM_256_approaching_Daan_Station_20210418.jpg
+- Author: Subscriptshoe9 / License: CC BY-SA 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/f/ff/Bombardier_INNOVIA_APM_256_approaching_Daan_Station_20210418.jpg
+- 備註：6178×3484，INNOVIA APM 256 進站大安站，2021-04-18
 
 ### mrt_tamsui_xinyi — 淡水信義線（紅線）
 

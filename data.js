@@ -504,6 +504,8 @@ window.TRAIN_DATA = [
         maxSpeed: 70,
         cars: 4,
         seats: 96,
+        photoUrl: "images/mrt_wenhu--INNOVIA-APM-256.jpg",
+        photoCredit: { author: "Subscriptshoe9", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Bombardier_INNOVIA_APM_256_approaching_Daan_Station_20210418.jpg" },
         description: "2009 年內湖線延伸段通車時加入的新車隊，龐巴迪製造，共 101 對 202 輛。外觀較方正現代，車內天花板較低（190 cm）是旅客常見抱怨。",
         features: [
           "2009 年內湖線延伸加入",

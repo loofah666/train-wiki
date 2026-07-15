@@ -133,6 +133,12 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Source: https://commons.wikimedia.org/wiki/File:Matra_VAL256,_Taipei_Metro_20210509.jpg
 - Downloaded: 2026-07-14
 
+### mrt_wenhu--INNOVIA-APM-256.jpg — 文湖線 INNOVIA APM 256 variant
+- Author: **Subscriptshoe9**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:Bombardier_INNOVIA_APM_256_approaching_Daan_Station_20210418.jpg
+- Downloaded: 2026-07-15
+
 ### mrt_c371.jpg — 台北捷運松山新店線 C371（頂層 + C371 variant 共用）
 - Author: **Howard61313**
 - License: **GFDL 1.2+ / Public Domain**
