@@ -555,7 +555,7 @@ window.TRAIN_SVG = {
     <circle cx="180" cy="70" r="3.5" fill="#975a16" fill-opacity="0.4"/>
   </g></svg>`,
 
-  "nrm_dr2203": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  "nrm_blueskin": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
   <g stroke-linecap="round" stroke-linejoin="round">
     <rect x="18" y="30" width="60" height="36" rx="10" fill="#2c5282" fill-opacity="0.2" stroke="#2c5282" stroke-width="2.5"/>
     <rect x="88" y="34" width="50" height="28" rx="8" fill="#2c5282" fill-opacity="0.12" stroke="#2c5282" stroke-width="2"/>

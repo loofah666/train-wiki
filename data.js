@@ -1142,8 +1142,8 @@ window.TRAIN_DATA = [
     tags: ["觀光", "支線", "柴油", "北部", "客家", "內灣"]
   },
   {
-    id: "nrm_dr2203",
-    photoUrl: "images/nrm--dr2203.jpg",
+    id: "nrm_blueskin",
+    photoUrl: "images/nrm_blueskin--dr2203.jpg",
     name: "鐵博藍皮小火車",
     nameEn: "NRM Blue Skin Heritage Train",
     operator: "國家鐵道博物館",
@@ -1183,6 +1183,7 @@ window.TRAIN_DATA = [
         maxSpeed: 30,
         cars: 1,
         seats: 66,
+        photoUrl: "images/nrm_blueskin--dr2203.jpg",
         description: "1932–1934 年由川崎車輛以キハ200 型汽油客車製造，1956 年改為柴油動力。是台灣 DR2200 型的唯一倖存個體。修復為服役後期至 1998 年退役時的「孔雀藍」塗裝，2024 年 5 月完工，同批獨立工程也升級了車頂 SPAH 耐候鋼板與 IEC 61133 防水規格。",
         features: [
           "台灣 DR2200 型的唯一倖存體",
