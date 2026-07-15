@@ -162,19 +162,59 @@
 
 ## 都會捷運
 
-### mrt_val256_wenhu (台北捷運文湖線)
-- [x] filename: `mrt_val256_wenhu.jpg`
+### mrt_wenhu — 文湖線（棕線）頂層 + VAL256 variant
+- [x] filename: `mrt_val256_wenhu.jpg`（頂層 + VAL256 variant 共用）
 - File page: https://commons.wikimedia.org/wiki/File:Matra_VAL256,_Taipei_Metro_20210509.jpg
 - Author: Subscriptshoe9 / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/0/0a/Matra_VAL256%2C_Taipei_Metro_20210509.jpg
-- 備註：5759×2810 高解析；已改正 id 從 mrt_c301_wenhu → mrt_val256_wenhu
+- 備註：5759×2810；INNOVIA APM 256 variant 照片待找
 
-### mrt_c381 (台北捷運 C381)
-- [ ] filename: `mrt_c381.jpg`
+### mrt_tamsui_xinyi — 淡水信義線（紅線）
+
+#### 頂層 / C301 variant
+- [ ] filename: `mrt_tamsui_xinyi.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C301_train_at_Beitou_Station.jpg
+- Author: Lokseng01 / License: CC BY-SA 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/e/ec/A_Taipei_Metro_C301_train_at_Beitou_Station.jpg
+- 備註：6016×4016，C301 於北投站，2021-04-02
+
+#### C381 variant
+- [ ] filename: `mrt_tamsui_xinyi--c381.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C381_train_leaving_Beitou_Station_toward_Fuxinggang_Station.jpg
 - Author: Lokseng01 / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/8/8d/A_Taipei_Metro_C381_train_leaving_Beitou_Station_toward_Fuxinggang_Station.jpg
-- 備註：2021-04-02，6016×4016 高解析
+- 備註：6016×4016，C381 離開北投站往復興崗，2021-04-02
+
+### mrt_songshan_xindian — 松山新店線（綠線）
+
+#### 頂層 / C371(3系) variant
+- [x] filename: `mrt_c371.jpg`（已有，沿用為頂層 + C371 variant）
+- 備註：來源未追蹤（既有照片）
+
+#### C381 variant
+- [ ] filename: `mrt_songshan_xindian--c381.jpg`
+- 備註：可與淡水信義線共用同一張 C381 照或另找一張綠線站場景；待決策
+
+### mrt_zhonghe_xinlu — 中和新蘆線（橘線）
+
+#### 頂層 / C371(4系) variant
+- [ ] filename: `mrt_zhonghe_xinlu.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:Kawasaki-TRSC_C371_EMU.jpg
+- Author: Samson Ng . D201@EAL / License: CC BY-SA 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/9/91/Kawasaki-TRSC_C371_EMU.jpg
+- 備註：2000×1333，C371 外觀照，2024-02-25
+
+### mrt_bannan — 板南線（藍線）
+
+#### 頂層 / C321 variant
+- [ ] filename: `mrt_bannan.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:C321_Bannan_BL02_20260108.jpg
+- Author: Sinsyuan / License: CC BY-SA 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/a/a6/C321_Bannan_BL02_20260108.jpg
+- 備註：4000×2252，C321 於永寧站（BL02），2026-01-08
+
+#### C341 variant
+- [ ] 待找照片（外觀與 C321 極相似，可考慮不另外放）
 
 ### ntmetro_610 (新北捷運環狀線)
 - [ ] filename: `ntmetro_610.jpg`
