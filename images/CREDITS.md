@@ -229,6 +229,12 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Downloaded: 2026-07-15
 - 備註：2000 系直達車含 DMB 行李車；`taoyuan_emu` 頂層卡片圖與此 variant 共用同一檔案
 
+### taoyuan_emu--1000.jpg — 桃園機場捷運 1000 型普通車
+- Author: **Subscriptshoe9**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:Taoyuan_Metro_Commuter_Train_2017-02-25.jpg
+- Downloaded: 2026-07-15
+
 ---
 
 ## 阿里山
@@ -244,6 +250,14 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Author: **Industrial Wales**
 - License: **CC BY-SA 2.0**
 - Source: https://commons.wikimedia.org/wiki/File:AFR_'DL_42'_at_Alishan_2023-07-19.jpg
+- Downloaded: 2026-07-15
+
+### alishan--xuyue.jpg — 阿里山 栩悅號
+- 授權：非自由授權（私用），不對外公開發布
+- Downloaded: 2026-07-15
+
+### alishan--fusen.jpg — 阿里山 福森號
+- 授權：非自由授權（私用），不對外公開發布
 - Downloaded: 2026-07-15
 
 ---

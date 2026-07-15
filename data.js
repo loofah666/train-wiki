@@ -856,6 +856,12 @@ window.TRAIN_DATA = [
         maxSpeed: 100,
         cars: 4,
         seats: 185,
+        photoUrl: "images/taoyuan_emu--1000.jpg",
+        photoCredit: {
+          author: "Subscriptshoe9",
+          license: "CC BY-SA 4.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Taoyuan_Metro_Commuter_Train_2017-02-25.jpg"
+        },
         description: "每站都停的普通車，全動力（4M）4 節編組，採縱向長條座椅設計以最大化站立空間，兩端 DMC1/DMC2 車節設有腳踏車放置區。101、118–120 組由日本川崎重工製造，102–117 組由台灣車輛在新竹廠組裝。",
         features: [
           "縱向長條座椅設計、極大站立空間",
@@ -1069,6 +1075,7 @@ window.TRAIN_DATA = [
         maxSpeed: null,
         cars: 5,
         seats: 60,
+        photoUrl: "images/alishan--xuyue.jpg",
         description: "栩悅號是林鐵及文資處與雄獅旅遊合作、2024 年 5 月首航的高階觀光列車，由既有阿里山號舊客車改裝而成，全列 5 節、共 60 席。以阿里山「迎賓鳥」栗背林鴝為彩繪主題，並首創台灣火車 360 度環繞透明駕駛室；車廂分包廂席與可 360 度旋轉的瞭望席，配大面觀景窗、環繞音響與專業導覽，主打視、聽、嗅、味、觸「五感」森林體驗，行駛於嘉義－奮起湖間。",
         features: [
           "2024 年首航，雄獅旅遊營運的生態觀光列車",
@@ -1087,6 +1094,7 @@ window.TRAIN_DATA = [
         maxSpeed: null,
         cars: 6,
         seats: 108,
+        photoUrl: "images/alishan--fusen.jpg",
         description: "福森號是林鐵及文資處耗資約 6,500 萬元、以鋼構骨架結合國產紅檜與台灣扁柏全新打造的檜木觀光列車，2024 年 7 月啟航，由雄獅旅遊規劃遊程。全列 6 節、約 108 席，定位為「移動的美術館」，首創台灣火車數位畫框，輪播阿里山主題畫作與畫家陳澄波作品；配 165 公分寬大觀景窗、英國進口牛皮座椅與吧台餐車，車內滿溢紅檜與扁柏天然香氣。",
         features: [
           "2024 年啟航，耗資約 6,500 萬元全新檜木打造",

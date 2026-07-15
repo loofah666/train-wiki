@@ -274,7 +274,7 @@
 - 備註：2000 系直達車含 DMB 行李車；離開新莊產業園區
 
 ### taoyuan_emu--1000 (機捷普通車)
-- [ ] filename: `taoyuan_emu--1000.jpg`
+- [x] filename: `taoyuan_emu--1000.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:Taoyuan_Metro_Commuter_Train_2017-02-25.jpg
 - Author: Subscriptshoe9 / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/a/a4/Taoyuan_Metro_Commuter_Train_2017-02-25.jpg
@@ -297,12 +297,16 @@
 - 備註：現役主力為第七代 DL-45~51（非單一車型代表），此圖為 DL-42，2023-07-19 拍攝
 
 ### alishan — 栩悅號 variant
-- [ ] filename: `alishan--xuyue.jpg`（Wikimedia 未見自由授權照，暫無圖）
-- 備註：2024 雄獅旅遊生態觀光列車。可再搜 `Category:Alishan Forest Railway` 是否有新上傳；否則維持無圖 placeholder。
+- [x] filename: `alishan--xuyue.jpg`
+- 來源：非 Wikimedia，私人取得照片
+- License: 非自由授權（私用），不對外公開發布
+- 備註：2024 雄獅旅遊生態觀光列車，Wikimedia 無自由授權照可用
 
 ### alishan — 福森號 variant
-- [ ] filename: `alishan--fusen.jpg`（Wikimedia 未見自由授權照，暫無圖）
-- 備註：2024 雄獅旅遊檜木觀光列車。同上，Commons 暫無自由授權照，維持無圖 placeholder。
+- [x] filename: `alishan--fusen.jpg`
+- 來源：非 Wikimedia，私人取得照片
+- License: 非自由授權（私用），不對外公開發布
+- 備註：2024 雄獅旅遊檜木觀光列車，Wikimedia 無自由授權照可用
 
 ### nrm_dr2203--dr2203 (孔雀藍)
 - [ ] filename: `nrm_dr2203--dr2203.jpg`
@@ -330,6 +334,9 @@
 - `kaohsiung_lrt` 頂層 + CAF variant — `images/kaohsiung_lrt--caf.jpg`
 - `kaohsiung_lrt--alstom` — `images/kaohsiung_lrt--alstom.jpg`
 - `alishan--dl` — `images/alishan--dl.jpg`
+- `alishan--xuyue` — `images/alishan--xuyue.jpg`（私用照片）
+- `alishan--fusen` — `images/alishan--fusen.jpg`（私用照片）
+- `taoyuan_emu--1000` — `images/taoyuan_emu--1000.jpg`
 
 ---
 
