@@ -283,17 +283,18 @@
 > 阿里山已收攏為單一 `alishan` 卡片 + 4 variants（Shay 蒸汽 / DL 柴油 / 栩悅號 / 福森號）。
 
 ### alishan — Shay 蒸汽機車 variant（頂層共用）
-- [x] filename: `alishan--shay.jpg`（頂層 + Shay variant 共用；來源未追蹤）
-- 備註：由原 `alishan_shay.jpg` 改名而來。原 `alishan_sl25` 卡已併入此 variant（SL = Shay 同款）。
-  若日後要換乾淨 SL 圖，備選：`File:AFR_Shay_SL25_in_AFR_Garage_Park.jpg`
-  (jason199567, CC BY-SA 4.0, https://upload.wikimedia.org/wikipedia/commons/8/8c/AFR_Shay_SL25_in_AFR_Garage_Park.jpg)
+- [x] filename: `alishan--shay.jpg`（頂層 + Shay variant 共用）
+- File page: https://commons.wikimedia.org/wiki/File:AFR_Shay_SL25_in_AFR_Garage_Park.jpg
+- Author: jason199567 / License: CC BY-SA 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/8/8c/AFR_Shay_SL25_in_AFR_Garage_Park.jpg
+- 備註：換用此乾淨版取代原本來源未追蹤的舊圖
 
 ### alishan — DL 柴油機車 variant
-- [ ] filename: `alishan--dl.jpg`（暫用 remote hotlink，尚未本地化）
-- File page: https://commons.wikimedia.org/wiki/File:%E9%98%BF%E9%87%8C%E5%B1%B1%E5%B0%8F%E7%81%AB%E8%BB%8A.jpg
-- Author: 陳書欣 / License: CC BY-SA 4.0
-- Download: https://upload.wikimedia.org/wikipedia/commons/5/52/%E9%98%BF%E9%87%8C%E5%B1%B1%E5%B0%8F%E7%81%AB%E8%BB%8A.jpg
-- 備註：現役主力為第七代 DL-45~51（非 DL-47 單一車）。乾淨備選：`File:AFR_'DL_42'_at_Alishan_2023-07-19.jpg`
+- [x] filename: `alishan--dl.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:AFR_'DL_42'_at_Alishan_2023-07-19.jpg
+- Author: Industrial Wales / License: CC BY-SA 2.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/b/bc/AFR_%27DL_42%27_at_Alishan_2023-07-19.jpg
+- 備註：現役主力為第七代 DL-45~51（非單一車型代表），此圖為 DL-42，2023-07-19 拍攝
 
 ### alishan — 栩悅號 variant
 - [ ] filename: `alishan--xuyue.jpg`（Wikimedia 未見自由授權照，暫無圖）
@@ -328,6 +329,7 @@
 - `kmrt_c301h` — `images/kmrt_c301h.jpg`
 - `kaohsiung_lrt` 頂層 + CAF variant — `images/kaohsiung_lrt--caf.jpg`
 - `kaohsiung_lrt--alstom` — `images/kaohsiung_lrt--alstom.jpg`
+- `alishan--dl` — `images/alishan--dl.jpg`
 
 ---
 

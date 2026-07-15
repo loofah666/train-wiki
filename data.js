@@ -984,6 +984,11 @@ window.TRAIN_DATA = [
   {
     id: "alishan",
     photoUrl: "images/alishan--shay.jpg",
+    photoCredit: {
+      author: "jason199567",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:AFR_Shay_SL25_in_AFR_Garage_Park.jpg"
+    },
     name: "阿里山林業鐵路",
     nameEn: "Alishan Forest Railway",
     operator: "農業部林業及自然保育署阿里山林業鐵路及文化資產管理處",
@@ -1017,6 +1022,11 @@ window.TRAIN_DATA = [
         cars: null,
         seats: null,
         photoUrl: "images/alishan--shay.jpg",
+        photoCredit: {
+          author: "jason199567",
+          license: "CC BY-SA 4.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:AFR_Shay_SL25_in_AFR_Garage_Park.jpg"
+        },
         description: "阿里山現存的 Shay 型齒輪傳動蒸汽機車由美國利馬機車廠製造，屬 28 噸級、直立汽缸配傘形齒輪傳動，專為對抗森鐵陡坡與急彎而選用。現存 SL-21、SL-25、SL-26、SL-31 等數輛仍動態保存，部分（如 SL-25、SL-31）已改燒柴油鍋爐，SL-26 則仍燒煤。假日與特定主題列車（如冬季賞楓 SL-31 蒸汽列車）不定期運轉，是台灣現存最年長、仍能行駛的蒸汽火車。",
         features: [
           "美國 Lima 製 Shay 型齒輪傳動蒸汽機車（28 噸級）",
@@ -1035,7 +1045,12 @@ window.TRAIN_DATA = [
         maxSpeed: 45,
         cars: null,
         seats: null,
-        photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/AFR_DL42_01.jpg",
+        photoUrl: "images/alishan--dl.jpg",
+        photoCredit: {
+          author: "Industrial Wales",
+          license: "CC BY-SA 2.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:AFR_'DL_42'_at_Alishan_2023-07-19.jpg"
+        },
         description: "DL 系列是阿里山森鐵日常牽引旅客列車的柴油主力。現役最新為第七代 DL-45～51 共 7 輛，2004 年向日本車輛訂購、2006～07 年陸續上線，日本車輛設計、委由台灣車輛組裝，採連控推拉式運轉。搭載 Cummins QSK19L 柴油引擎（約 700 hp），車重約 30 噸，專為 762mm 窄軌與高坡度設計，每天牽引列車從嘉義平原爬升到海拔 2,216 公尺的阿里山。",
         features: [
           "森鐵現役日常主力（第七代 DL-45～51，共 7 輛）",

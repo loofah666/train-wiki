@@ -231,9 +231,25 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 
 ---
 
+## 阿里山
+
+### alishan--shay.jpg — 阿里山 Shay 蒸汽機車 SL-25（頂層共用）
+- Author: **jason199567**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:AFR_Shay_SL25_in_AFR_Garage_Park.jpg
+- Downloaded: 2026-07-15
+- 備註：`alishan` 頂層卡片圖與此 Shay variant 共用同一檔案
+
+### alishan--dl.jpg — 阿里山 DL-42 柴油機車
+- Author: **Industrial Wales**
+- License: **CC BY-SA 2.0**
+- Source: https://commons.wikimedia.org/wiki/File:AFR_'DL_42'_at_Alishan_2023-07-19.jpg
+- Downloaded: 2026-07-15
+
+---
+
 ## 已存在的本地照片（來源未詳細記錄）
 
 以下照片在此清單建立前就已在本地目錄，來源未追蹤：
 
-- `alishan--shay.jpg`（阿里山 Shay 蒸汽 variant + 頂層共用；來源未追蹤）
 - `nrm--dr2203.jpg`
