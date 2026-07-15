@@ -764,9 +764,14 @@ window.TRAIN_DATA = [
   },
   {
     id: "ntmetro_610",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/%E7%92%B0%E7%8B%80%E7%B7%9A%E5%88%97%E8%BB%8A%E8%BB%8A%E9%AB%94.jpg",
-    name: "新北捷運環狀線 610型",
-    nameEn: "NTMC Circular Line 610",
+    photoUrl: "images/ntmetro_610.jpg",
+    photoCredit: {
+      author: "Tbatb",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Train_in_Taipei_Metro_Circular_Line_Banqiao_Station.jpg"
+    },
+    name: "新北捷運環狀線",
+    nameEn: "NTMC Circular Line",
     model: "610型",
     operator: "新北大眾捷運股份有限公司",
     type: "捷運",
@@ -793,9 +798,14 @@ window.TRAIN_DATA = [
   },
   {
     id: "kmrt_c301h",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Kaohsiung_MRT_Red_Line_Train.jpg",
-    name: "高雄捷運C301H型電聯車",
-    nameEn: "Kaohsiung MRT C301H",
+    photoUrl: "images/kmrt_c301h.jpg",
+    photoCredit: {
+      author: "Joe Lewis",
+      license: "CC BY-SA 2.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Kaohsiung_MRT_Red_Line_Train.jpg"
+    },
+    name: "高雄捷運紅橘線",
+    nameEn: "Kaohsiung MRT (Red/Orange Line)",
     model: "C301H",
     operator: "高雄捷運股份有限公司",
     type: "捷運",

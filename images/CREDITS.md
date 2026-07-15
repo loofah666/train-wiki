@@ -189,6 +189,18 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Source: https://commons.wikimedia.org/wiki/File:C341_1201_at_Ximen_Station_20060531.jpg
 - Downloaded: 2026-07-15
 
+### ntmetro_610.jpg — 新北捷運環狀線 610型
+- Author: **Tbatb**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:A_Train_in_Taipei_Metro_Circular_Line_Banqiao_Station.jpg
+- Downloaded: 2026-07-15
+
+### kmrt_c301h.jpg — 高雄捷運 C301H
+- Author: **Joe Lewis**
+- License: **CC BY-SA 2.0**
+- Source: https://commons.wikimedia.org/wiki/File:Kaohsiung_MRT_Red_Line_Train.jpg
+- Downloaded: 2026-07-15
+
 ---
 
 ## 機捷

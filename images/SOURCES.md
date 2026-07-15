@@ -231,16 +231,14 @@
 - 備註：1600×1200，C341 編號 1201 於西門站，2006-05-31
 
 ### ntmetro_610 (新北捷運環狀線)
-- [ ] filename: `ntmetro_610.jpg`
-- File page: https://commons.wikimedia.org/wiki/File:%E7%92%B0%E7%8B%80%E7%B7%9A%E5%88%97%E8%BB%8A%E8%BB%8A%E9%AB%94.jpg
-- Author: Ryan lin91 / License: CC BY-SA 4.0
-- Download: https://upload.wikimedia.org/wikipedia/commons/0/09/%E7%92%B0%E7%8B%80%E7%B7%9A%E5%88%97%E8%BB%8A%E8%BB%8A%E9%AB%94.jpg
-- 備註：⚠️ 現有圖太小（656×369），**強烈建議換**：
-  - 替代：`File:A_Train_in_Taipei_Metro_Circular_Line_Banqiao_Station.jpg` (Tbatb, CC BY-SA 4.0, 4032×3024)
-  - Download: https://upload.wikimedia.org/wikipedia/commons/e/e4/A_Train_in_Taipei_Metro_Circular_Line_Banqiao_Station.jpg
+- [x] filename: `ntmetro_610.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:A_Train_in_Taipei_Metro_Circular_Line_Banqiao_Station.jpg
+- Author: Tbatb / License: CC BY-SA 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/e/e4/A_Train_in_Taipei_Metro_Circular_Line_Banqiao_Station.jpg
+- 備註：採用替代大圖（4032×3024），原 Ryan lin91 版太小（656×369）未使用
 
-### kmrt_c301h (高雄捷運紅線 C301H)
-- [ ] filename: `kmrt_c301h.jpg`
+### kmrt_c301h (高雄捷運紅橘線 C301H)
+- [x] filename: `kmrt_c301h.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:Kaohsiung_MRT_Red_Line_Train.jpg
 - Author: Joe Lewis (Flickr 50514859@N00) / License: CC BY-SA 2.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/2/2a/Kaohsiung_MRT_Red_Line_Train.jpg
@@ -333,6 +331,8 @@
 - `nrm_dr2203` 頂層 — `images/nrm--dr2203.jpg`
 - `mrt_songshan_xindian--c371` — `images/mrt_songshan_xindian--c371.jpg`
 - `taoyuan_emu` 頂層 — `images/taoyuan_emu--2000.jpg`
+- `ntmetro_610` — `images/ntmetro_610.jpg`
+- `kmrt_c301h` — `images/kmrt_c301h.jpg`
 
 ---
 
