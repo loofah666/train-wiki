@@ -203,6 +203,23 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 
 ---
 
+## 高雄輕軌
+
+### kaohsiung_lrt--caf.jpg — 高雄輕軌 CAF Urbos 3（頂層共用）
+- Author: **Subscriptshoe9**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:KMRT_CAF_train_at_C7_2016-08-27.jpg
+- Downloaded: 2026-07-15
+- 備註：`kaohsiung_lrt` 頂層卡片圖與此 CAF variant 共用同一檔案
+
+### kaohsiung_lrt--alstom.jpg — 高雄輕軌 Alstom Citadis X-05 305
+- Author: **Takeshi Aida**
+- License: **CC BY-SA 2.0**
+- Source: https://commons.wikimedia.org/wiki/File:Kaohsiung_Light_Rail_Alstom_Citadis,_Pier-2_Art_Center_(20240316a)_(53607047337).jpg
+- Downloaded: 2026-07-15
+
+---
+
 ## 機捷
 
 ### taoyuan_emu--2000.jpg — 桃園機場捷運 2000 系直達車 (頂層共用)

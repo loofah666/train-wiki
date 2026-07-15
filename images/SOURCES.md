@@ -15,7 +15,7 @@
 ## ⚠️ 需先決策的項目
 
 - [x] ~~**`ziqiang` 頂層要不要換圖？**~~ ✅ 已解決：頂層改用 EMU3000（現役），與 `--emu3000` variant 共用 `ziqiang--emu3000.jpg`。原 EMU1200 圖仍保留於 `--emu1200` variant。
-- [ ] **`kaohsiung_lrt` 頂層要不要換圖？** 建議的頂層照與 `--caf` variant 都是 CAF Urbos 3，會撞照片。可保持撞（沒差）或找一張站內合影。
+- [x] ~~**`kaohsiung_lrt` 頂層要不要換圖？**~~ ✅ 已解決：頂層改與 CAF Urbos 3（首發、第一階段車型）共用 `kaohsiung_lrt--caf.jpg`，慣例與其他北捷路線卡一致（頂層＝首發代表車型）。
 - [x] ~~**`mrt_c301_wenhu` 現在的圖是錯的**~~ ✅ 已解決：改用 Matra_VAL256 照片，檔名 `mrt_wenhu--val256.jpg`。
 
 ---
@@ -248,22 +248,15 @@
 
 ## 高雄輕軌
 
-### kaohsiung_lrt (頂層)
-- [ ] filename: `kaohsiung_lrt.jpg`
-- File page: https://commons.wikimedia.org/wiki/File:Kaohsiung_LRT_20150902.JPG
-- Author: Rsa / License: GFDL 1.2+ / CC BY-SA 3.0 (雙)
-- Download: https://upload.wikimedia.org/wikipedia/commons/c/cf/Kaohsiung_LRT_20150902.JPG
-- 備註：CAF Urbos 3；若嫌與 `--caf` variant 撞照，可找站內合影
-
-### kaohsiung_lrt--caf (CAF Urbos 3, 小綠綠)
-- [ ] filename: `kaohsiung_lrt--caf.jpg`
+### kaohsiung_lrt — 頂層 / CAF Urbos 3 variant（小綠綠）
+- [x] filename: `kaohsiung_lrt--caf.jpg`（頂層 + CAF variant 共用）
 - File page: https://commons.wikimedia.org/wiki/File:KMRT_CAF_train_at_C7_2016-08-27.jpg
 - Author: Subscriptshoe9 / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/a/af/KMRT_CAF_train_at_C7_2016-08-27.jpg
-- 備註：於 C7 軟體技術園區站
+- 備註：於 C7 軟體技術園區站；CAF 為 2015 年首發車型，頂層與此 variant 共用同一檔案
 
 ### kaohsiung_lrt--alstom (Alstom Citadis X-05 305, 小黑綠)
-- [ ] filename: `kaohsiung_lrt--alstom.jpg`
+- [x] filename: `kaohsiung_lrt--alstom.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:Kaohsiung_Light_Rail_Alstom_Citadis,_Pier-2_Art_Center_(20240316a)_(53607047337).jpg
 - Author: Takeshi Aida / License: CC BY-SA 2.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/e/e1/Kaohsiung_Light_Rail_Alstom_Citadis%2C_Pier-2_Art_Center_%2820240316a%29_%2853607047337%29.jpg
@@ -333,6 +326,8 @@
 - `taoyuan_emu` 頂層 — `images/taoyuan_emu--2000.jpg`
 - `ntmetro_610` — `images/ntmetro_610.jpg`
 - `kmrt_c301h` — `images/kmrt_c301h.jpg`
+- `kaohsiung_lrt` 頂層 + CAF variant — `images/kaohsiung_lrt--caf.jpg`
+- `kaohsiung_lrt--alstom` — `images/kaohsiung_lrt--alstom.jpg`
 
 ---
 

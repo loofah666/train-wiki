@@ -914,7 +914,12 @@ window.TRAIN_DATA = [
   },
   {
     id: "kaohsiung_lrt",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Urbos_3_of_Kaohsiung_LRT_2018-01-01.jpg",
+    photoUrl: "images/kaohsiung_lrt--caf.jpg",
+    photoCredit: {
+      author: "Subscriptshoe9",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:KMRT_CAF_train_at_C7_2016-08-27.jpg"
+    },
     name: "高雄輕軌",
     nameEn: "Kaohsiung Circular Light Rail",
     operator: "高雄捷運股份有限公司",
@@ -937,6 +942,12 @@ window.TRAIN_DATA = [
         maxSpeed: 50,
         cars: 5,
         seats: 64,
+        photoUrl: "images/kaohsiung_lrt--caf.jpg",
+        photoCredit: {
+          author: "Subscriptshoe9",
+          license: "CC BY-SA 4.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:KMRT_CAF_train_at_C7_2016-08-27.jpg"
+        },
         description: "第一階段車輛，2015 年通車時投入營運，是台灣首列現代化輕軌車輛，也是首款西班牙製鐵道車輛。5 節模組化車體，中間第 2、4 節無轉向架，浮動懸掛於相鄰車節之間。",
         features: [
           "台灣首列現代化輕軌車輛",
@@ -954,6 +965,12 @@ window.TRAIN_DATA = [
         maxSpeed: 50,
         cars: 5,
         seats: 66,
+        photoUrl: "images/kaohsiung_lrt--alstom.jpg",
+        photoCredit: {
+          author: "Takeshi Aida",
+          license: "CC BY-SA 2.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Kaohsiung_Light_Rail_Alstom_Citadis,_Pier-2_Art_Center_(20240316a)_(53607047337).jpg"
+        },
         description: "第二階段車輛，2020 年 11 月投入營運，為 Citadis X05 系列，5 節模組化車體、44 噸鋁合金車身，採用永磁同步馬達（PMSM）驅動。原訂 15 列、後追加 4 列，2021 年 12 月全數交車。",
         features: [
           "永磁同步馬達 PMSM 驅動、更節能",
