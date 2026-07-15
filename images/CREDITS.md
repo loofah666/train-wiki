@@ -133,6 +133,20 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Source: https://commons.wikimedia.org/wiki/File:Matra_VAL256,_Taipei_Metro_20210509.jpg
 - Downloaded: 2026-07-14
 
+### mrt_c371.jpg — 台北捷運松山新店線 C371（頂層 + C371 variant 共用）
+- Author: **Howard61313**
+- License: **GFDL 1.2+ / Public Domain**
+- Source: https://commons.wikimedia.org/wiki/File:C371_approaching_Platform_2,_CKS_Meml_Hall_20110225.jpg
+- Downloaded: 2026-07-15
+- 備註：C371 進站中正紀念堂站月台 2，2011-02-25
+
+### mrt_songshan_xindian--c381.png — 松山新店線 C381 variant
+- Author: 不明（YouTube 截圖）
+- License: 非自由授權（私用）
+- Source: https://www.youtube.com/watch?v=lp1hRypvuYo
+- Downloaded: 2026-07-15
+- 備註：私人使用，不公開發布
+
 ---
 
 ## 已存在的本地照片（來源未詳細記錄）
@@ -141,5 +155,4 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 
 - `alishan_shay.jpg`
 - `nrm_dr2203.jpg`
-- `mrt_c371.jpg`
 - `taoyuan_emu.jpg`

@@ -579,6 +579,7 @@ window.TRAIN_DATA = [
   {
     id: "mrt_songshan_xindian",
     photoUrl: "images/mrt_c371.jpg",
+    photoCredit: { author: "Howard61313", license: "GFDL 1.2+ / Public Domain", sourceUrl: "https://commons.wikimedia.org/wiki/File:C371_approaching_Platform_2,_CKS_Meml_Hall_20110225.jpg" },
     name: "台北捷運松山新店線",
     nameEn: "Songshan-Xindian Line (Green)",
     operator: "台北大眾捷運股份有限公司",
@@ -610,6 +611,8 @@ window.TRAIN_DATA = [
         maxSpeed: 80,
         cars: 6,
         seats: 308,
+        photoUrl: "images/mrt_c371.jpg",
+        photoCredit: { author: "Howard61313", license: "GFDL 1.2+ / Public Domain", sourceUrl: "https://commons.wikimedia.org/wiki/File:C371_approaching_Platform_2,_CKS_Meml_Hall_20110225.jpg" },
         description: "台灣首款國產化捷運車輛，由川崎重工與台灣車輛合作製造。3 系配屬新店機廠，行駛松山新店線。另有 3 節編組短列車行駛小碧潭支線。",
         features: [
           "台灣首款國產化捷運列車",
@@ -628,6 +631,7 @@ window.TRAIN_DATA = [
         maxSpeed: 80,
         cars: 6,
         seats: 310,
+        photoUrl: "images/mrt_songshan_xindian--c381.png",
         description: "2012 年投入營運的新世代車款，部分列車配屬新店機廠行駛松山新店線。與淡水信義線共用同一型號，車頭「三眼」燈組設計是辨識特徵。",
         features: [
           "2012 年啟用，與紅線共用車型",

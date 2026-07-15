@@ -172,14 +172,14 @@
 ### mrt_tamsui_xinyi — 淡水信義線（紅線）
 
 #### 頂層 / C301 variant
-- [ ] filename: `mrt_tamsui_xinyi.jpg`
+- [x] filename: `mrt_tamsui_xinyi.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C301_train_at_Beitou_Station.jpg
 - Author: Lokseng01 / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/e/ec/A_Taipei_Metro_C301_train_at_Beitou_Station.jpg
 - 備註：6016×4016，C301 於北投站，2021-04-02
 
 #### C381 variant
-- [ ] filename: `mrt_tamsui_xinyi--c381.jpg`
+- [x] filename: `mrt_tamsui_xinyi--c381.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C381_train_leaving_Beitou_Station_toward_Fuxinggang_Station.jpg
 - Author: Lokseng01 / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/8/8d/A_Taipei_Metro_C381_train_leaving_Beitou_Station_toward_Fuxinggang_Station.jpg
@@ -188,12 +188,17 @@
 ### mrt_songshan_xindian — 松山新店線（綠線）
 
 #### 頂層 / C371(3系) variant
-- [x] filename: `mrt_c371.jpg`（已有，沿用為頂層 + C371 variant）
-- 備註：來源未追蹤（既有照片）
+- [x] filename: `mrt_c371.jpg`（頂層 + C371 variant 共用）
+- File page: https://commons.wikimedia.org/wiki/File:C371_approaching_Platform_2,_CKS_Meml_Hall_20110225.jpg
+- Author: Howard61313 / License: GFDL 1.2+ / Public Domain
+- Download: https://upload.wikimedia.org/wikipedia/commons/1/1a/C371_approaching_Platform_2%2C_CKS_Meml_Hall_20110225.jpg
+- 備註：3456×2592，C371 進站中正紀念堂月台 2，2011-02-25
 
 #### C381 variant
-- [ ] filename: `mrt_songshan_xindian--c381.jpg`
-- 備註：可與淡水信義線共用同一張 C381 照或另找一張綠線站場景；待決策
+- [x] filename: `mrt_songshan_xindian--c381.png`
+- Source: YouTube 截圖（https://www.youtube.com/watch?v=lp1hRypvuYo）
+- License: 非自由授權（私用）
+- 備註：私人使用，不公開發布
 
 ### mrt_zhonghe_xinlu — 中和新蘆線（橘線）
 
