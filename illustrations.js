@@ -476,8 +476,8 @@ window.TRAIN_SVG = {
     <circle cx="196" cy="68" r="5" fill="#fed7d7" stroke="#c53030" stroke-width="2"/>
   </g></svg>`,
 
-  "alishan_shay": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
-  <!-- 阿里山蒸汽機車：復古可愛，大鍋爐，煙囪，連桿，大驅動輪 -->
+  "alishan": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 阿里山林業鐵路：以百年 Shay 蒸汽機車為代表——大鍋爐、煙囪、連桿、大驅動輪 -->
   <g stroke-linecap="round" stroke-linejoin="round">
     <!-- 煤水車（後方） -->
     <rect x="155" y="38" width="70" height="30" rx="4" fill="#975a16" fill-opacity="0.12" stroke="#975a16" stroke-width="2"/>
@@ -537,52 +537,6 @@ window.TRAIN_SVG = {
     <circle cx="200" cy="72" r="3" fill="#975a16" fill-opacity="0.4" stroke="none"/>
   </g>
 </svg>`,
-
-  "alishan_dl47": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
-  <g stroke-linecap="round" stroke-linejoin="round">
-    <rect x="20" y="30" width="80" height="36" rx="3" fill="#975a16" fill-opacity="0.2" stroke="#975a16" stroke-width="2.5"/>
-    <rect x="100" y="36" width="110" height="24" rx="2" fill="#975a16" fill-opacity="0.1" stroke="#975a16" stroke-width="2"/>
-    <rect x="32" y="18" width="10" height="14" rx="2" fill="#975a16" fill-opacity="0.6" stroke="#975a16" stroke-width="2"/>
-    <ellipse cx="37" cy="17" rx="6" ry="3" fill="#975a16" fill-opacity="0.4" stroke="#975a16" stroke-width="1.5"/>
-    <path d="M37 14 Q39 8 38 4" fill="none" stroke="#744210" stroke-width="1.5" opacity="0.5"/>
-    <path d="M37 14 Q42 7 43 3" fill="none" stroke="#744210" stroke-width="1.5" opacity="0.4"/>
-    <rect x="32" y="34" width="24" height="14" rx="2" fill="#fefcbf" fill-opacity="0.7" stroke="#975a16" stroke-width="1.5"/>
-    <rect x="66" y="34" width="14" height="14" rx="2" fill="#fefcbf" fill-opacity="0.7" stroke="#975a16" stroke-width="1.5"/>
-    <rect x="110" y="40" width="20" height="12" rx="2" fill="#fefcbf" fill-opacity="0.7" stroke="#975a16" stroke-width="1.5"/>
-    <rect x="148" y="40" width="20" height="12" rx="2" fill="#fefcbf" fill-opacity="0.7" stroke="#975a16" stroke-width="1.5"/>
-    <circle cx="44"  cy="72" r="9" fill="#fffbeb" stroke="#975a16" stroke-width="2.5"/>
-    <circle cx="44"  cy="72" r="4"  fill="#975a16" fill-opacity="0.4"/>
-    <circle cx="76"  cy="72" r="9" fill="#fffbeb" stroke="#975a16" stroke-width="2.5"/>
-    <circle cx="76"  cy="72" r="4"  fill="#975a16" fill-opacity="0.4"/>
-    <circle cx="130" cy="72" r="7" fill="#fffbeb" stroke="#975a16" stroke-width="2"/>
-    <circle cx="170" cy="72" r="7" fill="#fffbeb" stroke="#975a16" stroke-width="2"/>
-  </g></svg>`,
-
-  "alishan_sl25": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
-  <g stroke-linecap="round" stroke-linejoin="round">
-    <ellipse cx="70" cy="46" rx="55" ry="18" fill="#744210" fill-opacity="0.18" stroke="#744210" stroke-width="2.5"/>
-    <rect x="16" y="36" width="22" height="26" rx="3" fill="#744210" fill-opacity="0.25" stroke="#744210" stroke-width="2.5"/>
-    <rect x="125" y="42" width="100" height="16" rx="2" fill="#744210" fill-opacity="0.1" stroke="#744210" stroke-width="2"/>
-    <rect x="28" y="22" width="12" height="16" rx="2" fill="#744210" fill-opacity="0.7" stroke="#744210" stroke-width="2"/>
-    <ellipse cx="34" cy="21" rx="7" ry="3.5" fill="#744210" fill-opacity="0.5" stroke="#744210" stroke-width="1.5"/>
-    <path d="M32 18 Q30 11 31 6"  fill="none" stroke="#5a3e1a" stroke-width="1.8" opacity="0.6"/>
-    <path d="M34 18 Q36 10 35 5"  fill="none" stroke="#5a3e1a" stroke-width="1.8" opacity="0.5"/>
-    <path d="M36 18 Q40 11 42 7"  fill="none" stroke="#5a3e1a" stroke-width="1.5" opacity="0.4"/>
-    <circle cx="40"  cy="70" r="11" fill="#fffbeb" stroke="#744210" stroke-width="2.5"/>
-    <circle cx="40"  cy="70" r="5"  fill="#744210" fill-opacity="0.35"/>
-    <line x1="40" y1="59" x2="40" y2="81" stroke="#744210" stroke-width="1.5" opacity="0.4"/>
-    <line x1="29" y1="70" x2="51" y2="70" stroke="#744210" stroke-width="1.5" opacity="0.4"/>
-    <circle cx="72"  cy="70" r="11" fill="#fffbeb" stroke="#744210" stroke-width="2.5"/>
-    <circle cx="72"  cy="70" r="5"  fill="#744210" fill-opacity="0.35"/>
-    <line x1="72" y1="59" x2="72" y2="81" stroke="#744210" stroke-width="1.5" opacity="0.4"/>
-    <line x1="61" y1="70" x2="83" y2="70" stroke="#744210" stroke-width="1.5" opacity="0.4"/>
-    <circle cx="104" cy="70" r="11" fill="#fffbeb" stroke="#744210" stroke-width="2.5"/>
-    <circle cx="104" cy="70" r="5"  fill="#744210" fill-opacity="0.35"/>
-    <path d="M40 64 Q56 58 72 64" fill="none" stroke="#744210" stroke-width="2"/>
-    <path d="M72 64 Q88 58 104 64" fill="none" stroke="#744210" stroke-width="2"/>
-    <circle cx="155" cy="72" r="7" fill="#fffbeb" stroke="#744210" stroke-width="2"/>
-    <circle cx="195" cy="72" r="7" fill="#fffbeb" stroke="#744210" stroke-width="2"/>
-  </g></svg>`,
 
   "neiwan_dr1000": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
   <g stroke-linecap="round" stroke-linejoin="round">

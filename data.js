@@ -955,91 +955,106 @@ window.TRAIN_DATA = [
     ]
   },
   {
-    id: "alishan_shay",
-    photoUrl: "images/alishan_shay.jpg",
-    name: "阿里山森鐵Shay型蒸汽機車",
-    nameEn: "Alishan Forest Railway Shay Steam Locomotive",
-    model: "Shay Type",
-    operator: "林務局阿里山林業鐵路及文化資產管理處",
+    id: "alishan",
+    photoUrl: "images/alishan--shay.jpg",
+    name: "阿里山林業鐵路",
+    nameEn: "Alishan Forest Railway",
+    operator: "農業部林業及自然保育署阿里山林業鐵路及文化資產管理處",
     type: "觀光",
     region: ["中部"],
     yearStart: 1912,
-    maxSpeed: 30,
-    manufacturer: "美國 利馬機車廠（Lima Locomotive Works）",
-    seats: null,
-    cars: null,
-    color: "#2c3e50",
-    emoji: "🚂",
-    description: "阿里山森林鐵路是全球少數仍在運行的高山森林鐵道之一，採用美國利馬機車廠製造的Shay型蒸汽機車，以獨特的垂直汽缸與傳動軸設計聞名，能在陡峭山坡上爬行。自1912年起，這些鐵馬承載著無數木材與旅客穿越台灣最壯觀的山林。冒著白煙穿越雲海的畫面，成為阿里山最具代表性的浪漫景象，也是台灣鐵道迷最朝聖的夢幻目標之一。",
+    maxSpeed: 45,
+    color: "#2f855a",
+    emoji: "🚞",
+    description: "阿里山林業鐵路是台灣碩果僅存、仍在營運的高山森林鐵道，1912 年為運送阿里山檜木而通車。全線以 762mm 窄軌，自海拔約 30 公尺的嘉義站一路盤旋爬升至海拔 2,216 公尺的阿里山站，途中經獨立山螺旋、Z 字形折返，橫跨熱、暖、溫、寒四種氣候林相，與印度大吉嶺、祕魯安地斯並列世界僅存的高山鐵路。從百年 Shay 蒸汽機車、現役 DL 柴油機車，到 2024 年登場的栩悅號與福森號主題觀光列車，串起橫跨百年的登山鐵道文化。",
     features: [
-      "全球最著名高山森林鐵道之一",
-      "Shay型特殊垂直汽缸傳動設計",
-      "能在大於60‰坡度上行駛",
-      "穿越雲海的夢幻鐵道景觀"
+      "台灣唯一仍營運的高山森林鐵道（1912 年通車）",
+      "762mm 窄軌，嘉義 30m 爬升至阿里山 2,216m",
+      "獨立山螺旋、Z 字形折返等特殊登山工法",
+      "橫跨熱、暖、溫、寒四種氣候林相"
     ],
     routes: [
-      { name: "阿里山鐵路", stations: ["嘉義", "竹崎", "奮起湖", "神木", "阿里山"] }
+      { name: "阿里山線（本線）", stations: ["嘉義", "北門", "竹崎", "樟腦寮", "獨立山", "奮起湖", "十字路", "阿里山"] },
+      { name: "祝山線", stations: ["阿里山", "祝山"] }
     ],
-    funFact: "阿里山蒸汽火車爬山的坡度，比台灣最陡的公路還要陡！在鐵路界這叫「齒軌坡」，非常罕見！",
-    tags: ["觀光", "蒸汽", "森林鐵路", "中部", "歷史", "阿里山"]
-  },
-  {
-    id: "alishan_dl47",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/AFR_DL42_01.jpg",
-    name: "阿里山森鐵DL-47柴油機車",
-    nameEn: "Alishan Forest Railway DL-47 Diesel Locomotive",
-    model: "DL-47",
-    operator: "農業部林業及自然保育署阿里山林業鐵路及文化資產管理處",
-    type: "觀光",
-    region: ["中部"],
-    yearStart: 2007,
-    maxSpeed: 35,
-    manufacturer: "日本 日本車輛（台灣車輛組裝）",
-    seats: null,
-    cars: null,
-    color: "#27ae60",
-    emoji: "🚂",
-    description: "DL-47 是阿里山林業鐵路第 7 代柴油機車，2007 年由日本車輛設計、台灣車輛組裝。搭載 Cummins QSK19 柴油引擎（750 hp），車重 30 噸，專為應對阿里山 762mm 窄軌及高坡度路線設計，是森鐵日常牽引旅客列車的現役主力。綠色車身在阿里山山林中格外融合，每天牽引列車從嘉義平原爬升到海拔 2216 公尺的阿里山，穿越熱、暖、溫、寒四種氣候帶。",
-    features: [
-      "阿里山森鐵現役主力柴油機車（第 7 代）",
-      "適應 762mm 特殊窄軌設計",
-      "Cummins QSK19 柴油引擎、750 hp",
-      "穿越四種不同氣候林相"
-    ],
-    routes: [
-      { name: "阿里山鐵路", stations: ["嘉義", "竹崎", "交力坪", "奮起湖", "阿里山"] }
-    ],
-    funFact: "阿里山鐵路從海拔30公尺的嘉義一路爬到2216公尺，等於從地面爬上了約7棟101大樓疊起來的高度！",
-    tags: ["觀光", "柴油", "森林鐵路", "中部", "登山鐵路", "阿里山"]
-  },
-  {
-    id: "alishan_sl25",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/AFR_Shay_SL25_in_AFR_Garage_Park.jpg",
-    name: "阿里山森鐵SL-25蒸汽機車",
-    nameEn: "Alishan Forest Railway SL-25 Shay Locomotive",
-    model: "SL-25（Shay B 型 28 噸）",
-    operator: "農業部林業及自然保育署阿里山林業鐵路及文化資產管理處",
-    type: "觀光",
-    region: ["中部"],
-    yearStart: 1913,
-    maxSpeed: 25,
-    manufacturer: "美國 利馬機車廠（Lima Locomotive Works）",
-    seats: null,
-    cars: null,
-    color: "#7f8c8d",
-    emoji: "🚂",
-    description: "SL-25 是阿里山森鐵的百年歷史瑰寶，1913 年由美國利馬機車廠製造，屬 Shay 型 B 級 28 噸齒輪傳動蒸汽機車，最初為對抗阿里山陡峭坡度與急彎而選用。曾長期擔任日本殖民時期至戰後初期阿里山木材運輸的主力，現以動態保存方式讓遊客體驗超過百年的蒸汽火車魅力。假日推出的蒸汽火車專列場場爆滿，是跨越世代的珍貴鐵道文化體驗。",
-    features: [
-      "1913 年美國 Lima 製造的 Shay B 型齒輪傳動蒸汽機車",
-      "阿里山現存最古老的動態保存蒸汽機車",
-      "假日觀光特別運轉",
-      "為對抗森鐵陡坡與急彎特別選用的齒輪傳動設計"
-    ],
-    routes: [
-      { name: "阿里山站內線", stations: ["阿里山", "祝山"] }
-    ],
-    funFact: "SL-25 已經超過 110 歲了！它是台灣還在實際跑動的蒸汽火車中，歲數最大的老前輩——齒輪傳動設計讓它能爬上其他火車連想都不敢想的陡坡。",
-    tags: ["觀光", "蒸汽", "Shay", "保存鐵道", "中部", "阿里山", "歷史"]
+    funFact: "為了用 762mm 窄軌爬上近 2,200 公尺的落差，火車得在「獨立山」繞著同一座山頭盤旋約三圈才往上爬——坐在車上，你會看到山下的樟腦寮車站從三個不同高度出現三次！",
+    tags: ["觀光", "森林鐵路", "登山鐵路", "蒸汽", "柴油", "中部", "阿里山", "歷史"],
+    variants: [
+      {
+        model: "Shay 蒸汽機車",
+        nickname: "老蒸汽",
+        manufacturer: "美國 利馬機車廠（Lima Locomotive Works）",
+        yearStart: 1912,
+        status: "preserved",
+        maxSpeed: null,
+        cars: null,
+        seats: null,
+        photoUrl: "images/alishan--shay.jpg",
+        description: "阿里山現存的 Shay 型齒輪傳動蒸汽機車由美國利馬機車廠製造，屬 28 噸級、直立汽缸配傘形齒輪傳動，專為對抗森鐵陡坡與急彎而選用。現存 SL-21、SL-25、SL-26、SL-31 等數輛仍動態保存，部分（如 SL-25、SL-31）已改燒柴油鍋爐，SL-26 則仍燒煤。假日與特定主題列車（如冬季賞楓 SL-31 蒸汽列車）不定期運轉，是台灣現存最年長、仍能行駛的蒸汽火車。",
+        features: [
+          "美國 Lima 製 Shay 型齒輪傳動蒸汽機車（28 噸級）",
+          "現存 SL-21／25／26／31 等數輛動態保存",
+          "直立汽缸＋傘形齒輪，專為陡坡急彎設計",
+          "假日與主題列車（如冬季 SL-31 賞楓專列）運轉"
+        ],
+        funFact: "現役的 SL-25、SL-31 都已超過 110 歲，是台灣還能實際跑動的火車中最年長的老前輩；其中 SL-26 至今仍堅持燒煤，冒出的白煙成了鐵道迷追逐的經典畫面。"
+      },
+      {
+        model: "DL 柴油機車",
+        nickname: "現役主力",
+        manufacturer: "日本車輛（設計）／台灣車輛（組裝）",
+        yearStart: 2006,
+        status: "active",
+        maxSpeed: 45,
+        cars: null,
+        seats: null,
+        photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/AFR_DL42_01.jpg",
+        description: "DL 系列是阿里山森鐵日常牽引旅客列車的柴油主力。現役最新為第七代 DL-45～51 共 7 輛，2004 年向日本車輛訂購、2006～07 年陸續上線，日本車輛設計、委由台灣車輛組裝，採連控推拉式運轉。搭載 Cummins QSK19L 柴油引擎（約 700 hp），車重約 30 噸，專為 762mm 窄軌與高坡度設計，每天牽引列車從嘉義平原爬升到海拔 2,216 公尺的阿里山。",
+        features: [
+          "森鐵現役日常主力（第七代 DL-45～51，共 7 輛）",
+          "日本車輛設計、台灣車輛組裝，2006～07 年上線",
+          "Cummins QSK19L 引擎、約 700 hp",
+          "連控推拉式，適應 762mm 窄軌與陡坡"
+        ],
+        funFact: "阿里山鐵路從海拔 30 公尺的嘉義一路爬到 2,216 公尺，落差等於疊起約 7 棟台北 101——這段國寶級的爬坡，如今日常就靠這批 DL 柴油機車拉上山。"
+      },
+      {
+        model: "栩悅號",
+        nickname: "Vivid Express",
+        manufacturer: "既有阿里山號客車改裝（雄獅旅遊營運）",
+        yearStart: 2024,
+        status: "active",
+        maxSpeed: null,
+        cars: 5,
+        seats: 60,
+        description: "栩悅號是林鐵及文資處與雄獅旅遊合作、2024 年 5 月首航的高階觀光列車，由既有阿里山號舊客車改裝而成，全列 5 節、共 60 席。以阿里山「迎賓鳥」栗背林鴝為彩繪主題，並首創台灣火車 360 度環繞透明駕駛室；車廂分包廂席與可 360 度旋轉的瞭望席，配大面觀景窗、環繞音響與專業導覽，主打視、聽、嗅、味、觸「五感」森林體驗，行駛於嘉義－奮起湖間。",
+        features: [
+          "2024 年首航，雄獅旅遊營運的生態觀光列車",
+          "由既有阿里山號客車改裝，5 節 60 席",
+          "台灣火車首創 360 度環繞透明駕駛室",
+          "栗背林鴝彩繪主題、瞭望席可 360 度旋轉"
+        ],
+        funFact: "栩悅號的彩繪靈感來自阿里山「迎賓鳥」栗背林鴝——連牽引它的 DL-47 柴油機車都換上了同款塗裝，成為森鐵第一台有專屬造型的機車。"
+      },
+      {
+        model: "福森號",
+        nickname: "Formosensis",
+        manufacturer: "全新檜木打造（雄獅旅遊營運）",
+        yearStart: 2024,
+        status: "active",
+        maxSpeed: null,
+        cars: 6,
+        seats: 108,
+        description: "福森號是林鐵及文資處耗資約 6,500 萬元、以鋼構骨架結合國產紅檜與台灣扁柏全新打造的檜木觀光列車，2024 年 7 月啟航，由雄獅旅遊規劃遊程。全列 6 節、約 108 席，定位為「移動的美術館」，首創台灣火車數位畫框，輪播阿里山主題畫作與畫家陳澄波作品；配 165 公分寬大觀景窗、英國進口牛皮座椅與吧台餐車，車內滿溢紅檜與扁柏天然香氣。",
+        features: [
+          "2024 年啟航，耗資約 6,500 萬元全新檜木打造",
+          "紅檜＋扁柏車體，6 節約 108 席",
+          "定位「移動的美術館」，首創數位畫框輪播名畫",
+          "165cm 寬觀景窗、進口牛皮座椅、吧台餐車"
+        ],
+        funFact: "「Formosensis」是拉丁文學名字尾，意為「台灣（福爾摩沙）特有」——阿里山有多種以此命名的特有生物，福森號便以此結合「福爾摩沙」與「森林」，打造出滿載檜木香氣的移動美術館。"
+      }
+    ]
   },
   {
     id: "neiwan_dr1000",

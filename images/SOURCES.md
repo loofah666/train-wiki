@@ -289,19 +289,28 @@
 - Download: https://upload.wikimedia.org/wikipedia/commons/a/a4/Taoyuan_Metro_Commuter_Train_2017-02-25.jpg
 - 備註：川崎 1000 型於新莊副都心附近
 
-### alishan_dl47 (阿里山 DL-47 柴油)
-- [ ] filename: `alishan_dl47.jpg`（待配合阿里山卡片重構定案檔名）
+> 阿里山已收攏為單一 `alishan` 卡片 + 4 variants（Shay 蒸汽 / DL 柴油 / 栩悅號 / 福森號）。
+
+### alishan — Shay 蒸汽機車 variant（頂層共用）
+- [x] filename: `alishan--shay.jpg`（頂層 + Shay variant 共用；來源未追蹤）
+- 備註：由原 `alishan_shay.jpg` 改名而來。原 `alishan_sl25` 卡已併入此 variant（SL = Shay 同款）。
+  若日後要換乾淨 SL 圖，備選：`File:AFR_Shay_SL25_in_AFR_Garage_Park.jpg`
+  (jason199567, CC BY-SA 4.0, https://upload.wikimedia.org/wikipedia/commons/8/8c/AFR_Shay_SL25_in_AFR_Garage_Park.jpg)
+
+### alishan — DL 柴油機車 variant
+- [ ] filename: `alishan--dl.jpg`（暫用 remote hotlink，尚未本地化）
 - File page: https://commons.wikimedia.org/wiki/File:%E9%98%BF%E9%87%8C%E5%B1%B1%E5%B0%8F%E7%81%AB%E8%BB%8A.jpg
 - Author: 陳書欣 / License: CC BY-SA 4.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/5/52/%E9%98%BF%E9%87%8C%E5%B1%B1%E5%B0%8F%E7%81%AB%E8%BB%8A.jpg
-- 備註：`Category:AFR_DL-47` 只有 2 個檔案。乾淨的 DL-42 備選：`File:AFR_'DL_42'_at_Alishan_2023-07-19.jpg`
+- 備註：現役主力為第七代 DL-45~51（非 DL-47 單一車）。乾淨備選：`File:AFR_'DL_42'_at_Alishan_2023-07-19.jpg`
 
-### alishan_sl25 (阿里山 SL-25 Shay)
-- [ ] filename: `alishan_sl25.jpg`（待配合阿里山卡片重構定案檔名）
-- File page: https://commons.wikimedia.org/wiki/File:AFR_Shay_SL25_in_AFR_Garage_Park.jpg
-- Author: jason199567 / License: CC BY-SA 4.0
-- Download: https://upload.wikimedia.org/wikipedia/commons/8/8c/AFR_Shay_SL25_in_AFR_Garage_Park.jpg
-- 備註：現有圖驗證過；SL-25 與現有 `alishan_shay.jpg` 為同款（SL = Shay），重構時合併
+### alishan — 栩悅號 variant
+- [ ] filename: `alishan--xuyue.jpg`（Wikimedia 未見自由授權照，暫無圖）
+- 備註：2024 雄獅旅遊生態觀光列車。可再搜 `Category:Alishan Forest Railway` 是否有新上傳；否則維持無圖 placeholder。
+
+### alishan — 福森號 variant
+- [ ] filename: `alishan--fusen.jpg`（Wikimedia 未見自由授權照，暫無圖）
+- 備註：2024 雄獅旅遊檜木觀光列車。同上，Commons 暫無自由授權照，維持無圖 placeholder。
 
 ### nrm_dr2203--dr2203 (孔雀藍)
 - [ ] filename: `nrm_dr2203--dr2203.jpg`
@@ -320,7 +329,7 @@
 ---
 
 ## 已本地化（略過）
-- `alishan_shay` — `images/alishan_shay.jpg`（待重構改名）
+- `alishan` 頂層 + Shay variant — `images/alishan--shay.jpg`
 - `nrm_dr2203` 頂層 — `images/nrm--dr2203.jpg`
 - `mrt_songshan_xindian--c371` — `images/mrt_songshan_xindian--c371.jpg`
 - `taoyuan_emu` 頂層 — `images/taoyuan_emu--2000.jpg`
