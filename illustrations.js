@@ -622,7 +622,7 @@ window.TRAIN_SVG = {
     <circle cx="160" cy="72" r="3.5" fill="#2c5282" fill-opacity="0.4"/>
   </g></svg>`,
 
-  "ck124": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+  "jiushanxian": `<svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
   <g stroke-linecap="round" stroke-linejoin="round">
     <ellipse cx="80" cy="44" rx="64" ry="20" fill="#2d3748" fill-opacity="0.15" stroke="#2d3748" stroke-width="2.5"/>
     <rect x="16" y="34" width="26" height="28" rx="3" fill="#2d3748" fill-opacity="0.3" stroke="#2d3748" stroke-width="2.5"/>

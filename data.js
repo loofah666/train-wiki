@@ -1,7 +1,7 @@
 window.TRAIN_DATA = [
   {
     id: "puyuma",
-    photoUrl: "images/puyuma.jpg",
+    photoUrl: "images/puyuma--temu2000.jpg",
     photoCredit: {
       author: "LucasLiu0910",
       license: "CC BY-SA 4.0",
@@ -35,7 +35,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "taroko",
-    photoUrl: "images/taroko.jpg",
+    photoUrl: "images/taroko--temu1000.jpg",
     photoCredit: {
       author: "Encino~commonswiki",
       license: "CC BY-SA 4.0",
@@ -146,7 +146,7 @@ window.TRAIN_DATA = [
         maxSpeed: 130,
         cars: 12,
         seats: 572,
-        photoUrl: "images/ziqiang--pp.jpg",
+        photoUrl: "images/ziqiang--e1000.jpg",
         photoCredit: {
           author: "jason199567",
           license: "CC BY-SA 4.0",
@@ -187,7 +187,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "juguang",
-    photoUrl: "images/juguang.jpg",
+    photoUrl: "images/juguang--e400.jpg",
     photoCredit: {
       author: "Kazehayashi",
       license: "CC BY-SA 4.0",
@@ -222,7 +222,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "emu_local",
-    photoUrl: "images/emu_local.jpg",
+    photoUrl: "images/emu_local--emu900.jpg",
     photoCredit: {
       author: "jason199567",
       license: "CC BY-SA 4.0",
@@ -313,7 +313,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "pingxi_dr1000",
-    photoUrl: "images/pingxi_dr1000.jpg",
+    photoUrl: "images/pingxi--dr1000.jpg",
     photoCredit: {
       author: "Takeshi Aida",
       license: "CC BY-SA 2.0",
@@ -347,7 +347,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "jiji_dr2700",
-    photoUrl: "images/jiji_dr2700.jpg",
+    photoUrl: "images/jiji--dr2700.jpg",
     photoCredit: {
       author: "賴德湘",
       license: "CC BY 4.0",
@@ -384,7 +384,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "blue_skin",
-    photoUrl: "images/blue_skin.jpg",
+    photoUrl: "images/blue_skin--spk2300.jpg",
     photoCredit: {
       author: "jason199567",
       license: "CC BY-SA 4.0",
@@ -418,7 +418,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "thsr_700t",
-    photoUrl: "images/thsr_700t.jpg",
+    photoUrl: "images/thsr--700t.jpg",
     photoCredit: {
       author: "Rsa",
       license: "CC BY-SA 3.0",
@@ -452,7 +452,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "mrt_wenhu",
-    photoUrl: "images/mrt_val256_wenhu.jpg",
+    photoUrl: "images/mrt_wenhu--val256.jpg",
     photoCredit: { author: "Subscriptshoe9", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Matra_VAL256,_Taipei_Metro_20210509.jpg" },
     name: "台北捷運文湖線",
     nameEn: "Wenhu Line (Brown)",
@@ -485,7 +485,7 @@ window.TRAIN_DATA = [
         maxSpeed: 70,
         cars: 4,
         seats: 80,
-        photoUrl: "images/mrt_val256_wenhu.jpg",
+        photoUrl: "images/mrt_wenhu--val256.jpg",
         photoCredit: { author: "Subscriptshoe9", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Matra_VAL256,_Taipei_Metro_20210509.jpg" },
         description: "木柵線通車時的原始車隊，法國馬特拉製造，共 51 對 102 輛。2010 年完成號誌系統升級（改用龐巴迪 CITYFLO 650 CBTC），與新車統一控制。",
         features: [
@@ -504,7 +504,7 @@ window.TRAIN_DATA = [
         maxSpeed: 70,
         cars: 4,
         seats: 96,
-        photoUrl: "images/mrt_wenhu--INNOVIA-APM-256.jpg",
+        photoUrl: "images/mrt_wenhu--innovia_apm_256.jpg",
         photoCredit: { author: "Subscriptshoe9", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Bombardier_INNOVIA_APM_256_approaching_Daan_Station_20210418.jpg" },
         description: "2009 年內湖線延伸段通車時加入的新車隊，龐巴迪製造，共 101 對 202 輛。外觀較方正現代，車內天花板較低（190 cm）是旅客常見抱怨。",
         features: [
@@ -518,7 +518,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "mrt_tamsui_xinyi",
-    photoUrl: "images/mrt_tamsui_xinyi.jpg",
+    photoUrl: "images/mrt_tamsui_xinyi--c301.jpg",
     photoCredit: { author: "Lokseng01", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C301_train_at_Beitou_Station.jpg" },
     name: "台北捷運淡水信義線",
     nameEn: "Tamsui-Xinyi Line (Red)",
@@ -551,7 +551,7 @@ window.TRAIN_DATA = [
         maxSpeed: 80,
         cars: 6,
         seats: 396,
-        photoUrl: "images/mrt_tamsui_xinyi.jpg",
+        photoUrl: "images/mrt_tamsui_xinyi--c301.jpg",
         photoCredit: { author: "Lokseng01", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C301_train_at_Beitou_Station.jpg" },
         description: "北捷最早的高運量鋼輪列車，1997 年隨淡水線通車啟用，共 22 列 132 輛。2012–2017 年間完成牽引系統升級（GTO → IGBT），持續服役中。",
         features: [
@@ -585,7 +585,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "mrt_songshan_xindian",
-    photoUrl: "images/mrt_c371.jpg",
+    photoUrl: "images/mrt_songshan_xindian--c371.jpg",
     photoCredit: { author: "Howard61313", license: "GFDL 1.2+ / Public Domain", sourceUrl: "https://commons.wikimedia.org/wiki/File:C371_approaching_Platform_2,_CKS_Meml_Hall_20110225.jpg" },
     name: "台北捷運松山新店線",
     nameEn: "Songshan-Xindian Line (Green)",
@@ -618,7 +618,7 @@ window.TRAIN_DATA = [
         maxSpeed: 80,
         cars: 6,
         seats: 308,
-        photoUrl: "images/mrt_c371.jpg",
+        photoUrl: "images/mrt_songshan_xindian--c371.jpg",
         photoCredit: { author: "Howard61313", license: "GFDL 1.2+ / Public Domain", sourceUrl: "https://commons.wikimedia.org/wiki/File:C371_approaching_Platform_2,_CKS_Meml_Hall_20110225.jpg" },
         description: "台灣首款國產化捷運車輛，由川崎重工與台灣車輛合作製造。3 系配屬新店機廠，行駛松山新店線。另有 3 節編組短列車行駛小碧潭支線。",
         features: [
@@ -651,7 +651,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "mrt_zhonghe_xinlu",
-    photoUrl: "images/mrt_zhonghe_xinlu.jpg",
+    photoUrl: "images/mrt_zhonghe_xinlu--c371.jpg",
     photoCredit: { author: "Samson Ng . D201@EAL", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Kawasaki-TRSC_C371_EMU.jpg" },
     name: "台北捷運中和新蘆線",
     nameEn: "Zhonghe-Xinlu Line (Orange)",
@@ -684,7 +684,7 @@ window.TRAIN_DATA = [
         maxSpeed: 80,
         cars: 6,
         seats: 308,
-        photoUrl: "images/mrt_zhonghe_xinlu.jpg",
+        photoUrl: "images/mrt_zhonghe_xinlu--c371.jpg",
         photoCredit: { author: "Samson Ng . D201@EAL", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:Kawasaki-TRSC_C371_EMU.jpg" },
         description: "C371 的 4 系列車，配屬蘆洲機廠與新莊機廠，專門行駛中和新蘆線。由台灣車輛在國內製造，是台灣捷運國產化的重要里程碑。",
         features: [
@@ -698,7 +698,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "mrt_bannan",
-    photoUrl: "images/mrt_bannan.jpg",
+    photoUrl: "images/mrt_bannan--c321.jpg",
     photoCredit: { author: "Sinsyuan", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:C321_Bannan_BL02_20260108.jpg" },
     name: "台北捷運板南線",
     nameEn: "Bannan Line (Blue)",
@@ -731,7 +731,7 @@ window.TRAIN_DATA = [
         maxSpeed: 80,
         cars: 6,
         seats: 396,
-        photoUrl: "images/mrt_bannan.jpg",
+        photoUrl: "images/mrt_bannan--c321.jpg",
         photoCredit: { author: "Sinsyuan", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:C321_Bannan_BL02_20260108.jpg" },
         description: "板南線通車時的主力列車，1999 年啟用，共 36 列 216 輛。目前正進行牽引系統更新（GTO → ABB BORDLINE IGBT），首列改造車 2024 年 4 月重新上線。",
         features: [
@@ -823,7 +823,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "taoyuan_emu",
-    photoUrl: "images/taoyuan_emu.jpg",
+    photoUrl: "images/taoyuan_emu--2000.jpg",
     name: "桃園機場捷運電聯車",
     nameEn: "Taoyuan Airport MRT",
     operator: "桃園大眾捷運股份有限公司",
@@ -1043,7 +1043,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "neiwan_dr1000",
-    photoUrl: "images/neiwan_dr1000.jpg",
+    photoUrl: "images/neiwan--dr1000.jpg",
     photoCredit: {
       author: "SElefant (Sean H. Yu)",
       license: "CC BY-SA 3.0",
@@ -1078,7 +1078,7 @@ window.TRAIN_DATA = [
   },
   {
     id: "nrm_dr2203",
-    photoUrl: "images/nrm_dr2203.jpg",
+    photoUrl: "images/nrm--dr2203.jpg",
     name: "鐵博藍皮小火車",
     nameEn: "NRM Blue Skin Heritage Train",
     operator: "國家鐵道博物館",
@@ -1129,8 +1129,8 @@ window.TRAIN_DATA = [
     ]
   },
   {
-    id: "ck124",
-    photoUrl: "images/ck124.jpg",
+    id: "jiushanxian",
+    photoUrl: "images/jiushanxian--ck124.jpg",
     photoCredit: {
       author: "Subscriptshoe9",
       license: "CC BY-SA 4.0",
