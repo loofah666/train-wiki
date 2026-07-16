@@ -200,10 +200,10 @@
 - 備註：3456×2592，C371 進站中正紀念堂月台 2，2011-02-25
 
 #### C381 variant
-- [x] filename: `mrt_songshan_xindian--c381.png`
-- Source: YouTube 截圖（https://www.youtube.com/watch?v=lp1hRypvuYo）
-- License: 非自由授權（私用）
-- 備註：私人使用，不公開發布
+- [x] 改用 `mrt_tamsui_xinyi--c381.jpg`（Lokseng01, CC BY-SA 4.0，見淡水信義線段）
+- 備註：原私用 YouTube 截圖已移除。C381 是淡水信義線與松山新店線共用的同型
+  車廂，外觀完全相同，直接沿用紅線那張已授權照片；卡片文字已註明「圖為
+  淡水信義線拍攝，非松山新店線實拍」。
 
 ### mrt_zhonghe_xinlu — 中和新蘆線（橘線）
 
@@ -297,16 +297,14 @@
 - 備註：現役主力為第七代 DL-45~51（非單一車型代表），此圖為 DL-42，2023-07-19 拍攝
 
 ### alishan — 栩悅號 variant
-- [x] filename: `alishan--xuyue.jpg`
-- 來源：非 Wikimedia，私人取得照片
-- License: 非自由授權（私用），不對外公開發布
-- 備註：2024 雄獅旅遊生態觀光列車，Wikimedia 無自由授權照可用
+- [ ] 無圖，`photoUrl: null`，UI 顯示 📷 佔位圖示
+- 備註：2024 雄獅旅遊生態觀光列車，Wikimedia 無自由授權照可用；原私用照片
+  （`alishan--xuyue.jpg`）已移除。之後補到授權照或自拍再補上。
 
 ### alishan — 福森號 variant
-- [x] filename: `alishan--fusen.jpg`
-- 來源：非 Wikimedia，私人取得照片
-- License: 非自由授權（私用），不對外公開發布
-- 備註：2024 雄獅旅遊檜木觀光列車，Wikimedia 無自由授權照可用
+- [ ] 無圖，`photoUrl: null`，UI 顯示 📷 佔位圖示
+- 備註：2024 雄獅旅遊檜木觀光列車，Wikimedia 無自由授權照可用；原私用照片
+  （`alishan--fusen.jpg`）已移除。之後補到授權照或自拍再補上。
 
 > 卡片 id 已由 `nrm_dr2203` 改名為 `nrm_blueskin`（鐐博藍皮小火車主題，不用單一型號命名），檔名前綴同步更新。
 
@@ -337,9 +335,8 @@
 - `kaohsiung_lrt` 頂層 + CAF variant — `images/kaohsiung_lrt--caf.jpg`
 - `kaohsiung_lrt--alstom` — `images/kaohsiung_lrt--alstom.jpg`
 - `alishan--dl` — `images/alishan--dl.jpg`
-- `alishan--xuyue` — `images/alishan--xuyue.jpg`（私用照片）
-- `alishan--fusen` — `images/alishan--fusen.jpg`（私用照片）
 - `taoyuan_emu--1000` — `images/taoyuan_emu--1000.jpg`
+- `mrt_songshan_xindian--c381` — 沿用 `images/mrt_tamsui_xinyi--c381.jpg`（見淡水信義線段）
 
 ---
 

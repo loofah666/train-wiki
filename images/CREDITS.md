@@ -154,6 +154,7 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - License: **CC BY-SA 4.0**
 - Source: https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C381_train_leaving_Beitou_Station_toward_Fuxinggang_Station.jpg
 - Downloaded: 2026-07-15
+- 備註：此檔案同時沿用於 `mrt_songshan_xindian` 的 C381 variant（兩線共用同型車廂）
 
 ### mrt_songshan_xindian--c371.jpg — 松山新店線 C371 (頂層共用)
 - Author: **Howard61313**
@@ -162,12 +163,11 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Downloaded: 2026-07-15
 - 備註：C371 進站中正紀念堂站月台 2，2011-02-25；`mrt_songshan_xindian` 頂層卡片圖與此 C371 variant 共用同一檔案
 
-### mrt_songshan_xindian--c381.png — 松山新店線 C381 variant
-- Author: 不明（YouTube 截圖）
-- License: 非自由授權（私用）
-- Source: https://www.youtube.com/watch?v=lp1hRypvuYo
-- Downloaded: 2026-07-15
-- 備註：私人使用，不公開發布
+### mrt_songshan_xindian--c381 variant — 改用 mrt_tamsui_xinyi--c381.jpg
+- 備註：不再使用先前私用的 YouTube 截圖（`mrt_songshan_xindian--c381.png` 已移除）。
+  C381 為淡水信義線與松山新店線共用同一型號車廂，兩線車廂外觀完全相同，
+  故直接沿用下方「mrt_tamsui_xinyi--c381.jpg」（Lokseng01, CC BY-SA 4.0）——
+  卡片內文已加註「圖為淡水信義線拍攝，非松山新店線實拍」的說明。
 
 ### mrt_zhonghe_xinlu--c371.jpg — 中和新蘆線 C371(4系) (頂層共用)
 - Author: **Samson Ng . D201@EAL**
@@ -252,13 +252,11 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Source: https://commons.wikimedia.org/wiki/File:AFR_'DL_42'_at_Alishan_2023-07-19.jpg
 - Downloaded: 2026-07-15
 
-### alishan--xuyue.jpg — 阿里山 栩悅號
-- 授權：非自由授權（私用），不對外公開發布
-- Downloaded: 2026-07-15
-
-### alishan--fusen.jpg — 阿里山 福森號
-- 授權：非自由授權（私用），不對外公開發布
-- Downloaded: 2026-07-15
+### 栩悅號 / 福森號 — 無照片，顯示 📷 佔位圖示
+- 備註：先前使用的私用照片已移除（`alishan--xuyue.jpg` / `alishan--fusen.jpg`）。
+  Wikimedia 上目前無這兩款 2024 年觀光列車的自由授權照片，`photoUrl` 已設為
+  `null`，UI 會顯示照片佔位圖示，不借用同卡片其他 variant 的照片。
+  若之後補到授權照片或自行拍攝，再依現有流程補上 photoUrl + photoCredit。
 
 ---
 

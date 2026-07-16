@@ -353,8 +353,8 @@ window.TRAIN_DATA = [
       license: "CC BY 4.0",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:%E5%85%89%E8%8F%AF%E8%99%9F.jpg"
     },
-    name: "光華號 DR2700（白鐵仔）",
-    nameEn: "Kuang-Hua Express DR2700",
+    name: "光華號（白鐵仔）",
+    nameEn: "Kuang-Hua Express",
     model: "DR2700",
     operator: "臺灣鐵路管理局（已退役）",
     type: "台鐵",
@@ -424,8 +424,8 @@ window.TRAIN_DATA = [
       license: "CC BY-SA 3.0",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:THSR_700T_TR17_20130907.jpg"
     },
-    name: "高鐵700T型",
-    nameEn: "Taiwan High Speed Rail 700T",
+    name: "台灣高鐵",
+    nameEn: "Taiwan High Speed Rail",
     model: "700T",
     operator: "台灣高速鐵路股份有限公司",
     type: "高鐵",
@@ -638,8 +638,13 @@ window.TRAIN_DATA = [
         maxSpeed: 80,
         cars: 6,
         seats: 310,
-        photoUrl: "images/mrt_songshan_xindian--c381.png",
-        description: "2012 年投入營運的新世代車款，部分列車配屬新店機廠行駛松山新店線。與淡水信義線共用同一型號，車頭「三眼」燈組設計是辨識特徵。",
+        photoUrl: "images/mrt_tamsui_xinyi--c381.jpg",
+        photoCredit: {
+          author: "Lokseng01",
+          license: "CC BY-SA 4.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C381_train_leaving_Beitou_Station_toward_Fuxinggang_Station.jpg"
+        },
+        description: "2012 年投入營運的新世代車款，部分列車配屬新店機廠行駛松山新店線。與淡水信義線共用同一型號，車頭「三眼」燈組設計是辨識特徵。（圖為淡水信義線拍攝的同型 C381，兩線車廂外觀完全相同，非松山新店線實拍）",
         features: [
           "2012 年啟用，與紅線共用車型",
           "車頭三眼燈組",
@@ -1075,7 +1080,10 @@ window.TRAIN_DATA = [
         maxSpeed: null,
         cars: 5,
         seats: 60,
-        photoUrl: "images/alishan--xuyue.jpg",
+        photoUrl: null,
+        routes: [
+          { name: "栩悅號（嘉義－奮起湖）", stations: ["嘉義", "北門", "樟腦寮", "梨園寮", "奮起湖"] }
+        ],
         description: "栩悅號是林鐵及文資處與雄獅旅遊合作、2024 年 5 月首航的高階觀光列車，由既有阿里山號舊客車改裝而成，全列 5 節、共 60 席。以阿里山「迎賓鳥」栗背林鴝為彩繪主題，並首創台灣火車 360 度環繞透明駕駛室；車廂分包廂席與可 360 度旋轉的瞭望席，配大面觀景窗、環繞音響與專業導覽，主打視、聽、嗅、味、觸「五感」森林體驗，行駛於嘉義－奮起湖間。",
         features: [
           "2024 年首航，雄獅旅遊營運的生態觀光列車",
@@ -1094,7 +1102,13 @@ window.TRAIN_DATA = [
         maxSpeed: null,
         cars: 6,
         seats: 108,
-        photoUrl: "images/alishan--fusen.jpg",
+        photoUrl: null,
+        routes: [
+          { name: "森好食（北門－十字路）", stations: ["北門", "十字路"] },
+          { name: "森林癒（十字路－阿里山，經祝山）", stations: ["十字路", "祝山", "阿里山"] },
+          { name: "好森音（阿里山－奮起湖，經二萬坪）", stations: ["阿里山", "二萬坪", "奮起湖"] },
+          { name: "森品茗（奮起湖－北門）", stations: ["奮起湖", "北門"] }
+        ],
         description: "福森號是林鐵及文資處耗資約 6,500 萬元、以鋼構骨架結合國產紅檜與台灣扁柏全新打造的檜木觀光列車，2024 年 7 月啟航，由雄獅旅遊規劃遊程。全列 6 節、約 108 席，定位為「移動的美術館」，首創台灣火車數位畫框，輪播阿里山主題畫作與畫家陳澄波作品；配 165 公分寬大觀景窗、英國進口牛皮座椅與吧台餐車，車內滿溢紅檜與扁柏天然香氣。",
         features: [
           "2024 年啟航，耗資約 6,500 萬元全新檜木打造",

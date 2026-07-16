@@ -13,39 +13,27 @@
   <div class="header-inner">
     <h1 class="site-title">🚞 台灣鐵道車種百科</h1>
     <p class="site-subtitle">從捷運到高鐵，探索台灣所有鐵道車輛</p>
+  </div>
+</header>
+
+<!-- STICKY NAV: search + jump-to-category -->
+<div class="nav-bar">
+  <div class="nav-bar-inner">
     <div class="search-wrap">
       <input class="search-input" type="search" id="searchInput"
              placeholder="🔍 搜尋車名、型號、營運單位…" autocomplete="off">
     </div>
-  </div>
-</header>
-
-<!-- FILTER BAR -->
-<div class="filter-bar">
-  <div class="filter-bar-inner">
-    <div class="filter-row">
-      <span class="filter-label">車種</span>
-      <div class="chips" id="typeChips"></div>
-    </div>
-    <div class="filter-row">
-      <span class="filter-label">地區</span>
-      <div class="chips" id="regionChips"></div>
-    </div>
-    <div class="filter-row">
-      <span class="filter-label">年代</span>
-      <div class="chips" id="eraChips"></div>
-    </div>
-    <div class="result-count" id="resultCount">符合條件：<strong>0</strong> 種車輛</div>
+    <nav class="type-nav" id="typeNav"></nav>
+    <div class="result-count" id="resultCount"></div>
   </div>
 </div>
 
 <!-- MAIN -->
 <main class="main">
-  <div class="grid" id="grid"></div>
+  <div id="sections"></div>
 </main>
 
 <script src="data.js"></script>
-<script src="illustrations.js"></script>
 <script src="app.js"></script>
 
 </body>

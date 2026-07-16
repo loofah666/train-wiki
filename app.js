@@ -1,92 +1,41 @@
 const data = window.TRAIN_DATA;
 
 /* ──────────────────────────────────
-   FILTER CONFIG (derived from data)
+   TYPE SECTIONS
 ────────────────────────────────── */
-function yearToDecade(year) {
-  if (!year) return "";
-  return `${Math.floor(year / 10) * 10}s`;
-}
+const TYPE_ORDER = ["台鐵", "觀光", "高鐵", "捷運", "輕軌"];
+const TYPE_EMOJI = { "台鐵": "🚆", "高鐵": "🚄", "捷運": "🚇", "輕軌": "🚊", "觀光": "🚂" };
+/* Categorical accent per type (validated 5-slot palette, fixed order — see dataviz skill) */
+const TYPE_ACCENT = { "台鐵": "#2a78d6", "高鐵": "#1baf7a", "捷運": "#eda100", "輕軌": "#008300", "觀光": "#4a3aa7" };
 
-/* Return the "primary" variant of a train.
-   Priority: (1) matches the currently-active era filter,
-             (2) newest active variant,
-             (3) newest overall variant.
+/* Return the "primary" variant of a train: newest active variant,
+   falling back to newest overall if none are active.
    For flat (no-variants) entries, returns null. */
 function getPrimaryVariant(v) {
   if (!v.variants || !v.variants.length) return null;
-  if (activeEra !== "全部") {
-    const eraMatch = v.variants.filter(x => yearToDecade(x.yearStart) === activeEra);
-    if (eraMatch.length) {
-      return eraMatch.reduce((a, b) => (b.yearStart || 0) > (a.yearStart || 0) ? b : a);
-    }
-  }
   const active = v.variants.filter(x => x.status !== "retired");
   const pool = active.length ? active : v.variants;
   return pool.reduce((a, b) => (b.yearStart || 0) > (a.yearStart || 0) ? b : a);
 }
 
-/* Year used on card era-tag: primary variant year for multi-variant, yearStart for flat. */
-function primaryYear(v) {
-  const primary = getPrimaryVariant(v);
-  return primary ? primary.yearStart : v.yearStart;
+/* True when at least one variant defines its own routes (e.g. 阿里山's
+   栩悅號/福森號 run different segments than the shared 本線). When true,
+   routes render per-variant instead of once in the shared basic-info area. */
+function hasPerVariantRoutes(v) {
+  return Array.isArray(v.variants) && v.variants.some(x => x.routes && x.routes.length);
 }
 
-/* All years across variants (or single year); used for era filter. */
-function allYears(v) {
-  if (v.variants && v.variants.length) return v.variants.map(x => x.yearStart).filter(Boolean);
-  return v.yearStart ? [v.yearStart] : [];
-}
+let searchQuery = "";
+let openCardId  = null;
 
-const TYPES   = ["全部", ...new Set(data.map(d => d.type))];
-const REGIONS = ["全部", ...new Set(data.flatMap(d => d.region || []))];
-const ERAS    = ["全部", ...[...new Set(data.flatMap(d => allYears(d).map(yearToDecade)))].sort()];
-
-let activeType   = "全部";
-let activeRegion = "全部";
-let activeEra    = "全部";
-let searchQuery  = "";
-let openCardId   = null;
-
-/* ── CHIPS ── */
-function buildChips(containerId, items, activeClass, getActive, setter) {
-  const el = document.getElementById(containerId);
-  el.innerHTML = "";
-  items.forEach(item => {
-    const btn = document.createElement("button");
-    btn.className = "chip" + (getActive() === item ? " " + activeClass : "");
-    btn.textContent = item;
-    btn.addEventListener("click", () => {
-      setter(item);
-      buildChips(containerId, items, activeClass, getActive, setter);
-      render();
-    });
-    el.appendChild(btn);
-  });
-}
-
-function buildAllChips() {
-  buildChips("typeChips",   TYPES,   "active-type",   () => activeType,   v => { activeType   = v; });
-  buildChips("regionChips", REGIONS, "active-region", () => activeRegion, v => { activeRegion = v; });
-  buildChips("eraChips",    ERAS,    "active-era",    () => activeEra,    v => { activeEra    = v; });
-}
-
-/* ── FILTERS ── */
-function matchesFilters(v) {
-  if (activeType   !== "全部" && v.type !== activeType)                          return false;
-  if (activeRegion !== "全部" && !(v.region && v.region.includes(activeRegion))) return false;
-  if (activeEra    !== "全部") {
-    const eras = allYears(v).map(yearToDecade);
-    if (!eras.includes(activeEra)) return false;
-  }
-  if (searchQuery) {
-    const q = searchQuery.toLowerCase();
-    const variantHay = (v.variants || []).flatMap(x => [x.model, x.nickname, x.manufacturer]);
-    const hay = [v.name, v.nameEn, v.model, v.operator, v.type, ...(v.tags||[]), ...variantHay]
-      .join(" ").toLowerCase();
-    if (!hay.includes(q)) return false;
-  }
-  return true;
+/* ── SEARCH ── */
+function matchesSearch(v) {
+  if (!searchQuery) return true;
+  const q = searchQuery.toLowerCase();
+  const variantHay = (v.variants || []).flatMap(x => [x.model, x.nickname, x.manufacturer]);
+  const hay = [v.name, v.nameEn, v.model, v.operator, v.type, ...(v.tags||[]), ...variantHay]
+    .join(" ").toLowerCase();
+  return hay.includes(q);
 }
 
 /* ── HTML / URL / COLOR HELPERS ── */
@@ -124,9 +73,13 @@ function gradient(color, delta=-30) {
 
 /* Build the photo slot with optional credit tooltip.
    `source` is the variant/train whose photoUrl+photoCredit is used;
-   falls back to top-level fields on the train object `v`. */
+   falls back to top-level fields on the train object `v` — unless
+   `source` explicitly sets photoUrl: null, meaning "no photo exists
+   for this specific variant" (show the placeholder, don't borrow a
+   sibling variant's photo and mislabel it). */
 function buildPhotoSlot(v, source) {
-  const photo = safePhotoUrl((source && source.photoUrl) || v.photoUrl);
+  const hasOwnPhoto = source && Object.prototype.hasOwnProperty.call(source, "photoUrl");
+  const photo = safePhotoUrl(hasOwnPhoto ? source.photoUrl : v.photoUrl);
   if (!photo) {
     return `<div class="img-slot"><span>📷</span><span>照片</span></div>`;
   }
@@ -144,12 +97,74 @@ function buildPhotoSlot(v, source) {
   </div>`;
 }
 
+/* Build the station-hop row for one or more routes. */
+function buildRoutesHTML(routes, color) {
+  const clr = safeColor(color);
+  return routes.map(r => {
+    const stHTML = r.stations.map((s, i) => {
+      const isLast = i === r.stations.length - 1;
+      return `<div class="station" style="color:${clr}">
+        <div class="station-row">
+          <div class="station-dot"></div>
+          ${!isLast ? `<div class="station-line"></div>` : ""}
+        </div>
+        <div class="station-name">${esc(s)}</div>
+      </div>`;
+    }).join("");
+    return `<div class="route-name">${esc(r.name)}</div>
+            <div class="route-stations-scroll"><div class="route-stations">${stHTML}</div></div>`;
+  }).join("");
+}
+
+/* ── CARD (grid) ── */
+
+/* All variant model names for a train, or the single flat model.
+   Drives the tag-like "variant pills" row on each card. */
+function variantPillModels(v) {
+  if (v.variants && v.variants.length) return v.variants.map(x => x.model);
+  return v.model ? [v.model] : [];
+}
+
+function buildPillsHTML(v) {
+  const models = variantPillModels(v);
+  if (!models.length) return "";
+  return `<div class="card-pills">${
+    models.map(m => `<span class="variant-pill" data-id="${esc(v.id)}" data-variant="${esc(m)}">${esc(m)}</span>`).join("")
+  }</div>`;
+}
+
+function buildCardEl(v, activeId) {
+  const card = document.createElement("div");
+  card.className = "card" + (v.id === activeId ? " active" : "");
+  card.dataset.id = v.id;
+  card.setAttribute("role", "button");
+  card.setAttribute("tabindex", "0");
+  card.setAttribute("aria-label", v.name);
+
+  const primary = getPrimaryVariant(v);
+  const photo = safePhotoUrl((primary && primary.photoUrl) || v.photoUrl);
+
+  card.innerHTML = `
+    <div class="card-media" style="background:${gradient(v.color)};">
+      <span class="card-media-emoji">${esc(v.emoji || "🚂")}</span>
+      ${photo ? `<img class="card-media-img" src="${esc(photo)}" alt="${esc(v.name)}" loading="lazy" onerror="this.remove()">` : ""}
+      <div class="card-scrim"></div>
+      <div class="card-overlay">
+        <div class="card-name">${esc(v.name)}</div>
+        ${buildPillsHTML(v)}
+        <div class="card-operator">${esc(v.operator || "")}</div>
+      </div>
+    </div>`;
+  return card;
+}
+
 /* ── DETAIL HTML ── */
 
-/* Build the per-variant section (specs grid + features + funFact).
-   `source` can be a flat train entry OR a variant object — both have
-   the same shape for the fields we read here. */
-function buildVariantSection(source) {
+/* Build the variant-specific section: photo + specs + features + funFact
+   (+ its own routes, only when the card uses per-variant routes).
+   `source` can be a flat train entry OR a variant object. `v` is always
+   the parent train (needed for color/photo fallback and route fallback). */
+function buildVariantSection(source, v) {
   const specs = [
     { label:"最高時速", value: source.maxSpeed     ? source.maxSpeed + " km/h" : "—" },
     { label:"車廂節數", value: source.cars         ? source.cars     + " 節"   : "—" },
@@ -162,43 +177,47 @@ function buildVariantSection(source) {
     `<div class="spec-item"><div class="spec-label">${esc(s.label)}</div><div class="spec-value">${esc(s.value)}</div></div>`
   ).join("");
 
-  const featHTML = (source.features || []).map(f => `<li>${esc(f)}</li>`).join("");
+  // For flat cards `source` IS `v` — its description/features already
+  // rendered once in the basic-info block, so skip re-printing them here.
+  const isDistinctVariant = source !== v;
+  const featHTML = (isDistinctVariant && source.features || []).map(f => `<li>${esc(f)}</li>`).join("");
 
+  let routesHTML = "";
+  if (hasPerVariantRoutes(v)) {
+    const routes = source.routes || v.routes || [];
+    if (routes.length) routesHTML = buildRoutesHTML(routes, v.color);
+  }
+
+  // Photo sits in its own column (sticky on wide screens) so it stays
+  // in view alongside specs/features while scrolling, instead of
+  // scrolling away before the reader reaches the technical details.
   return `
-    ${source.description ? `<p class="variant-desc">${esc(source.description)}</p>` : ""}
-    <div class="section-title">技術規格</div>
-    <div class="specs-grid">${specsHTML}</div>
-    ${featHTML ? `<div class="section-title">特色亮點</div><ul class="features-list">${featHTML}</ul>` : ""}
-    ${source.funFact ? `<div class="fun-fact"><div class="fun-fact-icon">🎉</div><div class="fun-fact-text">${esc(source.funFact)}</div></div>` : ""}
+    <div class="variant-body">
+      <div class="variant-photo-slot">${buildPhotoSlot(v, source)}</div>
+      <div class="variant-info">
+        ${isDistinctVariant && source.description ? `<p class="variant-desc">${esc(source.description)}</p>` : ""}
+        ${routesHTML ? `<div class="section-title">營運路線</div><div class="routes-wrap">${routesHTML}</div>` : ""}
+        <div class="section-title">技術規格</div>
+        <div class="specs-grid">${specsHTML}</div>
+        ${featHTML ? `<div class="section-title">特色亮點</div><ul class="features-list">${featHTML}</ul>` : ""}
+        ${source.funFact ? `<div class="fun-fact"><div class="fun-fact-icon">🎉</div><div class="fun-fact-text">${esc(source.funFact)}</div></div>` : ""}
+      </div>
+    </div>
   `;
 }
 
 function buildDetailHTML(v) {
-  // Routes (service-level, shared across variants)
-  let routesHTML = "";
-  if (v.routes && v.routes.length) {
-    const clr = safeColor(v.color);
-    routesHTML = v.routes.map(r => {
-      const stHTML = r.stations.map((s, i) => {
-        const isLast = i === r.stations.length - 1;
-        return `<div class="station" style="color:${clr}">
-          <div class="station-row">
-            <div class="station-dot"></div>
-            ${!isLast ? `<div class="station-line"></div>` : ""}
-          </div>
-          <div class="station-name">${esc(s)}</div>
-        </div>`;
-      }).join("");
-      return `<div class="route-name">${esc(r.name)}</div>
-              <div class="route-stations-scroll"><div class="route-stations">${stHTML}</div></div>`;
-    }).join("");
-  }
-
   const hasVariants = Array.isArray(v.variants) && v.variants.length > 0;
   const primary = hasVariants ? getPrimaryVariant(v) : null;
   const headerModel = hasVariants ? primary.model : v.model;
+  const perVariantRoutes = hasPerVariantRoutes(v);
 
-  const svg = (window.TRAIN_SVG && window.TRAIN_SVG[v.id]) || "";
+  const featHTML = (v.features || []).map(f => `<li>${esc(f)}</li>`).join("");
+
+  let sharedRoutesHTML = "";
+  if (!perVariantRoutes && v.routes && v.routes.length) {
+    sharedRoutesHTML = buildRoutesHTML(v.routes, v.color);
+  }
 
   let tabsHTML = "";
   if (hasVariants) {
@@ -215,7 +234,6 @@ function buildDetailHTML(v) {
 
   return `
     <div class="detail-header" style="background:${gradient(v.color, -35)};">
-      <div class="detail-header-emoji">${esc(v.emoji || "🚂")}</div>
       <div class="detail-header-info">
         <div class="detail-header-name">${esc(v.name)}</div>
         <div class="detail-header-model">${esc(v.nameEn || "")}${headerModel ? " · " + esc(headerModel) : ""}</div>
@@ -224,17 +242,33 @@ function buildDetailHTML(v) {
       <button class="close-btn" onclick="closeDetail()" title="關閉">✕</button>
     </div>
     <div class="detail-body">
-      <div class="img-slots">
-        ${buildPhotoSlot(v, hasVariants ? primary : v)}
-        <div class="img-slot img-slot--svg">
-          ${svg || `<span>${esc(v.emoji || "🚂")}</span><span style="font-size:0.7rem;color:#a0aec0">插畫</span>`}
-        </div>
+      <div class="basic-info">
+        <p class="detail-desc">${esc(v.description || "")}</p>
+        ${featHTML ? `<ul class="features-list basic-features">${featHTML}</ul>` : ""}
+        ${sharedRoutesHTML ? `<div class="section-title">營運路線</div><div class="routes-wrap">${sharedRoutesHTML}</div>` : ""}
       </div>
-      <p class="detail-desc">${esc(v.description || "")}</p>
-      ${routesHTML ? `<div class="section-title">營運路線</div><div class="routes-wrap">${routesHTML}</div>` : ""}
       ${tabsHTML}
-      <div class="variant-detail">${buildVariantSection(hasVariants ? primary : v)}</div>
+      <div class="variant-detail">${buildVariantSection(hasVariants ? primary : v, v)}</div>
     </div>`;
+}
+
+/* Switch the active variant tab within an already-open detail panel.
+   Shared by both the in-panel tab clicks and the on-card variant pills. */
+function activateVariant(panel, v, model) {
+  if (!v.variants) return;
+  const variant = v.variants.find(x => x.model === model);
+  if (!variant) return;
+  const panelInner = panel.querySelector(".detail-panel");
+  panel.querySelectorAll(".variant-tab").forEach(t =>
+    t.classList.toggle("active", t.dataset.variant === model));
+  const section = panel.querySelector(".variant-detail");
+  section.innerHTML = buildVariantSection(variant, v);
+  const header = panel.querySelector(".detail-header-model");
+  if (header) {
+    const nameEn = v.nameEn ? esc(v.nameEn) : "";
+    header.innerHTML = nameEn + (variant.model ? " · " + esc(variant.model) : "");
+  }
+  panel.style.maxHeight = panelInner.scrollHeight + "px";
 }
 
 /* ── DETAIL PANEL OPEN/CLOSE ── */
@@ -242,12 +276,37 @@ function getPanelForCard(id) {
   return document.querySelector(`.detail-panel-wrap[data-for-${CSS.escape(id)}]`);
 }
 
+/* `.detail-panel-wrap` needs overflow:hidden while its max-height is
+   animating (so content doesn't visibly poke out), but overflow:hidden
+   also makes it the sticky-positioning containing block for any sticky
+   descendant (the variant tabs / photo column) — pinning them to that
+   box instead of the viewport, i.e. no visible "stick" at all. Once the
+   open transition settles, switch to overflow:visible so sticky works;
+   switch back to hidden before collapsing so the close animation still
+   clips cleanly. */
+function settlePanel(panel) {
+  panel.classList.add("settled");
+}
+function unsettlePanel(panel) {
+  panel.classList.remove("settled");
+}
+
 function mountDetail(panel, v, { animate = true } = {}) {
   const inner = panel.querySelector(".detail-panel");
   inner.innerHTML = buildDetailHTML(v);
   panel.classList.add("open");
-  // Set max-height to actual content height so CSS transition works and no clipping
-  panel.style.maxHeight = animate ? inner.scrollHeight + "px" : "none";
+  if (!animate) {
+    panel.style.maxHeight = "none";
+    settlePanel(panel);
+    return;
+  }
+  unsettlePanel(panel);
+  panel.style.maxHeight = inner.scrollHeight + "px";
+  panel.addEventListener("transitionend", function onEnd(e) {
+    if (e.propertyName !== "max-height") return;
+    panel.removeEventListener("transitionend", onEnd);
+    settlePanel(panel);
+  });
 }
 
 function openDetail(id) {
@@ -259,7 +318,11 @@ function openDetail(id) {
   // Close previous if different row
   if (openCardId && openCardId !== id) {
     const prev = getPanelForCard(openCardId);
-    if (prev) { prev.classList.remove("open"); prev.style.maxHeight = ""; }
+    if (prev) {
+      unsettlePanel(prev);
+      prev.classList.remove("open");
+      prev.style.maxHeight = "";
+    }
     document.querySelector(`.card[data-id="${openCardId}"]`)?.classList.remove("active");
   }
 
@@ -272,7 +335,11 @@ function openDetail(id) {
 function closeDetail() {
   if (!openCardId) return;
   const panel = getPanelForCard(openCardId);
-  if (panel) { panel.classList.remove("open"); panel.style.maxHeight = ""; }
+  if (panel) {
+    unsettlePanel(panel);
+    panel.classList.remove("open");
+    panel.style.maxHeight = "";
+  }
   document.querySelector(`.card[data-id="${openCardId}"]`)?.classList.remove("active");
   openCardId = null;
 }
@@ -291,82 +358,105 @@ function getColumns() {
 }
 
 function render() {
-  const grid     = document.getElementById("grid");
-  const filtered = data.filter(matchesFilters);
-  document.getElementById("resultCount").innerHTML =
-    `符合條件：<strong>${filtered.length}</strong> 種車輛`;
+  const root = document.getElementById("sections");
+  const wasOpen = openCardId; // preserve across re-render
+  root.innerHTML = "";
 
-  grid.innerHTML = "";
+  const filtered = data.filter(matchesSearch);
+  const resultCount = document.getElementById("resultCount");
 
   if (!filtered.length) {
-    grid.innerHTML = `<div class="no-results">
+    resultCount.textContent = "沒有符合的車輛";
+    root.innerHTML = `<div class="no-results">
       <span class="no-results-emoji">🔍</span>
-      <p>找不到符合條件的車輛，試試看其他篩選條件？</p>
+      <p>找不到符合條件的車輛，換個關鍵字試試？</p>
     </div>`;
     openCardId = null;
     return;
   }
 
+  resultCount.textContent = searchQuery
+    ? `符合「${searchQuery}」：${filtered.length} 種車輛`
+    : `共 ${filtered.length} 種車輛`;
+
   const cols = getColumns();
-  const wasOpen = openCardId; // preserve across re-render
 
-  // Chunk into rows
-  for (let i = 0; i < filtered.length; i += cols) {
-    const row = filtered.slice(i, i + cols);
-    const rowIds = row.map(v => v.id);
+  TYPE_ORDER.forEach(type => {
+    const items = filtered.filter(v => v.type === type);
+    if (!items.length) return;
 
-    // Cards
-    row.forEach(v => {
-      const card = document.createElement("div");
-      card.className = "card" + (v.id === wasOpen ? " active" : "");
-      card.dataset.id = v.id;
-      card.setAttribute("role", "button");
-      card.setAttribute("tabindex", "0");
-      card.setAttribute("aria-label", v.name);
-      card.innerHTML = `
-        <div class="card-top" style="background:${gradient(v.color)};">
-          ${esc(v.emoji || "🚂")}
-          <div class="card-top-stripe"></div>
-        </div>
-        <div class="card-body">
-          <div class="card-name">${esc(v.name)}</div>
-          <div class="card-model">${esc(v.variants ? `${v.variants.length} 車型世代` : (v.model || ""))}</div>
-          <div class="card-operator">${esc(v.operator || "")}</div>
-          <div class="card-tags">
-            <span class="tag">${esc(v.type)}</span>
-            ${(v.region||[]).map(r => `<span class="tag">${esc(r)}</span>`).join("")}
-            <span class="tag">${esc(yearToDecade(primaryYear(v)))}</span>
-          </div>
-        </div>`;
-      grid.appendChild(card);
-    });
+    const section = document.createElement("section");
+    section.className = "type-section";
+    section.id = "section-" + type;
+    section.innerHTML = `
+      <h2 class="type-heading" style="--accent:${TYPE_ACCENT[type] || "#2a78d6"}">
+        <span class="type-heading-emoji">${TYPE_EMOJI[type] || "🚆"}</span>
+        ${esc(type)}
+        <span class="type-count">${items.length}</span>
+      </h2>
+      <div class="grid"></div>`;
+    root.appendChild(section);
 
-    // One detail panel per row, spanning all columns
-    const panelWrap = document.createElement("div");
-    panelWrap.className = "detail-panel-wrap";
-    rowIds.forEach(id => panelWrap.setAttribute(`data-for-${id}`, "1"));
-    panelWrap.innerHTML = `<div class="detail-panel"></div>`;
-    grid.appendChild(panelWrap);
+    const grid = section.querySelector(".grid");
 
-    // Re-open if this row contained the previously open card
-    if (wasOpen && rowIds.includes(wasOpen)) {
-      const v = data.find(x => x.id === wasOpen);
-      if (v) {
-        mountDetail(panelWrap, v, { animate: false });
-        document.querySelector(`.card[data-id="${wasOpen}"]`)?.classList.add("active");
+    // Chunk into rows so each row gets one full-width detail panel
+    for (let i = 0; i < items.length; i += cols) {
+      const row = items.slice(i, i + cols);
+      const rowIds = row.map(v => v.id);
+
+      row.forEach(v => grid.appendChild(buildCardEl(v, wasOpen)));
+
+      const panelWrap = document.createElement("div");
+      panelWrap.className = "detail-panel-wrap";
+      rowIds.forEach(id => panelWrap.setAttribute(`data-for-${id}`, "1"));
+      panelWrap.innerHTML = `<div class="detail-panel"></div>`;
+      grid.appendChild(panelWrap);
+
+      if (wasOpen && rowIds.includes(wasOpen)) {
+        const v = data.find(x => x.id === wasOpen);
+        if (v) {
+          mountDetail(panelWrap, v, { animate: false });
+          grid.querySelector(`.card[data-id="${wasOpen}"]`)?.classList.add("active");
+        }
       }
     }
-  }
+  });
+}
+
+/* ── TYPE JUMP-NAV ── */
+function buildTypeNav() {
+  const nav = document.getElementById("typeNav");
+  nav.innerHTML = TYPE_ORDER.map(type =>
+    `<button class="type-nav-link" data-type="${esc(type)}" style="--accent:${TYPE_ACCENT[type] || "#2a78d6"}">
+      <span class="type-nav-dot"></span>${TYPE_EMOJI[type] || "🚆"} ${esc(type)}
+    </button>`
+  ).join("");
+  nav.addEventListener("click", e => {
+    const btn = e.target.closest(".type-nav-link");
+    if (!btn) return;
+    document.getElementById("section-" + btn.dataset.type)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 }
 
 /* ── INIT ── */
+
+/* Keep --navbar-h in sync with the real sticky nav-bar height, so the
+   sticky variant tabs / photo column pin just below it instead of
+   using a hardcoded guess (the bar can wrap to two lines on narrow
+   viewports when the search box and type-nav don't fit one row). */
+function syncNavbarHeight() {
+  const bar = document.querySelector(".nav-bar");
+  if (bar) document.documentElement.style.setProperty("--navbar-h", bar.offsetHeight + "px");
+}
+window.addEventListener("resize", syncNavbarHeight);
+
 document.getElementById("searchInput").addEventListener("input", e => { searchQuery = e.target.value.trim(); render(); });
 
-const gridEl = document.getElementById("grid");
-gridEl.addEventListener("click", e => {
+const sectionsEl = document.getElementById("sections");
+sectionsEl.addEventListener("click", e => {
   // Photo credit toggle
   const creditBtn = e.target.closest(".photo-credit-btn");
-  if (creditBtn && gridEl.contains(creditBtn)) {
+  if (creditBtn && sectionsEl.contains(creditBtn)) {
     e.stopPropagation();
     const slot = creditBtn.closest(".img-slot--photo");
     slot?.classList.toggle("credit-open");
@@ -375,46 +465,36 @@ gridEl.addEventListener("click", e => {
   // Close open credit tooltip on outside click
   document.querySelectorAll(".img-slot--photo.credit-open").forEach(s => s.classList.remove("credit-open"));
 
-  // Variant tab switch takes priority over card click
+  // Variant tab switch (inside an open detail panel) takes priority over card click
   const tab = e.target.closest(".variant-tab");
-  if (tab && gridEl.contains(tab)) {
+  if (tab && sectionsEl.contains(tab)) {
     e.stopPropagation();
     const panel = tab.closest(".detail-panel-wrap");
-    const panelInner = panel.querySelector(".detail-panel");
-    const model = tab.dataset.variant;
     const v = data.find(x => x.id === openCardId);
-    if (!v || !v.variants) return;
-    const variant = v.variants.find(x => x.model === model);
-    if (!variant) return;
-    panel.querySelectorAll(".variant-tab").forEach(t => t.classList.remove("active"));
-    tab.classList.add("active");
-    const section = panel.querySelector(".variant-detail");
-    section.innerHTML = buildVariantSection(variant);
-    // Update header model line
-    const header = panel.querySelector(".detail-header-model");
-    if (header) {
-      const nameEn = v.nameEn ? esc(v.nameEn) : "";
-      header.innerHTML = nameEn + (variant.model ? " · " + esc(variant.model) : "");
-    }
-    // Update the photo slot (photoUrl and credit may differ per variant)
-    const imgSlots = panel.querySelector(".img-slots");
-    const oldPhotoSlot = imgSlots && imgSlots.firstElementChild;
-    if (oldPhotoSlot) {
-      const tmp = document.createElement("div");
-      tmp.innerHTML = buildPhotoSlot(v, variant);
-      oldPhotoSlot.replaceWith(tmp.firstElementChild);
-    }
-    // Recalc panel max-height because content height changed
-    panel.style.maxHeight = panelInner.scrollHeight + "px";
+    if (v) activateVariant(panel, v, tab.dataset.variant);
     return;
   }
+
+  // Variant pill on a (possibly still closed) card: open it straight to that variant
+  const pill = e.target.closest(".variant-pill");
+  if (pill && sectionsEl.contains(pill)) {
+    e.stopPropagation();
+    const id = pill.dataset.id;
+    const v = data.find(x => x.id === id);
+    if (!v) return;
+    if (openCardId !== id) openDetail(id);
+    const panel = getPanelForCard(id);
+    if (panel) activateVariant(panel, v, pill.dataset.variant);
+    return;
+  }
+
   const card = e.target.closest(".card");
-  if (card && gridEl.contains(card)) toggleDetail(card.dataset.id);
+  if (card && sectionsEl.contains(card)) toggleDetail(card.dataset.id);
 });
-gridEl.addEventListener("keydown", e => {
+sectionsEl.addEventListener("keydown", e => {
   if (e.key !== "Enter" && e.key !== " ") return;
   const card = e.target.closest(".card");
-  if (card && gridEl.contains(card)) {
+  if (card && sectionsEl.contains(card)) {
     e.preventDefault();
     toggleDetail(card.dataset.id);
   }
@@ -428,5 +508,7 @@ window.addEventListener("resize", () => {
     render();
   }
 });
-buildAllChips();
+
+buildTypeNav();
+syncNavbarHeight();
 render();
