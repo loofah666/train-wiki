@@ -68,6 +68,13 @@
 - Download: https://upload.wikimedia.org/wikipedia/commons/7/75/TRA_EMU3000_at_Qidu_Station_20220618.jpg
 - 備註：2022-06-18 於七堵站；同時作為 `ziqiang` 頂層代表
 
+### ziqiang--dr2800 (DR2800/2900/3000 柴聯自強號，已退役)
+- [x] filename: `ziqiang--dr2800.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:TRA_DR2864_at_Taitung_Station_20140225.jpg
+- Author: Komushi / License: CC BY-SA 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/2/2e/TRA_DR2864_at_Taitung_Station_20140225.jpg
+- 備註：DR2864（DR2800 型）於台東站，2014-02-25；代表 DR2800/2900/3000 三型柴聯自強號（2023-04-26 全數退役）
+
 ### juguang (莒光號)
 - [x] filename: `juguang--e400.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:TRA_E402_Chu-Kuang_Express_at_Taitung_Station_20201114.jpg
@@ -190,6 +197,13 @@
 - Download: https://upload.wikimedia.org/wikipedia/commons/8/8d/A_Taipei_Metro_C381_train_leaving_Beitou_Station_toward_Fuxinggang_Station.jpg
 - 備註：6016×4016，C381 離開北投站往復興崗，2021-04-02
 
+#### C371(3節編組) variant — 新北投支線
+- [x] filename: `mrt_tamsui_xinyi--c371_xinbeitou.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C371_train_leaving_Beitou_Station_toward_Xinbeitou_Station.jpg
+- Author: Lokseng01 / License: CC BY-SA 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/e/e0/A_Taipei_Metro_C371_train_leaving_Beitou_Station_toward_Xinbeitou_Station.jpg
+- 備註：C371 3節編組列車自北投站駛往新北投站，2021-04-02
+
 ### mrt_songshan_xindian — 松山新店線（綠線）
 
 #### 頂層 / C371(3系) variant
@@ -244,6 +258,13 @@
 - Download: https://upload.wikimedia.org/wikipedia/commons/2/2a/Kaohsiung_MRT_Red_Line_Train.jpg
 - 備註：世運站，2008-07-12
 
+### tcmetro_green (台中捷運綠線中運量電聯車)
+- [x] filename: `tcmetro_green--emu.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:Trains_at_HSR_Taichung_Station_(Taichung_Metro)_01.jpg
+- Author: Cheng-en Cheng / License: CC BY-SA 2.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/c/ca/Trains_at_HSR_Taichung_Station_%28Taichung_Metro%29_01.jpg
+- 備註：4800×3200，列車#13 進站高鐵臺中站，2020-11-21（試營運期間，標準塗裝、無廣告包膜）
+
 ---
 
 ## 高雄輕軌
@@ -261,6 +282,17 @@
 - Author: Takeshi Aida / License: CC BY-SA 2.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/e/e1/Kaohsiung_Light_Rail_Alstom_Citadis%2C_Pier-2_Art_Center_%2820240316a%29_%2853607047337%29.jpg
 - 備註：於駁二藝術特區，2024-03-16
+
+---
+
+## 安坑輕軌
+
+### ankeng_lrt (安坑輕軌電聯車，光耀金塗裝)
+- [x] filename: `ankeng_lrt--guangyaojin.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:Ankeng_LRV_at_Shisizhang_20260107.jpg
+- Author: Sinsyuan / License: CC BY-SA 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/d/d8/Ankeng_LRV_at_Shisizhang_20260107.jpg
+- 備註：4000×2252，十四張站月台兩列列車並排（往雙城站方向），2026-01-07 上傳（Galaxy S25 Ultra 拍攝）
 
 ---
 

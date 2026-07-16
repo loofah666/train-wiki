@@ -114,6 +114,26 @@ window.TRAIN_DATA = [
         funFact: "1991 年曾嘗試推出類似日本綠色車廂的商務車廂，台北到高雄票價 999 元，結果一年後就因乏人問津停辦——比高鐵商務車廂還早了將近 20 年！"
       },
       {
+        model: "DR2800/2900/3000",
+        nickname: "柴聯自強號",
+        manufacturer: "日本 東急車輛（DR2800）/ 日本 日立製作所（DR2900、DR3000）",
+        yearStart: 1982,
+        yearEnd: 2023,
+        status: "retired",
+        maxSpeed: 110,
+        cars: 3,
+        seats: 134,
+        photoUrl: "images/ziqiang--dr2800.jpg",
+        photoCredit: { author: "Komushi", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_DR2864_at_Taitung_Station_20140225.jpg" },
+        description: "1982 年上路的 DR2800 是東部幹線第一款附冷氣的柴聯自強號，取代了無冷氣的光華號（DR2700）擔綱東部主力；1987 年日立打造的 DR2900、1990 年的 DR3000 陸續加入，撐起北迴、南迴、東部幹線超過 40 年的自強號服務。三代車外觀相近、控制系統相容可混編運轉，隨著南迴線 2020 年電氣化完工、全島幹線不再有非電氣化路段，三型柴聯車於 2023 年 4 月 26 日以紀念列車畫下句點。",
+        features: [
+          "東部幹線首款附冷氣的柴聯自強號，取代無冷氣的光華號（DR2700）",
+          "三車一組（2 動力車＋1 拖車），三代車控制系統相容可混合編組",
+          "服役超過 40 年，直到南迴線電氣化完成後才於 2023 年退役"
+        ],
+        funFact: "1987 年首批 DR2900 抵台前，台鐵就已經開始賣票——最後兩組甚至還在貨輪上，一上岸就連夜趕裝座椅與冷氣、徹夜試車，隔天立刻投入農曆春節疏運，成為鐵道迷口中的傳奇。"
+      },
+      {
         model: "EMU1200",
         nickname: "紅斑馬",
         manufacturer: "南非 UCW（原車體）/ 英國 GEC（電機）/ 台灣車輛（改造）",
@@ -537,7 +557,8 @@ window.TRAIN_DATA = [
       "含高架、地面、地下段"
     ],
     routes: [
-      { name: "淡水信義線", stations: ["淡水", "北投", "士林", "台北車站", "東門", "台北101/世貿", "象山"] }
+      { name: "淡水信義線", stations: ["淡水", "北投", "士林", "台北車站", "東門", "台北101/世貿", "象山"] },
+      { name: "新北投支線", stations: ["北投", "新北投"] }
     ],
     funFact: "2001 年納莉颱風造成淡水線部分路段泡水，全線停駛將近 3 個月——是北捷史上最嚴重的天災停擺事件。",
     tags: ["捷運", "北部", "淡水信義線", "紅線", "高運量"],
@@ -580,6 +601,25 @@ window.TRAIN_DATA = [
           "與 C371 零件互通率逾 50%"
         ],
         funFact: "C381 是台北捷運第一款車頭燈組採「三眼」設計的車型——上下兩顆為近光燈、中間一顆是遠光燈，遠遠一看就能認出它。"
+      },
+      {
+        model: "C371（新北投支線）",
+        nickname: "",
+        manufacturer: "日本 川崎重工／台灣車輛",
+        yearStart: 2006,
+        status: "active",
+        maxSpeed: 25,
+        cars: 3,
+        seats: 110,
+        photoUrl: "images/mrt_tamsui_xinyi--c371_xinbeitou.jpg",
+        photoCredit: { author: "Lokseng01", license: "CC BY-SA 4.0", sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C371_train_leaving_Beitou_Station_toward_Xinbeitou_Station.jpg" },
+        description: "新北投支線是北捷唯一全線僅設兩站、且列車固定以 3 節編組獨立運行的路線。1997 年淡水線通車時，此段沿用舊台鐵新北投線路廊改建為高架捷運支線；1998–2006 年間曾以拆解自 6 節編組的臨時 3 節車廂運行，2006 年 7 月起才改用專為本線與小碧潭支線打造的 C371 3 節編組（397～399 號列車）。其中 399 號列車自 2009 年起塗裝為「溫泉彩繪列車」，車廂內外皆為北投溫泉主題彩繪。",
+        features: [
+          "北捷唯一固定 3 節編組獨立運行的路線",
+          "全線僅 1.2 公里、2 站，為台灣最短的捷運支線",
+          "因鄰近民宅噪音問題，通車速限僅 25 km/h"
+        ],
+        funFact: "新北投支線的路廊源自已廢止的台鐵新北投線；由於列車噪音在試車期間遭沿線居民強烈反彈，捷運通車後速限僅 25 km/h，遠低於其他路線的最高速度。"
       }
     ]
   },
@@ -604,7 +644,8 @@ window.TRAIN_DATA = [
       "C371（3 系）+ C381 混合車隊"
     ],
     routes: [
-      { name: "松山新店線", stations: ["新店", "公館", "中正紀念堂", "西門", "中山", "松江南京", "松山"] }
+      { name: "松山新店線", stations: ["新店", "公館", "中正紀念堂", "西門", "中山", "松江南京", "松山"] },
+      { name: "小碧潭支線", stations: ["七張", "小碧潭"] }
     ],
     funFact: "松山新店線其實是三條線拼起來的——新店線（1998）、小南門線（2000）、松山線（2014），花了 16 年才串成一條完整路線！",
     tags: ["捷運", "北部", "松山新店線", "綠線", "高運量"],
@@ -895,6 +936,40 @@ window.TRAIN_DATA = [
     ]
   },
   {
+    id: "tcmetro_green",
+    photoUrl: "images/tcmetro_green--emu.jpg",
+    photoCredit: {
+      author: "Cheng-en Cheng",
+      license: "CC BY-SA 2.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Trains_at_HSR_Taichung_Station_(Taichung_Metro)_01.jpg"
+    },
+    name: "台中捷運綠線",
+    nameEn: "Taichung Metro Green Line",
+    model: "中運量電聯車",
+    operator: "臺中捷運股份有限公司",
+    type: "捷運",
+    region: ["中部"],
+    yearStart: 2021,
+    maxSpeed: 75,
+    manufacturer: "日本 川崎重工業／台灣 台灣車輛",
+    seats: 82,
+    cars: 2,
+    color: "#6cc24a",
+    emoji: "🚇",
+    description: "台中捷運綠線於 2021 年 4 月 25 日通車，是台灣中部第一條捷運系統，也讓台中正式邁入軌道運輸時代。全線高架、採第三軌供電與全自動無人駕駛，從北屯總站一路南下至高鐵台中站，並在南端與台鐵新烏日站、台灣高鐵形成三鐵共構。電聯車由日本川崎重工與台灣車輛聯合打造，車身以清新綠色作為主視覺，呼應中部的活力氣息。",
+    features: [
+      "全線高架、第三軌供電，採全自動無人駕駛（DTO/UTO）",
+      "川崎重工與台灣車輛聯合製造，共 18 組列車",
+      "南端高鐵台中站可與台鐵新烏日站、台灣高鐵三鐵共構轉乘",
+      "每側車門多達 5 組，為台灣目前所有軌道車輛單側車門數之最"
+    ],
+    routes: [
+      { name: "綠線（烏日文心北屯線）", stations: ["北屯總站", "松竹", "文心崇德", "市政府", "文心森林公園", "南屯", "大慶", "高鐵台中站"] }
+    ],
+    funFact: "台中捷運綠線電聯車每側車門多達 5 組，是台灣目前所有軌道車輛中單側車門數最多的紀錄，尖峰時刻上下車特別快！通車前試營運期間曾在 2020 年 11 月發生連結器斷裂事故，一度延後正式營運到隔年 4 月才上路。",
+    tags: ["捷運", "中部", "綠線", "台中捷運", "中運量", "無人駕駛"]
+  },
+  {
     id: "danhai_lrt",
     photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/New_Taipei_Metro_Danhai_Light_Rail_Train_2018-12-29.jpg",
     name: "淡海輕軌",
@@ -922,6 +997,40 @@ window.TRAIN_DATA = [
     ],
     funFact: "行武者號車隊裡藏著三列「幾米彩繪列車」——奇幻森林、漂浮城市、動物樂園，是全台唯一結合繪本大師幾米作品的輕軌車輛，搭到就是賺到！",
     tags: ["輕軌", "北部", "國車國造", "行武者", "低地板", "儲能"]
+  },
+  {
+    id: "ankeng_lrt",
+    photoUrl: "images/ankeng_lrt--guangyaojin.jpg",
+    photoCredit: {
+      author: "Sinsyuan",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Ankeng_LRV_at_Shisizhang_20260107.jpg"
+    },
+    name: "安坑輕軌",
+    nameEn: "Ankeng LRT",
+    model: "光耀金",
+    operator: "新北大眾捷運股份有限公司",
+    type: "輕軌",
+    region: ["北部"],
+    yearStart: 2023,
+    maxSpeed: 70,
+    manufacturer: "台灣車輛 / 德國 福伊特（Voith）",
+    seats: 265,
+    cars: 5,
+    color: "#c9a227",
+    emoji: "🚃",
+    description: "安坑輕軌是新北捷運的第二條輕軌路線，2023 年 2 月通車，行駛新店安坑地區至十四張間，末端於十四張站可與環狀線轉乘。車體與淡海輕軌同款，由台灣車輛與德國福伊特合作打造，塗裝色「光耀金」同樣經民眾票選決定，呼應安坑依山建城的山城意象。全線因地形起伏混合平面、高架與地下路段，跨越新店溪的「安心橋」是全台最長的單塔斜張軌道橋，也是沿線最醒目的地標。",
+    features: [
+      "車體與淡海輕軌同款，由台灣車輛與德國福伊特合作打造",
+      "塗裝「光耀金」由民眾票選決定，呼應安坑山城意象",
+      "全線混合平面、高架與地下路段，因應安坑丘陵地形",
+      "跨越新店溪的安心橋為全台最長單塔斜張軌道橋，塔高 130 公尺"
+    ],
+    routes: [
+      { name: "K線", stations: ["雙城", "玫瑰中國城", "台北小城", "耕莘安康院區", "景文科大", "安康", "陽光運動公園", "新和國小", "十四張"] }
+    ],
+    funFact: "安坑輕軌跨越新店溪的「安心橋」是全台首座單塔斜張桁架複合式軌道橋，橋長 502 公尺、塔高 130 公尺、重量約 3,450 噸，2020 年 9 月完成合龍，是全線工程難度最高的一段，也讓十四張站能無縫銜接新北環狀線。",
+    tags: ["輕軌", "北部", "光耀金", "低地板", "儲能", "安心橋"]
   },
   {
     id: "kaohsiung_lrt",

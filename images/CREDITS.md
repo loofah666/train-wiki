@@ -55,6 +55,13 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Downloaded: 2026-07-08
 - 備註：`ziqiang` 頂層卡片圖與此 EMU3000 variant 共用同一檔案
 
+### ziqiang--dr2800.jpg — 自強號 DR2800/2900/3000 柴聯自強號（已退役）
+- Author: **Komushi**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:TRA_DR2864_at_Taitung_Station_20140225.jpg
+- Downloaded: 2026-07-16
+- 備註：DR2864（DR2800 型）於台東站，2014-02-25；代表 DR2800/2900/3000 三型柴聯自強號
+
 ---
 
 ## TRA 通勤區間車
@@ -156,6 +163,13 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Downloaded: 2026-07-15
 - 備註：此檔案同時沿用於 `mrt_songshan_xindian` 的 C381 variant（兩線共用同型車廂）
 
+### mrt_tamsui_xinyi--c371_xinbeitou.jpg — 新北投支線 C371(3節編組) variant
+- Author: **Lokseng01**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:A_Taipei_Metro_C371_train_leaving_Beitou_Station_toward_Xinbeitou_Station.jpg
+- Downloaded: 2026-07-16
+- 備註：C371 3節編組列車自北投站駛往新北投站，2021-04-02
+
 ### mrt_songshan_xindian--c371.jpg — 松山新店線 C371 (頂層共用)
 - Author: **Howard61313**
 - License: **GFDL 1.2+ / Public Domain**
@@ -201,6 +215,12 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Source: https://commons.wikimedia.org/wiki/File:Kaohsiung_MRT_Red_Line_Train.jpg
 - Downloaded: 2026-07-15
 
+### tcmetro_green--emu.jpg — 台中捷運綠線中運量電聯車
+- Author: **Cheng-en Cheng**
+- License: **CC BY-SA 2.0**
+- Source: https://commons.wikimedia.org/wiki/File:Trains_at_HSR_Taichung_Station_(Taichung_Metro)_01.jpg
+- Downloaded: 2026-07-16
+
 ---
 
 ## 高雄輕軌
@@ -217,6 +237,16 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - License: **CC BY-SA 2.0**
 - Source: https://commons.wikimedia.org/wiki/File:Kaohsiung_Light_Rail_Alstom_Citadis,_Pier-2_Art_Center_(20240316a)_(53607047337).jpg
 - Downloaded: 2026-07-15
+
+---
+
+## 安坑輕軌
+
+### ankeng_lrt--guangyaojin.jpg — 安坑輕軌電聯車（光耀金）
+- Author: **Sinsyuan**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:Ankeng_LRV_at_Shisizhang_20260107.jpg
+- Downloaded: 2026-07-16
 
 ---
 
