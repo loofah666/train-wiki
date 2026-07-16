@@ -897,8 +897,8 @@ window.TRAIN_DATA = [
   {
     id: "danhai_lrt",
     photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/New_Taipei_Metro_Danhai_Light_Rail_Train_2018-12-29.jpg",
-    name: "淡海輕軌（行武者號）",
-    nameEn: "Danhai LRT (Xingwuzhe)",
+    name: "淡海輕軌",
+    nameEn: "Danhai LRT",
     model: "行武者號",
     operator: "新北大眾捷運股份有限公司",
     type: "輕軌",
