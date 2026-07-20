@@ -82,6 +82,13 @@
 - Download: https://upload.wikimedia.org/wikipedia/commons/3/3a/TRA_E402_Chu-Kuang_Express_at_Taitung_Station_20201114.jpg
 - 備註：E402 牽引，2020-11-14 於台東站
 
+### juguang--r100 (R100 型柴電機車 variant)
+- [x] filename: `juguang--r100.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:TRA_R138_leading_a_Chu-Kuang_Express_on_the_South-link_Line.jpg
+- Author: jason199567 / License: CC BY-SA 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/2/2d/TRA_R138_leading_a_Chu-Kuang_Express_on_the_South-link_Line.jpg
+- 備註：R138 牽引莒光號行駛南迴線
+
 ---
 
 ## TRA 通勤區間車
@@ -131,6 +138,13 @@
 - Download: https://upload.wikimedia.org/wikipedia/commons/4/48/%E5%85%89%E8%8F%AF%E8%99%9F.jpg
 - 備註：乾淨光華號本尊。備選：`File:DR2705_at_Taichung.JPG`
 
+### guanguang (觀光號，已退役)
+- [x] filename: `guanguang--35sp32750.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:19780425%E8%A7%80%E5%85%89%E8%99%9F%E5%88%97%E8%BB%8A%E6%96%BC%E5%8F%B0%E5%8C%97%E8%BB%8A%E7%B0%99.jpg
+- Author: 台灣新生報（國史館台灣文獻館典藏） / License: 政府網站資料開放宣告
+- Download: https://commons.wikimedia.org/wiki/Special:FilePath/19780425觀光號列車於台北車站.jpg
+- 備註：1978-04-25 觀光號末班車駛離台北車站（次日莒光號接手營運，同年8月自強號EMU100另行首航）。同分類（Category:Kuan-Kuang Express）另有餐車內用餐照 `File:乘客在觀光號餐車內用餐的情形.jpg`、保存中的35DC32751餐車現況照，未逐一查證授權，僅供備選
+
 ### blue_skin (藍皮解憂號)
 - [x] filename: `blue_skin--spk2300.jpg`
 - File page: https://commons.wikimedia.org/wiki/File:TRA_R101_leading_a_Breezy_Blue_Train_at_Taitung_Station.jpg
@@ -144,6 +158,20 @@
 - Author: SElefant (Sean H. Yu) / License: CC BY-SA 3.0
 - Download: https://upload.wikimedia.org/wikipedia/commons/4/47/TRA_DR1000_DMU_in_NeiWan_Station.jpg
 - 備註：2007-08-02 於橫山鄉；使用者選用此圖取代先前 Dquai 版
+
+### jiji_line_dr1000 (集集線)
+- [x] filename: `jiji_line--dr1000.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:TRA_DR1000_Jiji_Line_Longquan_Jiji_20170220.jpg
+- Author: Cassiopeia sweet / License: Public domain
+- Download: https://upload.wikimedia.org/wikipedia/commons/8/8d/TRA_DR1000_Jiji_Line_Longquan_Jiji_20170220.jpg
+- 備註：龍泉至集集間拍攝，2017-02-20；id 特別命名為 jiji_line_dr1000（非 jiji_dr2700）以避免與光華號卡片混淆
+
+### fuxing_express (復興號客車，已退役)
+- [x] filename: `fuxing_express--40sp20000.jpg`
+- File page: https://commons.wikimedia.org/wiki/File:TRA_40SP20073T_at_Chiayi_Station_20191011.jpg
+- Author: Kazehayashi / License: CC BY-SA 4.0
+- Download: https://upload.wikimedia.org/wikipedia/commons/f/f7/TRA_40SP20073T_at_Chiayi_Station_20191011.jpg
+- 備註：40SP20073T 客車廂，嘉義站，2019-10-11；同類候選見 Commons Category:Fu-Hsing_Semi_Express（同一作者另有 40SPK21008T、35SPK2300_in_Kaohsiung 等可換用）
 
 ### jiushanxian — 舊山線（頂層 + CK124 variant 共用）
 - [x] filename: `jiushanxian--ck124.jpg`

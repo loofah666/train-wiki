@@ -216,30 +216,63 @@ window.TRAIN_DATA = [
     },
     name: "莒光號",
     nameEn: "Chu-Kuang Express",
-    model: "35SP32950 系列客車（現役主力）",
     operator: "臺灣鐵路公司",
     type: "台鐵",
     region: ["全島"],
-    yearStart: 1970,
-    maxSpeed: 110,
-    manufacturer: "日本 日本車輛 / 日本 日立製作所 / 台灣 唐榮鐵工廠",
-    seats: 480,
-    cars: 8,
     color: "#8e44ad",
     emoji: "🚃",
     description: "莒光號是臺鐵長壽的對號快車服務，1970 年代起以紫紅色車身聞名。以機車頭牽引的客車組編成，車廂類型包含 35SP32850、35SP32950、35SP32720 等系列客車，是許多台灣人對「火車旅行」最原始的印象。速度雖不及自強號，但停靠站更多、票價更親民，至今仍在西部幹線與東部幹線部分列次服務。",
-    features: [
-      "停靠站數多，服務更多小城鎮",
-      "營運速度 110 km/h",
-      "紫紅色經典塗裝、機車牽引客車編組",
-      "由多批不同年代的 35SP 系列客車編組而成"
-    ],
     routes: [
       { name: "西部幹線", stations: ["基隆", "台北", "台中", "彰化", "嘉義", "台南", "高雄"] },
       { name: "南迴線／東部幹線", stations: ["高雄", "枋寮", "台東", "花蓮"] }
     ],
-    funFact: "「莒光」二字取自「毋忘在莒」的典故，1970 年推出時是為呼應當時政治氛圍，沒想到成了台鐵服役最久的長青服務——原本要陸續退場，卻因 EMU3000 交車進度延宕而多次獲得延壽。",
-    tags: ["快車", "全島", "對號座", "客車編組", "歷史車種"]
+    tags: ["快車", "全島", "對號座", "客車編組", "歷史車種"],
+    variants: [
+      {
+        model: "35SP32950 系列客車（現役主力）",
+        manufacturer: "日本 日本車輛 / 日本 日立製作所 / 台灣 唐榮鐵工廠",
+        yearStart: 1970,
+        status: "active",
+        maxSpeed: 110,
+        cars: 8,
+        seats: 480,
+        photoUrl: "images/juguang--e400.jpg",
+        photoCredit: {
+          author: "Kazehayashi",
+          license: "CC BY-SA 4.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_E402_Chu-Kuang_Express_at_Taitung_Station_20201114.jpg"
+        },
+        description: "莒光號現役主力客車，車廂類型包含 35SP32850、35SP32950、35SP32720 等系列，是許多台灣人對「火車旅行」最原始的印象。速度雖不及自強號，但停靠站更多、票價更親民，至今仍在西部幹線與東部幹線部分列次服務。",
+        features: [
+          "停靠站數多，服務更多小城鎮",
+          "紫紅色經典塗裝、機車牽引客車編組",
+          "由多批不同年代的 35SP 系列客車編組而成"
+        ],
+        funFact: "「莒光」二字取自「毋忘在莒」的典故，1970 年推出時是為呼應當時政治氛圍，沒想到成了台鐵服役最久的長青服務——原本要陸續退場，卻因 EMU3000 交車進度延宕而多次獲得延壽。"
+      },
+      {
+        model: "R100（車頭）",
+        manufacturer: "美國 GM-EMD（原型號 EMD G22U）",
+        yearStart: 1969,
+        status: "active",
+        maxSpeed: 100,
+        cars: null,
+        seats: null,
+        photoUrl: "images/juguang--r100.jpg",
+        photoCredit: {
+          author: "jason199567",
+          license: "CC BY-SA 4.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_R138_leading_a_Chu-Kuang_Express_on_the_South-link_Line.jpg"
+        },
+        description: "R100 型柴電機車是莒光號的開路先鋒——1969 年台鐵向美國 GM-EMD 購入 39 輛（R101–R139，原型號 EMD G22U），搭載 GM 12-645E 引擎、1,650 匹馬力，1970 年 1 月莒光號通車即擔任牽引主力。如今西部幹線多已電氣化改用電力機車，R100 逐漸退居貨運與新進司機員的駕駛訓練，但在南迴線等路段偶爾仍可見它牽著莒光號客車奔馳。",
+        features: [
+          "美國 GM-EMD 製造，1969 年購入 39 輛（R101–R139，原型號 EMD G22U）",
+          "GM 12-645E 柴油引擎、1,650 匹馬力，A1A-A1A 輪軸配置，車重 78 噸",
+          "台東機務段現配置約 10 輛，專責牽引藍皮解憂號並兼跑南迴線貨運"
+        ],
+        funFact: "因單側駕駛室設計，R100 倒退行駛時台鐵規定須由兩名司機員合作操作；2023 年 12 月 16 日首度與 CT273 蒸汽機車聯掛推出「SL藍皮解憂號」時，車尾掛的 R100 其實是負責補上蒸汽機車沒有的 ATP 訊號與動力系統。"
+      }
+    ]
   },
   {
     id: "emu_local",
@@ -404,6 +437,77 @@ window.TRAIN_DATA = [
     tags: ["歷史車種", "光華號", "白鐵仔", "已退役", "不鏽鋼"]
   },
   {
+    id: "guanguang",
+    photoUrl: "images/guanguang--35sp32750.jpg",
+    photoCredit: {
+      author: "台灣新生報（國史館台灣文獻館典藏）",
+      license: "政府網站資料開放宣告",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:19780425%E8%A7%80%E5%85%89%E8%99%9F%E5%88%97%E8%BB%8A%E6%96%BC%E5%8F%B0%E5%8C%97%E8%BB%8A%E7%B0%99.jpg"
+    },
+    name: "觀光號",
+    nameEn: "Kuan-Kuang Express",
+    model: "35SP32750",
+    operator: "臺灣鐵路管理局（已退役）",
+    type: "台鐵",
+    region: ["全島"],
+    yearStart: 1961,
+    yearEnd: 1978,
+    status: "retired",
+    maxSpeed: 100,
+    manufacturer: "日本 日本車輛（後期 臺北機廠自製）",
+    seats: 52,
+    cars: null,
+    color: "#1e3a5f",
+    emoji: "🍽️",
+    description: "觀光號 1961 年上路，是臺鐵首款全面裝設冷氣的長程列車，也首度配有餐車，提供中西式餐點與專屬服務小姐，車廂並可調整為臥式座椅。全盛時期擔任西部幹線最高等級對號快車，台北到高雄約 6 小時。1978 年 4 月 25 日最後一班觀光號駛離台北車站後正式停駛，營運任務由已運行多年的莒光號接手，同年 8 月自強號 EMU100 電聯車另行首航，開啟臺鐵特快車新世代。",
+    features: [
+      "臺鐵首款全面裝設冷氣的長程列車",
+      "首度配有餐車，提供中西式餐點與專屬「觀光號小姐」服務",
+      "1978 年 4 月 25 日停駛，營運交棒給莒光號"
+    ],
+    routes: [
+      { name: "西部幹線（觀光號時期）", stations: ["台北", "新竹", "台中", "嘉義", "台南", "高雄"] }
+    ],
+    funFact: "觀光號車頭最初曾掛上法文「BIENVENUE」（歡迎）字樣的識別牌，是臺鐵史上唯一一次以法文命名列車，後來才改為拼音「KUAN KUANG」。",
+    tags: ["歷史車種", "觀光號", "已退役", "冷氣列車", "餐車"]
+  },
+  {
+    id: "fuxing_express",
+    photoUrl: "images/fuxing_express--40sp20000.jpg",
+    photoCredit: {
+      author: "Kazehayashi",
+      license: "CC BY-SA 4.0",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_40SP20073T_at_Chiayi_Station_20191011.jpg"
+    },
+    name: "復興號",
+    nameEn: "Fu-Hsing Semi-Express",
+    model: "20000系鋼體客車（40SP20000／40SPK20000／40SPK21000）",
+    operator: "臺灣鐵路管理局（已退役）",
+    type: "台鐵",
+    region: ["全島"],
+    yearStart: 1981,
+    yearEnd: 2022,
+    status: "retired",
+    maxSpeed: 100,
+    manufacturer: "臺灣 唐榮鐵工廠",
+    seats: 60,
+    cars: 6,
+    color: "#e67e22",
+    emoji: "🚃",
+    description: "1981 年正式獨立營運的復興號，是台鐵電氣化後首款量產的冷氣對號客車，填補莒光號與普快車之間的票價空白。初期採橘色雙白線塗裝，1985 年起改漆天藍色與白色，成為許多人記憶中「藍皮」對號車的模樣。全盛時期奔馳西部與東部幹線，晚期則退居南迴線擔任區間車主力，直到 2022 年 12 月 28 日隨最後一班南迴區間車走入歷史，結束 41 年服役。",
+    features: [
+      "1981 年由唐榮鐵工廠打造，是莒光號與普快車之間的第三級對號客車",
+      "塗裝歷經橘白（1981）→天藍白（1985 起）兩代",
+      "2022 年 12 月 28 日南迴線末班車後全數退役，結束 41 年服務"
+    ],
+    routes: [
+      { name: "西部／東部幹線（全盛期）", stations: ["台北", "台中", "台南", "高雄", "花蓮", "台東"] },
+      { name: "南迴線（末期區間車）", stations: ["枋寮", "大武", "知本", "台東"] }
+    ],
+    funFact: "復興號最初其實是掛在莒光號後面混合編組運行，時人戲稱「莒興號」，直到 1981 年 7 月 1 日才正式脫離獨立成軍；它的最終謝幕也頗曲折——高雄機廠遷往潮州後檢修產能大減，這批老車廂終於在 2022 年底被 EMU900 電聯車全面取代，退出南迴線的最後崗位。",
+    tags: ["歷史車種", "已退役", "橘色塗裝", "對號車", "南迴線"]
+  },
+  {
     id: "blue_skin",
     photoUrl: "images/blue_skin--spk2300.jpg",
     photoCredit: {
@@ -413,29 +517,62 @@ window.TRAIN_DATA = [
     },
     name: "藍皮解憂號",
     nameEn: "Blue Skin Train",
-    model: "SPK32700 系客車（R100 柴電機車牽引）",
     operator: "臺灣鐵路公司／雄獅旅行社（代營）",
     type: "台鐵",
     region: ["南部", "東部"],
-    yearStart: 2021,
-    maxSpeed: 100,
-    manufacturer: "臺鐵早期客車（1960 年代）／R100 柴電機車",
-    seats: 200,
-    cars: 6,
     color: "#2980b9",
     emoji: "🚃",
     description: "藍皮解憂號 2021 年 10 月起行駛南迴線（枋寮至台東），前身是台鐵最後一班「藍皮普快車」，退役後由雄獅旅行社代營、包裝為主題觀光列車。編組為 R100 型柴電機車牽引 SPK32700／TPK32200／SP32550 等 1960 年代舊式客車，車廂保留手動推拉窗、老式木質行李架與吊扇，是台灣少數還能「吹風看海」的鐵道體驗。",
-    features: [
-      "1960 年代原型普快客車編組，非電聯車",
-      "可手動推拉的車窗，吹著南迴海風看太平洋",
-      "R100 型柴電機車牽引，非電氣化區段運行",
-      "由雄獅旅行社包裝營運，需事先預約"
-    ],
     routes: [
       { name: "南迴線", stations: ["枋寮", "枋山", "加祿", "內獅", "古莊", "大武", "金崙", "太麻里", "知本", "台東"] }
     ],
-    funFact: "藍皮解憂號的車窗可以真的推開！吹著海風看太平洋，是現在幾乎找不到的珍貴體驗！",
-    tags: ["觀光", "懷舊", "南迴線", "藍皮", "慢旅行"]
+    tags: ["觀光", "懷舊", "南迴線", "藍皮", "慢旅行"],
+    variants: [
+      {
+        model: "SPK32700 系客車",
+        manufacturer: "臺鐵早期客車（1960 年代）",
+        yearStart: 2021,
+        status: "active",
+        maxSpeed: 100,
+        cars: 6,
+        seats: 200,
+        photoUrl: "images/blue_skin--spk2300.jpg",
+        photoCredit: {
+          author: "jason199567",
+          license: "CC BY-SA 4.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_R101_leading_a_Breezy_Blue_Train_at_Taitung_Station.jpg"
+        },
+        description: "SPK32700／TPK32200／SP32550 等 1960 年代舊式客車，車廂保留手動推拉窗、老式木質行李架與吊扇，是台灣少數還能「吹風看海」的鐵道體驗。",
+        features: [
+          "1960 年代原型普快客車編組，非電聯車",
+          "可手動推拉的車窗，吹著南迴海風看太平洋",
+          "由雄獅旅行社包裝營運，需事先預約"
+        ],
+        funFact: "藍皮解憂號的車窗可以真的推開！吹著海風看太平洋，是現在幾乎找不到的珍貴體驗！"
+      },
+      {
+        model: "R100（車頭）",
+        manufacturer: "美國 GM-EMD（原型號 EMD G22U）",
+        yearStart: 1969,
+        status: "active",
+        maxSpeed: 100,
+        cars: null,
+        seats: null,
+        photoUrl: "images/blue_skin--spk2300.jpg",
+        photoCredit: {
+          author: "jason199567",
+          license: "CC BY-SA 4.0",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_R101_leading_a_Breezy_Blue_Train_at_Taitung_Station.jpg"
+        },
+        description: "牽引藍皮解憂號的正是 1969 年由美國 GM-EMD 打造的 R100 型柴電機車（原型號 EMD G22U，共 39 輛），當年正是莒光號通車時的第一代動力來源。如今台東機務段配置約 10 輛（如 R101、R122、R127、R135 等）專責牽引南迴線的藍皮解憂號；2023 年底更曾與 CT273 蒸汽機車聯掛推出「SL藍皮解憂號」，成為鐵道迷追逐的經典畫面。",
+        features: [
+          "美國 GM-EMD 製造，1969 年購入 39 輛（R101–R139，原型號 EMD G22U）",
+          "台東機務段現配置約 10 輛，專責牽引藍皮解憂號並兼跑南迴線貨運",
+          "R100 型柴電機車牽引，非電氣化區段運行"
+        ],
+        funFact: "2023 年 12 月 16 日 R100 首度與 CT273 蒸汽機車聯掛推出「SL藍皮解憂號」，車尾掛的 R100 其實是負責補上蒸汽機車沒有的 ATP 訊號與動力系統。"
+      }
+    ]
   },
   {
     id: "thsr_700t",
@@ -1264,6 +1401,40 @@ window.TRAIN_DATA = [
     ],
     funFact: "內灣線的合興車站有個超浪漫的傳說：月台上的愛情故事讓它成為台灣最有名的「愛情車站」，情侶都愛來這裡拍照！",
     tags: ["觀光", "支線", "柴油", "北部", "客家", "內灣"]
+  },
+  {
+    id: "jiji_line_dr1000",
+    photoUrl: "images/jiji_line--dr1000.jpg",
+    photoCredit: {
+      author: "Cassiopeia sweet",
+      license: "Public domain",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:TRA_DR1000_Jiji_Line_Longquan_Jiji_20170220.jpg"
+    },
+    name: "集集線柴油客車",
+    nameEn: "Jiji Line Diesel Railcar",
+    model: "DR1000",
+    operator: "臺灣鐵路公司",
+    type: "台鐵",
+    region: ["中部"],
+    yearStart: 1999,
+    maxSpeed: 110,
+    manufacturer: "日本 日本車輛（部分由 台灣 唐榮鐵工廠組裝）",
+    seats: 216,
+    cars: 3,
+    color: "#27ae60",
+    emoji: "🚞",
+    description: "集集線是台鐵最長的鐵路支線，全長 29.7 公里，自二水沿濁水溪河谷蜿蜒至南投車埕。1999 年起，DR1000 型冷氣柴油客車全面取代舊型柴客，成為這條非電化支線的固定班底，平日 3 輛、假日常加掛至 4 輛編組。1999 年 921 集集大地震重創沿線車站與軌道，歷經兩年多修復才於 2001 年恢復通車，集集車站至今仍保留地震紀念意象；近年因邊坡坍塌一度中斷，2026 年 6 月全線修復通車，DR1000 繼續穿梭於這條見證產業與地震重生記憶的懷舊支線。",
+    features: [
+      "台鐵最長支線，全長 29.7 公里",
+      "1999 年起 DR1000 成為集集線固定車種",
+      "見證 921 集集大地震重建歷史",
+      "沿濁水溪河谷穿越田野山林"
+    ],
+    routes: [
+      { name: "集集線", stations: ["二水", "源泉", "濁水", "龍泉", "集集", "水里", "車埕"] }
+    ],
+    funFact: "集集車站保留了 921 大地震後修復重建的木造車站原貌，是全台少數見證地震歷史的鐵道文化資產。",
+    tags: ["觀光", "支線", "柴油", "中部", "921地震", "集集"]
   },
   {
     id: "nrm_blueskin",

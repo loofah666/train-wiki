@@ -30,6 +30,13 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Source: https://commons.wikimedia.org/wiki/File:TRA_E402_Chu-Kuang_Express_at_Taitung_Station_20201114.jpg
 - Downloaded: 2026-07-08
 
+### juguang--r100.jpg — 莒光號 R100 型柴電機車 variant
+- Author: **jason199567**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:TRA_R138_leading_a_Chu-Kuang_Express_on_the_South-link_Line.jpg
+- Downloaded: 2026-07-17
+- 備註：R138 牽引莒光號行駛南迴線，與 `blue_skin--spk2300.jpg`（R101 牽引藍皮解憂號）共為同型機車的不同 variant 用照
+
 ### ziqiang--emu100.jpg — 自強號 EMU100 (英國貴婦，已退役)
 - Author: **Cheng-en Cheng** (Flickr: rail02000)
 - License: **CC BY-SA 2.0**
@@ -103,6 +110,13 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Source: https://commons.wikimedia.org/wiki/File:%E5%85%89%E8%8F%AF%E8%99%9F.jpg
 - Downloaded: 2026-07-08
 
+### guanguang--35sp32750.jpg — 觀光號 35SP32750 系客車（已退役）
+- Author: **台灣新生報**（原件典藏：國史館台灣文獻館）
+- License: **政府網站資料開放宣告**（Government Website Open Information Announcement，台灣政府開放資料授權，允許重製、改作、散布，需標示來源）
+- Source: https://commons.wikimedia.org/wiki/File:19780425%E8%A7%80%E5%85%89%E8%99%9F%E5%88%97%E8%BB%8A%E6%96%BC%E5%8F%B0%E5%8C%97%E8%BB%8A%E7%B0%99.jpg
+- Downloaded: 2026-07-17
+- 備註：1978-04-25 觀光號末班列車駛離台北車站，站長陳德培向列車長張旭堂敬禮致意，畫面右側月台可見 EMU100 自強號車廂
+
 ### blue_skin--spk2300.jpg — 藍皮解憂號
 - Author: **jason199567** (Flickr)
 - License: **CC BY-SA 4.0**
@@ -110,11 +124,25 @@ UI 上也可透過每張圖右下角的 (i) 按鈕看到相同資訊。
 - Downloaded: 2026-07-08
 - 備註：R101 牽引藍皮解憂號（SPK2300 系客車）於台東站，2023-01-26
 
+### fuxing_express--40sp20000.jpg — 復興號 40SP20000 系客車（已退役）
+- Author: **Kazehayashi**
+- License: **CC BY-SA 4.0**
+- Source: https://commons.wikimedia.org/wiki/File:TRA_40SP20073T_at_Chiayi_Station_20191011.jpg
+- Downloaded: 2026-07-17
+- 備註：40SP20073T 客車廂停靠嘉義站，2019-10-11。車身可見復興號後期改塗的天藍色／白色塗裝與車廂銘牌「復興號」字樣。
+
 ### neiwan--dr1000.jpg — 內灣線 DR1000
 - Author: **SElefant** (Sean H. Yu)
 - License: **CC BY-SA 3.0**
 - Source: https://commons.wikimedia.org/wiki/File:TRA_DR1000_DMU_in_NeiWan_Station.jpg
 - Downloaded: 2026-07-08
+
+### jiji_line--dr1000.jpg — 集集線 DR1000
+- Author: **Cassiopeia sweet**
+- License: **Public domain**
+- Source: https://commons.wikimedia.org/wiki/File:TRA_DR1000_Jiji_Line_Longquan_Jiji_20170220.jpg
+- Downloaded: 2026-07-17
+- 備註：龍泉至集集間，2017-02-20 拍攝
 
 ### jiushanxian--ck124.jpg — 舊山線 CK124 蒸汽
 - Author: **Subscriptshoe9**
